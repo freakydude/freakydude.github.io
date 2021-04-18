@@ -1,6 +1,13 @@
 [en]
-  title = "Freakydude's page"
+  title = "FreakyDude's page"
   languageName = "English"
   weight = 2
   languagedir = "ltr"
   contentdir = "content/en"
+
+[de]
+  title = "FreakyDude's Seite"
+  languageName = "Deutsch"
+  weight = 2
+  languagedir = "ltr"
+  contentdir = "content/de"

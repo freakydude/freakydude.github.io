@@ -1,0 +1,119 @@
+[search-placeholder]
+other = "Suchen"
+
+[summary-dateformat]
+other = "2. Jan 2006"
+
+[reading-time]
+other = "Lesedauer"
+
+[tags]
+other = "Tags"
+
+[categories]
+other = "Kategorien"
+
+[series]
+other = "Serien"
+
+[archive-dateformat]
+other = "2. Jan"
+
+[talks-dateformat]
+other = "2. Jan"
+
+[single-dateformat]
+other = "2. Jan 2006"
+
+[pub-dateformat]
+other = "02.01.2006"
+
+[resume-dateformat]
+other = "Jan 2006"
+
+[single-related]
+other = "Siehe auch"
+
+[single-writtenBy]
+other = "Geschrieben von"
+
+[toc-label]
+other = "Seiteninhalt"
+
+[counter-site-pv]
+other = "Seitenaufrufe"
+
+[counter-site-uv]
+other = "Seitenbesucher"
+
+[counter-page-pv]
+other = "Besucher"
+
+[donate-message]
+other = "Unterstütze den Author"
+
+[share-message]
+other = "Teilen"
+
+[contact-name]
+other = "Name"
+
+[contact-email]
+other = "Email"
+
+[contact-tel]
+other = "Tel"
+
+[contact-file]
+other = "Datei"
+
+[contact-message]
+other = "Nachricht"
+
+[contact-send]
+other = "Senden"
+
+[contact-browse]
+other = "Browsen"
+
+[tooltip-home]
+other = "Start"
+
+[tooltip-written]
+other = "Erstellt"
+
+[tooltip-modified]
+other = "Geändert"
+
+[tooltip-reading-time]
+other = "Lesedauer"
+
+[showcase-overview]
+other = "Übersicht"
+
+[showcase-pinned]
+other = "Angepinnt"
+
+[nojs-message]
+other = "Für eine perfekte Darstellung, schalte bitte JavaScript ein."
+
+[posts-by-order]
+other = "Beste Beiträge"
+
+[skin-dark]
+other = "Dunkel"
+
+[skin-light]
+other = "Hell"
+
+[skin-hacker]
+other = "Hacker"
+
+[skin-solarized]
+other = "Solar"
+
+[skin-kimbie]
+other = "Kimbie"
+
+[no-contents]
+other = "Ohne Inhalt, klick doch einfach woanders hin."
