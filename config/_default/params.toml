@@ -14,14 +14,14 @@ notAllowedTypesInArchive = ["about", "talks", "showcase"] # not allowed page typ
 notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery"]
 enablePinnedPosts = true # show pinned posts first in the main view
 
-viewportSize = "normal" # widest, wider, wide, normal, narrow
+viewportSize = "wide" # widest, wider, wide, normal, narrow
 enableUiAnimation = true
 hideSingleContentsWhenJSDisabled = false
 minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
 
 # appbar
 enableAppbarSearchIcon = false
-enableAppbarLangIcon = false
+enableAppbarLangIcon = true
 
 # header
 homeHeaderType = "text" # text, img, slide, typewriter
@@ -79,7 +79,7 @@ enableSidebarPostsByOrder = false # another lists in the sidebar
 showPoweredBy = false # show footer text: Powered by Hugo and Zzo theme
 showFeedLinks = true # RSS Feed 
 showSocialLinks = true # email, facebook, twitter ...
-enableLangChange = true # show button at bottom left of footer.
+enableLangChange = false # show button at bottom left of footer.
 
 # service
 googleTagManager = "" # GTM-XXXXXX
