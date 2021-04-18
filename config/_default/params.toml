@@ -1,7 +1,7 @@
-logoText = "Zzo" # Logo text that appears in the site navigation bar.
+logoText = "FreakyDude" # Logo text that appears in the site navigation bar.
 logoType = "short" # long, short -> short: squre shape includes logo text, long: rectangle shape not includes logo text
 logo = true # Logo that appears in the site navigation bar.
-description = "The Zzo theme for Hugo example site." # for SEO
+description = "FreakyDude in search of smart solutions" # for SEO
 custom_css = [] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
 custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
 useFaviconGenerator = false # https://www.favicon-generator.org/
@@ -47,14 +47,14 @@ talksPaginate = 8 # items per page
 talksGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
-myname = "zzossig"
-email = "zzossig@gmail.com"
-whoami = "Web Developer"
+myname = "freakydude"
+email = "developer@freakydu.de"
+whoami = "developer"
 bioImageUrl = "" # image url like "http//..." or "images/anyfoldername/mybioimage.jpg" If not set, we find a avatar image in root/static/images/whoami/avatar.(png|jpg|svg)
 useGravatar = false # we use this option highest priority
-location = "Seoul, Korea"
-organization = "Hugo"
-link = "https://github.com/zzossig/hugo-theme-zzo"
+location = "Nuremberg, Germany"
+organization = ""
+link = "https://github.com/freakydude"
 
 # sidebar
 enableBio = true # in home page sidebar
@@ -139,11 +139,11 @@ commento = false
   dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions] # if set, social icons will show up.
-  email = "mailto:your@email.com"
+  email = "mailto:developer@freakydu.de"
   phone = ""
-  facebook = "http://example.org/"
-  twitter = "http://example.org/"
-  github = "https://github.com/zzossig/hugo-theme-zzo"
+  facebook = ""
+  twitter = ""
+  github = "https://github.com/freakydude"
   stack-overflow = ""
   instagram = ""
   google-plus = ""
