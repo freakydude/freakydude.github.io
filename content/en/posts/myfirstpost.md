@@ -1,8 +1,8 @@
 ---
-title: "My First Post"
-date: 2019-03-26T08:47:11+01:00
-description: This is my awesome post!
+title: "About me"
+date: 2021-04-18T20:00:00+01:00
+description: My first "About me" post
 draft: false
 ---
 
-Your markdown here.
+Its me, a freaky dude.

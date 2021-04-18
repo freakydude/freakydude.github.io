@@ -1,5 +1,5 @@
-baseURL = "http://example.org/" # The URL of your site.
-title = "Hugo Zzo Theme" # Title of your site
+baseURL = "http://blog.freakydu.de/" # The URL of your site.
+title = "Freakydude's page" # Title of your site
 theme = "zzo" # Name of Zzo theme folder in `themes/`.
 
 defaultContentLanguage = "en" # Default language to use (if you setup multilingual)
