@@ -6,8 +6,6 @@ custom_css = [] # custom_css = ["scss/custom.scss"] and then make file at root/a
 custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
 useFaviconGenerator = true # https://www.favicon-generator.org/
 languagedir = "ltr" # ltr / rtl
-meta_image = ""
-themecolor = ""
 
 themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
 notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
@@ -221,5 +219,5 @@ commento = false
   name = ""
   link = ""
 [[footerLinks]]
-  name = ""
-  link = ""
+  name = "Imprint"
+  link = "imprint"

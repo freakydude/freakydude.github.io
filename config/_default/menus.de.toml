@@ -1,39 +1,5 @@
 [[main]]
-  identifier = "about"
-  name = "Über"
-  url = "about"
-  weight = 1
-
-[[main]]
-  identifier = "archive"
-  name = "Archiv"
-  url = "archive"
-  weight = 2
-
-[[main]]
-  identifier = "gallery"
-  name = "Gallerie"
-  url = "gallery"
-  weight = 3
-    
-[[main]]
-  parent = "gallery"
-  name = "Cartoons"
-  url = "gallery/cartoon"
-
-[[main]]
-  parent = "gallery"
-  name = "Photos"
-  url = "gallery/photo"
-
-[[main]]
   identifier = "posts"
   name = "Beiträge"
   url = "posts"
-  weight = 4
-    
-[[main]]
-  identifier = "notes"
-  name = "Anmerkungen"
-  url = "notes"
-  weight = 5
+  weight = 1
