@@ -2,7 +2,7 @@
 title: "Imprint"
 date: 2020-04-18T00:00:00+01:00
 author: freakydude
-type: contact
+type: about
 ---
 
 *Info: This page is machine translated*
