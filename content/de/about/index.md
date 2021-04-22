@@ -16,7 +16,7 @@ Frank Roth
 
 **Kontakt:**
 Telefon: 004915205448415
-E-Mail: developer(at)freakydu(dot)de
+E-Mail: [developer@freakydu.de](mailto:developer@freakydu.de)
 
 **Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**
 Frank Roth 
