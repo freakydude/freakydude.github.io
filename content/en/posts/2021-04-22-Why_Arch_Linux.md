@@ -19,6 +19,6 @@ There is no need to dive as deep as you have to with [Slackware](http://www.slac
 On the other hand, there are [Debian](https://www.debian.org/)-based distributions like [Ubuntu](https://ubuntu.com/). They are working out of the box. They have a graphical installer, pre-configured packages and including proprietary drivers for e.g. graphic cards. Most [Debian](https://www.debian.org/) based distribution are not rolling released. They have big releases from time to time and you can choose to upgrade or stay with your release for a while. Updates are mostly security fixes only. If you a beginner or just want to use a good looking Linux, without have to worry about internals - choose them.
 
 ## Round-up 
-In my opinion, [Arch Linux](https://archlinux.org/) catches the sweet spot. Without spending most of the time in configuring details, you get an always up-to-date, slim distribution. And wile working with it, you have the chance to learn a lot about how the linux-ecosystem works. 
+In my opinion, [Arch Linux](https://archlinux.org/) catches the sweet spot. Without spending most of the time in configuring details, you get an always up-to-date, slim distribution. And while working with it, you have the chance to learn a lot about how the linux-ecosystem works. 
 
 In future posts, i will help you with some aspects here.
