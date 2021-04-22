@@ -5,9 +5,9 @@
   languagedir = "ltr"
   contentdir = "content/en"
 
-[de]
-  title = "FreakyDude's Seite"
-  languageName = "Deutsch"
-  weight = 2
-  languagedir = "ltr"
-  contentdir = "content/de"
+# [de]
+#   title = "FreakyDude's Seite"
+#   languageName = "Deutsch"
+#   weight = 2
+#   languagedir = "ltr"
+#   contentdir = "content/de"
