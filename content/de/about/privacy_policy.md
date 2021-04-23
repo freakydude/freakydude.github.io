@@ -1,6 +1,6 @@
 ---
-title: "Impressum"
-date: 2020-04-18T00:00:00+01:00
+title: "Datenschutzerklärung"
+date: 2020-04-18
 author: freakydude
 type: about
 ---

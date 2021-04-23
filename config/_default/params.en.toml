@@ -217,7 +217,7 @@ commento = false
 
 [[footerLinks]]
   name = "Imprint"
-  link = "about"
+  link = "/en/about/imprint"
 [[footerLinks]]
-  name = ""
-  link = ""
+  name = "Privacy Policy"
+  link = "/en/about/privacy_policy"
