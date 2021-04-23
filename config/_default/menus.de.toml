@@ -1,5 +1,5 @@
 [[main]]
-  identifier = "posts"
-  name = "Beiträge"
-  url = "posts"
-  weight = 1
+identifier = "posts"
+name = "Beiträge"
+url = "posts"
+weight = 1

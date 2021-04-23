@@ -1,31 +1,31 @@
+custom_css = [] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss  
+custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js  
+description = "FreakyDude in search of smart solutions" # for SEO
+languagedir = "ltr" # ltr / rtl
+logo = true # Logo that appears in the site navigation bar.
 logoText = "FreakyDude" # Logo text that appears in the site navigation bar.
 logoType = "short" # long, short -> short: squre shape includes logo text, long: rectangle shape not includes logo text
-logo = true # Logo that appears in the site navigation bar.
-description = "FreakyDude in search of smart solutions" # for SEO
-custom_css = [] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
-custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
 useFaviconGenerator = true # https://www.favicon-generator.org/
-languagedir = "ltr" # ltr / rtl
 
-themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
-notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
-notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInArchive = ["about", "talks", "showcase", "publication", "presentation", "resume"]
+notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery"]
+notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "publication", "presentation", "resume"]
+themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
 
-viewportSize = "wide" # widest, wider, wide, normal, narrow
-enableUiAnimation = true
-hideSingleContentsWhenJSDisabled = false
 enablePinnedPosts = true # show pinned posts first in the main view
+enableUiAnimation = true 
+hideSingleContentsWhenJSDisabled = false 
 minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
+viewportSize = "wide" # widest, wider, wide, normal, narrow
 
 # appbar
-enableAppbarSearchIcon = false
 enableAppbarLangIcon = true
+enableAppbarSearchIcon = false
 
 # header
+hideHomeHeaderWhenMobile = false 
 homeHeaderType = "text" # text, img, slide, typewriter
-hideHomeHeaderWhenMobile = false
 
 # menu
 showMobileMenuTerms = ["tags", "categories", "series"]
@@ -34,190 +34,190 @@ showMobileMenuTerms = ["tags", "categories", "series"]
 enableThemeChange = true # site color theme
 
 # body
-enableBreadcrumb = true # breadcrumb for list, single page
-enablePhotoSwipe = true
-enableSearch = true # site search with Fuse
-enableSearchHighlight = true # when true, search keyword will be highlighted
-enableGoToTop = true # scroll to top
-enableWhoami = true # at the end of single page
-summaryShape = "classic" # card, classic, compact
-searchResultPosition = "main" # side, main
 archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 archivePaginate = 13 # items per page
+authorIcon = "✍️" 
+enableBreadcrumb = true # breadcrumb for list, single page
+enableGoToTop = true # scroll to top
+enablePhotoSwipe = true 
+enableSearch = true # site search with Fuse
+enableSearchHighlight = true # when true, search keyword will be highlighted
+enableWhoami = true # at the end of single page
+modifiedTimeIcon = "📝" 
+pagePvIcon = "👀" 
 paginateWindow = 1 # setting it to 1 gives 7 buttons, 2 gives 9, etc. If set 1: [1 ... 4 5 6 ... 356] [1 2 3 4 5 ... 356] etc
-talksPaginate = 8 # items per page
+pinIcon = "📌" 
+pubPaginate = 20 
+publicationIcon = "📚" 
+readingTimeIcon = "☕" 
+searchResultPosition = "main" # side, main
+summaryShape = "classic" # card, classic, compact
+tagIcon = "🏷️" 
 talksGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
-pubPaginate = 20
-writtenTimeIcon = "📅"
-modifiedTimeIcon = "📝"
-readingTimeIcon = "☕"
-authorIcon = "✍️"
-pagePvIcon = "👀"
-pinIcon = "📌"
-tagIcon = "🏷️"
-publicationIcon = "📚"
-typeIcon = "🎯"
+talksPaginate = 8 # items per page
+typeIcon = "�" 
+writtenTimeIcon = "�" 
 
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
-myname = "freakydude"
-email = "developer@freakydu.de"
-whoami = "💻Developer🎧DJ📚Learner"
 bioImageUrl = "" # image url like "http//..." or "images/anyfoldername/mybioimage.jpg" If not set, we find a avatar image in root/static/images/whoami/avatar.(png|jpg|svg)
+email = "developer@freakydu.de" 
+link = "https://www.freakydu.de/" 
+location = "Nuremberg, Germany" 
+myname = "freakydude" 
+organization = "" 
 useGravatar = false # we use this option highest priority
-location = "Nuremberg, Germany"
-organization = ""
-link = "https://www.freakydu.de/"
+whoami = "💻Developer🎧DJ📚Learner" 
 
 # sidebar
 enableBio = true # in home page sidebar
 enableBioImage = true # in home page sidebar
+enableHomeSidebarTitles = true 
+enableListSidebarTitles = true 
 enableSidebar = true # Set to false to create the full width of the content.
+enableSidebarCategories = true 
+enableSidebarPostsByOrder = false # another lists in the sidebar
+enableSidebarSeries = true 
 enableSidebarTags = true # if you want to use tags.
-enableSidebarSeries = true
-enableSidebarCategories = true
-enableHomeSidebarTitles = true
-enableListSidebarTitles = true
 enableToc = true # single page table of contents, you can replace this param to toc(toc = true)
-hideToc = false # Hide or Show toc
-tocFolding = false
-tocPosition = "inner" # inner, outer
 enableTocSwitch = true # single page table of contents visibility switch
+hideToc = false # Hide or Show toc
 itemsPerCategory = 5 # maximum number of posts shown in the sidebar.
 sidebarPosition = "right" # bio, profile component layout position
-tocLevels = ["h2", "h3", "h4"] # minimum h2, maximum h4 in your article
-enableSidebarPostsByOrder = false # another lists in the sidebar
+tocFolding = false 
+tocLevels = ["h2", "h3", "h4"] # minimum h2, maximum h4 in your article  
+tocPosition = "inner" # inner, outer
 
 # footer
-showPoweredBy = true # show footer text: Powered by Hugo and Zzo theme
-showFeedLinks = true # RSS Feed 
-showSocialLinks = true # email, facebook, twitter ...
 enableLangChange = false # show button at bottom left of footer.
+showFeedLinks = true # RSS Feed 
+showPoweredBy = true # show footer text: Powered by Hugo and Zzo theme
+showSocialLinks = true # email, facebook, twitter ...
 
 # service
-googleTagManager = "" # GTM-XXXXXX
 baiduAnalytics = "" # alternative of google analytics
-enableBusuanzi = false # if set true, total page view, total unique visitors show up in the footer.
-busuanziSiteUV = true # unique visitors (total number of visitors)
-busuanziSitePV = true # site total page view count
 busuanziPagePV = true # post view count
+busuanziSitePV = true # site total page view count
+busuanziSiteUV = true # unique visitors (total number of visitors)
+enableBusuanzi = false # if set true, total page view, total unique visitors show up in the footer.
+googleTagManager = "" # GTM-XXXXXX
 
 # rss
+fullContents = false 
+updateFrequency = "" 
 updatePeriod = "daily" # Possible values: 'hourly', 'daily', 'weekly', 'monthly', or 'yearly'.
-updateFrequency = ""
-fullContents = false
 
 # comment
-enableComment = true
-disqus_shortname = ""
 commento = false
+disqus_shortname = ""
+enableComment = true
 
 [telegram]
-  enable = false
-  siteId = ""
-  dataLimit = 5
+dataLimit = 5
+enable = false
+siteId = ""
 
-[gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-  owner = ""              # Your GitHub ID
-  repo = ""               # The repo to store comments
-  clientId = ""           # Your client ID
-  clientSecret = ""       # Your client secret
+[gitment] # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+clientId = "" # Your client ID
+clientSecret = "" # Your client secret
+owner = "" # Your GitHub ID
+repo = "" # The repo to store comments
 
-[utterances]       # https://utteranc.es/
-  owner = ""              # Your GitHub ID
-  repo = ""               # The repo to store comments
-  message = ""      # Optional
-  link = ""         # Optional
+[utterances] # https://utteranc.es/
+link = "" # Optional
+message = "" # Optional
+owner = "" # Your GitHub ID
+repo = "" # The repo to store comments
 
-[gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-  owner = ""              # Your GitHub ID
-  repo = ""               # The repo to store comments
-  clientId = ""           # Your client ID
-  clientSecret = ""       # Your client secret
+[gitalk] # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+clientId = "" # Your client ID
+clientSecret = "" # Your client secret
+owner = "" # Your GitHub ID
+repo = "" # The repo to store comments
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 [valine]
-  enable = false
-  appId = '你的appId'
-  appKey = '你的appKey'
-  notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
-  verify = false # Verification code
-  avatar = 'mm' 
-  placeholder = '说点什么吧...'
-  visitor = false
+appId = '你的appId' 
+appKey = '你的appKey' 
+avatar = 'mm' 
+enable = false 
+notify = false # mail notifier , https://github.com/xCss/Valine/wiki
+placeholder = '说点什么吧...' 
+verify = false # Verification code
+visitor = false 
 
 [changyan]
-  changyanAppid = ""        # Changyan app id             # 畅言
-  changyanAppkey = ""       # Changyan app key
+changyanAppid = "" # Changyan app id             # 畅言
+changyanAppkey = "" # Changyan app key
 
 [livere]
-  livereUID = ""            # LiveRe UID                  # 来必力
+livereUID = "" # LiveRe UID                  # 来必力
 
 # Isso: https://posativ.org/isso/
 [isso]
-  enable = false
-  scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
-  dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
+dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
+enable = false 
+scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
 
 [socialOptions] # if set, social icons will show up.
-  email = "mailto:developer@freakydu.de"
-  phone = ""
-  facebook = ""
-  twitter = ""
-  github = "https://github.com/freakydude"
-  stack-overflow = ""
-  instagram = ""
-  google-plus = ""
-  youtube = ""
-  medium = ""
-  tumblr = ""
-  linkedin = ""
-  pinterest = ""
-  stack-exchange = ""
-  telegram = ""
-  steam = ""
-  weibo = ""
-  douban = ""
-  csdn = ""
-  gitlab = ""
-  mastodon = ""
-  jianshu = ""
-  zhihu = ""
-  signal = ""
-  whatsapp = ""
-  matrix = ""
-  xmpp = ""
-  dev-to = ""
-  gitea = ""
-  google-scholar = ""
-  twitch = ""
+csdn = ""
+dev-to = ""
+douban = ""
+email = "mailto:developer@freakydu.de"
+facebook = ""
+gitea = ""
+github = "https://github.com/freakydude"
+gitlab = ""
+google-plus = ""
+google-scholar = ""
+instagram = ""
+jianshu = ""
+linkedin = ""
+mastodon = ""
+matrix = ""
+medium = ""
+phone = ""
+pinterest = ""
+signal = ""
+stack-exchange = ""
+stack-overflow = ""
+steam = ""
+telegram = ""
+tumblr = ""
+twitch = ""
+twitter = ""
+weibo = ""
+whatsapp = ""
+xmpp = ""
+youtube = ""
+zhihu = ""
 
 [donationOptions]
-  enable = false # if set, the donation button will show up on the single page.
-  alipay = "" # Alipay QR Code image (example path: images/donation/alipay-qrcode.png) and put your file at root/static/images/donation/
-  wechat = "" # Wechat pay QR Code image (example path: same as above)
-  paypal = "" # Paypal URL
-  patreon = "" # Patreon URL
-  bitcoin = "" # example path: images/donation/bitcoin-code-image.png
+alipay = "" # Alipay QR Code image (example path: images/donation/alipay-qrcode.png) and put your file at root/static/images/donation/
+bitcoin = "" # example path: images/donation/bitcoin-code-image.png
+enable = false # if set, the donation button will show up on the single page.
+patreon = "" # Patreon URL
+paypal = "" # Paypal URL
+wechat = "" # Wechat pay QR Code image (example path: same as above)
 
 [copyrightOptions]
-  enableCopyrightLink = false # if set, you can add copyright link
-  copyrightLink = ""
-  copyrightLinkImage = ""
-  copyrightLinkText = ""
+copyrightLink = "" 
+copyrightLinkImage = "" 
+copyrightLinkText = "" 
+enableCopyrightLink = false # if set, you can add copyright link
 
 # possible share name: ["facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line", "pocket", "feedly", "hatena", "pinterest", "delicious", "google", "whatsapp", "telegram"]
 [[share]]
-  name = "facebook"
-  username = ""
+name = "facebook"
+username = ""
 [[share]]
-  name = "twitter"
-  username = ""
+name = "twitter"
+username = ""
 
 [[footerLinks]]
-  name = "Imprint"
-  link = "/en/about/imprint"
+link = "/en/about/imprint"
+name = "Imprint"
 [[footerLinks]]
-  name = "Privacy Policy"
-  link = "/en/about/privacy_policy"
+link = "/en/about/privacy_policy"
+name = "Privacy Policy"

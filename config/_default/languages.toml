@@ -1,13 +1,13 @@
 [en]
-  title = "FreakyDude's page"
-  languageName = "English"
-  weight = 2
-  languagedir = "ltr"
-  contentdir = "content/en"
+contentdir = "content/en"
+languageName = "English"
+languagedir = "ltr"
+title = "FreakyDude's page"
+weight = 2
 
- [de]
-   title = "FreakyDude's Seite"
-   languageName = "Deutsch"
-   weight = 2
-   languagedir = "ltr"
-   contentdir = "content/de"
+[de]
+contentdir = "content/de"
+languageName = "Deutsch"
+languagedir = "ltr"
+title = "FreakyDude's Seite"
+weight = 2
