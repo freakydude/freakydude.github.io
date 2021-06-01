@@ -20,7 +20,7 @@ minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
 viewportSize = "wide" # widest, wider, wide, normal, narrow
 
 # appbar
-enableAppbarLangIcon = true
+enableAppbarLangIcon = false
 enableAppbarSearchIcon = false
 
 # header
