@@ -3,7 +3,7 @@ contentdir = "content/en"
 languageName = "English"
 languagedir = "ltr"
 title = "FreakyDude's page"
-weight = 2
+weight = 1
 
 [de]
 contentdir = "content/de"
