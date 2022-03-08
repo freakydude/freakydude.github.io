@@ -17,7 +17,7 @@ enablePinnedPosts = true # show pinned posts first in the main view
 enableUiAnimation = true 
 hideSingleContentsWhenJSDisabled = false 
 minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
-viewportSize = "normal" # widest, wider, wide, normal, narrow
+viewportSize = "wide" # widest, wider, wide, normal, narrow
 
 # appbar
 enableAppbarLangIcon = false
