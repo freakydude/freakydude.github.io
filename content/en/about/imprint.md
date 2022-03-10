@@ -5,7 +5,7 @@ author: freakydude
 type: about
 ---
 
-FreakyDude
+## Information according to § 5 TMG
 
 Frank Roth
 
@@ -13,9 +13,12 @@ Badstr. 40a
 90762 Fuerth
 Germany
 
+## Contact
+
+Phone: 004915205448415
 E-mail: developer@freakydu.de
 
-**Responsible for journalistic-editorial designed content:**
+## Editorially responsible
 
 Frank Roth
 Badstr. 40a
