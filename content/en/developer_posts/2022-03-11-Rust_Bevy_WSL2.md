@@ -47,8 +47,13 @@ In short:
    *Remarks*: The Ubuntu 20.04 packages from repository are missing libs for code completion in VS Code.
 
    1. If you are using fish shell
-      - Edit/Create file: `~/.config/fish/conf.d/myconfig.fish`
-      - Add `set -g -x PATH ~/.cargo/bin $PATH`
+      - Create/edit file: `~/.config/fish/conf.d/myconfig.fish`
+      - Add 
+        ```sh
+        if status --is-login
+          set -gx PATH $PATH ~/.cargo/bin $PATH
+        end
+        ```
 
 1. Install bevy linux dependencies with 
    ```sh
