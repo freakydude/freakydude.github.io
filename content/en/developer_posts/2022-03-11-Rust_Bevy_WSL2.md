@@ -1,6 +1,6 @@
 ---
 title: "Setup Rust and Bevy under WSL2 in Windows 11"
-date: 2022-03-08
+date: 2022-03-11
 description: Some easy steps to setup an initial Rust development environment in Windows 11 WSL2/Ubuntu Linux together with the needed libraries to compile and run all of the Bevy examples. All that is running within the brand new preview of the graphical WSL implementation. 
 author: freakydude
 draft: false
@@ -39,8 +39,16 @@ In short:
 
 1. Install rust with 
    ```sh
-   sudo apt install rust-all
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
+   rustup update
+   rustup component add rls rust-analysis rust-src
    ```
+
+   *Remarks*: The Ubuntu 20.04 packages from repository are missing libs for code completion in VS Code.
+
+   1. If you are using fish shell
+      - Edit/Create file: `~/.config/fish/conf.d/myconfig.fish`
+      - Add `set -g -x PATH ~/.cargo/bin $PATH`
 
 1. Install bevy linux dependencies with 
    ```sh
