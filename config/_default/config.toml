@@ -11,7 +11,7 @@ summaryLength = 70 # The length of a post description on a list page.
 
 copyright = "©{year}, All Rights Reserved" # copyright symbol: $copy; current year: {year}
 enableEmoji = true 
-enableRobotsTXT = true 
+enableRobotsTXT = false 
 paginate = 13 # Number of items per page in paginated lists.
 rssLimit = 100 
 timeout = 10000 
