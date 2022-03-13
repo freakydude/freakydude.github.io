@@ -1,11 +1,11 @@
 [[main]]
   identifier = "developer"
   name = "Developer Posts"
-  url = "developer_posts"
+  url = "developer"
   weight = 1
 
 [[main]]
   identifier = "dj"
   name = "DJ Posts"
-  url = "dj_posts"
+  url = "dj"
   weight = 2
