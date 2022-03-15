@@ -1,12 +1,13 @@
-build:
-  image: klakegg/hugo:ext-alpine
-  volumes:
+version: "3.8"
+services:
+  build:
+    image: klakegg/hugo:ext-alpine
+    volumes:
+        - ".:/src"
+  server:
+    image: klakegg/hugo:ext-alpine
+    command: server
+    volumes:
       - ".:/src"
-
-server:
-  image: klakegg/hugo:ext-alpine
-  command: server
-  volumes:
-    - ".:/src"
-  ports:
-    - "1313:1313"
+    ports:
+      - "1313:1313"
