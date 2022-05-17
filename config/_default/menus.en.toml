@@ -5,7 +5,13 @@
   weight = 1
 
 [[main]]
+  identifier = "maker"
+  name = "Maker & 3D Printer"
+  url = "maker"
+  weight = 2
+
+[[main]]
   identifier = "dj"
   name = "DJ Posts"
   url = "dj"
-  weight = 2
+  weight = 3
