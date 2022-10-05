@@ -8,10 +8,10 @@
     <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/3d-printer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Klipper with Artillery Sidewinder X2</title>
-      <link>https://blog.freakydu.de/posts/2022-09-01-klipper_with_artillery_sidewinderx2/</link>
+      <link>https://blog.freakydu.de/posts/2022-10-01-klipper_with_artillery_sidewinderx2/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.freakydu.de/posts/2022-09-01-klipper_with_artillery_sidewinderx2/</guid>
+      <guid>https://blog.freakydu.de/posts/2022-10-01-klipper_with_artillery_sidewinderx2/</guid>
       <description>Shows a way to use Klipper as a replacement for the Marlin firmware with your Sidewinder X2</description>
     </item>
     
