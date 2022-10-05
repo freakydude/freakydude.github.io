@@ -12,10 +12,9 @@ You can find that site under
 git clone https://github.com/freakydude/freakydude.github.io
 ```
 
-### Init ZZO submodule
+### Init PaperMod submodule
 ```sh
-git clone https://github.com/zzossig/hugo-theme-zzo.git themes/zzo
-git submodule update --remote --merge
+git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod  
 ```
 
 ### Build and run hugo server
