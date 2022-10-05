@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on freakyDude&#39;s Site</title>
+    <link>https://blog.freakydu.de/tags/</link>
+    <description>Recent content in Tags on freakyDude&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D printer</title>
+      <link>https://blog.freakydu.de/tags/3d-printer/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/3d-printer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>artillery</title>
+      <link>https://blog.freakydu.de/tags/artillery/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/artillery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>klipper</title>
+      <link>https://blog.freakydu.de/tags/klipper/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/klipper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mainsail</title>
+      <link>https://blog.freakydu.de/tags/mainsail/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/mainsail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>https://blog.freakydu.de/tags/raspberry-pi/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sidewinder</title>
+      <link>https://blog.freakydu.de/tags/sidewinder/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/sidewinder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bevy</title>
+      <link>https://blog.freakydu.de/tags/bevy/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/bevy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://blog.freakydu.de/tags/rust/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wsl</title>
+      <link>https://blog.freakydu.de/tags/wsl/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/wsl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fish</title>
+      <link>https://blog.freakydu.de/tags/fish/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/fish/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terminal</title>
+      <link>https://blog.freakydu.de/tags/terminal/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://blog.freakydu.de/tags/windows/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>archlinux</title>
+      <link>https://blog.freakydu.de/tags/archlinux/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/archlinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://blog.freakydu.de/tags/linux/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

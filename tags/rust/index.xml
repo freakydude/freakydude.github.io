@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>rust on freakyDude&#39;s Site</title>
+    <link>https://blog.freakydu.de/tags/rust/</link>
+    <description>Recent content in rust on freakyDude&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Rust and Bevy under WSL2 in Windows 11</title>
+      <link>https://blog.freakydu.de/posts/2022-03-11-rust_bevy_wsl2/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2022-03-11-rust_bevy_wsl2/</guid>
+      <description>Some easy steps to setup an initial Rust development environment in Windows 11 WSL2/Ubuntu Linux together with the needed libraries to compile and run all of the Bevy examples. All that is running within the brand new preview of the graphical WSL implementation.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>about on freakyDude&#39;s Site</title>
+    <link>https://blog.freakydu.de/categories/about/</link>
+    <description>Recent content in about on freakyDude&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/categories/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>It&#39;s me</title>
+      <link>https://blog.freakydu.de/about/me/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/about/me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Imprint</title>
+      <link>https://blog.freakydu.de/about/imprint/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/about/imprint/</guid>
+      <description>Information according to § 5 TMG Frank Roth
+Badstr. 40a 90762 Fuerth Germany
+Contact Phone: 004915205448415 E-mail: developer@freakydu.de
+Editorially responsible Frank Roth Badstr. 40a 90762 Fuerth E-Mail: developer@freakydu.de</description>
+    </item>
+    
+  </channel>
+</rss>

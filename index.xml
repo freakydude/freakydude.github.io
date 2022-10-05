@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>freakyDude&#39;s Site</title>
+    <link>https://blog.freakydu.de/</link>
+    <description>Recent content on freakyDude&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Klipper with Artillery Sidewinder X2</title>
+      <link>https://blog.freakydu.de/posts/2022-09-01-klipper_with_artillery_sidewinderx2/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2022-09-01-klipper_with_artillery_sidewinderx2/</guid>
+      <description>Shows a way to use Klipper as a replacement for the Marlin firmware with your Sidewinder X2</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s me</title>
+      <link>https://blog.freakydu.de/about/me/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/about/me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Artillery Sidewinder X2 3D FDM Printer</title>
+      <link>https://blog.freakydu.de/posts/2022-05-17-artillery_sidewinder_x2/</link>
+      <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2022-05-17-artillery_sidewinder_x2/</guid>
+      <description>Talking about the decision, pros and cons to buy an Artillery Sidewinder X2</description>
+    </item>
+    
+    <item>
+      <title>Setup Rust and Bevy under WSL2 in Windows 11</title>
+      <link>https://blog.freakydu.de/posts/2022-03-11-rust_bevy_wsl2/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2022-03-11-rust_bevy_wsl2/</guid>
+      <description>Some easy steps to setup an initial Rust development environment in Windows 11 WSL2/Ubuntu Linux together with the needed libraries to compile and run all of the Bevy examples. All that is running within the brand new preview of the graphical WSL implementation.</description>
+    </item>
+    
+    <item>
+      <title>Installing &#39;Oh My Fish&#39; Shell</title>
+      <link>https://blog.freakydu.de/posts/2022-03-01-installing-oh-my-fish/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2022-03-01-installing-oh-my-fish/</guid>
+      <description>About installing fish, a very helpful modern bash alternative in WSL2/Ubuntu. Enjoy the benefits of the powerline and nice helpers and visualistation in your common workflows.</description>
+    </item>
+    
+    <item>
+      <title>Windows package manager WinGet 1.0</title>
+      <link>https://blog.freakydu.de/posts/2021-06-01-windows_package_manager_winget/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2021-06-01-windows_package_manager_winget/</guid>
+      <description>A short intro to the finally released WinGet 1.0. It&amp;#39;s a native Microsoft Package Manager to install, uninstall and update most of your daily used applications.</description>
+    </item>
+    
+    <item>
+      <title>Why do I prefer Arch Linux?</title>
+      <link>https://blog.freakydu.de/posts/2021-04-22-why_arch_linux/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2021-04-22-why_arch_linux/</guid>
+      <description>About pros and cons using Arch Linux</description>
+    </item>
+    
+    <item>
+      <title>Imprint</title>
+      <link>https://blog.freakydu.de/about/imprint/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/about/imprint/</guid>
+      <description>Information according to § 5 TMG Frank Roth
+Badstr. 40a 90762 Fuerth Germany
+Contact Phone: 004915205448415 E-mail: developer@freakydu.de
+Editorially responsible Frank Roth Badstr. 40a 90762 Fuerth E-Mail: developer@freakydu.de</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://blog.freakydu.de/about/privacy_policy/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/about/privacy_policy/</guid>
+      <description>Personal data (usually referred to just as &#34;data&#34; below) will only be processed by us to the extent necessary and for the purpose of providing a functional and user-friendly website, including its contents, and the services offered there.
+Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter referred to as the &#34;GDPR&#34;), &#34;processing&#34; refers to any operation or set of operations such as collection, recording, organization, structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure by transmission, dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or destruction performed on personal data, whether by automated means or not.</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>
