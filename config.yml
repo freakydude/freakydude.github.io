@@ -22,9 +22,9 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, DJ, Tech]
+  title: freakyDude's Site
+  description: "My blog to remember and share knowledge I'm working on. As always in search of smart solutions."
+  keywords: [Blog, DJ, Tech, 3D Printer, Development]
   author: "freakyDude"
   # author: ["Me", "You"] # multiple authors
   #images: ["<link or path of image for opengraph, twitter-cards>"]
