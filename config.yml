@@ -82,10 +82,12 @@ params:
     Title: "freakyDude's blog"
     Content: in search of smart solutions
   socialIcons:
-    - name: youtube
-      url: "https://www.youtube.com/channel/UCnbeRiftkkyCWVawZTrCXYQ/"
     - name: github
       url: "https://github.com/freakydude/"
+    - name: paypal
+      url: "https://www.paypal.com/paypalme/frashman"
+    - name: youtube
+      url: "https://www.youtube.com/channel/UCnbeRiftkkyCWVawZTrCXYQ/"
 
   analytics:
     google:
