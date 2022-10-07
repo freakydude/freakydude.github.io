@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>marlin on freakyDude&#39;s Site</title>
+    <link>https://blog.freakydu.de/tags/marlin/</link>
+    <description>Recent content in marlin on freakyDude&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 30 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/marlin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flash latest Marlin firmware to Artillery Sidewinder X2</title>
+      <link>https://blog.freakydu.de/posts/2022-09-30-flash_marlin_sidewinderx2/</link>
+      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2022-09-30-flash_marlin_sidewinderx2/</guid>
+      <description>Step by step guide to flash the my compiled Marlin firmware to the Artillery Sidewinder X2 printer</description>
+    </item>
+    
+  </channel>
+</rss>

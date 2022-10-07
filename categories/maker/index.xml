@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>Flash latest Marlin firmware to Artillery Sidewinder X2</title>
+      <link>https://blog.freakydu.de/posts/2022-09-30-flash_marlin_sidewinderx2/</link>
+      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2022-09-30-flash_marlin_sidewinderx2/</guid>
+      <description>Step by step guide to flash the my compiled Marlin firmware to the Artillery Sidewinder X2 printer</description>
+    </item>
+    
+    <item>
       <title>Artillery Sidewinder X2 3D FDM Printer</title>
       <link>https://blog.freakydu.de/posts/2022-05-17-artillery_sidewinder_x2/</link>
       <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
