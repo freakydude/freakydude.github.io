@@ -1,5 +1,5 @@
 baseURL: "https://blog.freakydu.de/"
-title: freakyDude's Site
+title: freakyDude's Blog
 paginate: 10
 theme: PaperMod
 
@@ -7,8 +7,6 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
-googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
@@ -22,7 +20,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: freakyDude's Site
+  title: freakyDude's Blog
   description: "My blog to remember and share knowledge I'm working on. As always in search of smart solutions."
   keywords: [Blog, DJ, Tech, 3D Printer, Development]
   author: "freakyDude"
@@ -45,17 +43,17 @@ params:
   comments: true
   hidemeta: false
   hideSummary: false
-  showtoc: false
+  showtoc: true
   tocopen: false
 
   assets:
     disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/apple-touch-icon.png"
 
   label:
     text: "Home"
@@ -67,15 +65,17 @@ params:
     enabled: false # needs to be explicitly set
     title: freakyDude
     subtitle: "in search of smart solutions"
-    imageUrl: "<img location>"
+    imageUrl: "/apple-touch-icon.png"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: freakyDude logo
     buttons:
       - name: Posts
         url: posts
       - name: Tags
         url: tags
+      - name: Search
+        url: search
 
   # home-info mode
   homeInfoParams:
@@ -86,16 +86,10 @@ params:
       url: "https://github.com/freakydude/"
     - name: paypal
       url: "https://www.paypal.com/paypalme/frashman"
+    - name: buymeacoffee
+      url: "https://www.buymeacoffee.com/freakydude"
     - name: youtube
       url: "https://www.youtube.com/channel/UCnbeRiftkkyCWVawZTrCXYQ/"
-
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
