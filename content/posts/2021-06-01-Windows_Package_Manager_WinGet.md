@@ -9,8 +9,6 @@ categories:
   - developer
 ---
 
-## In short
-
 This week, Microsoft has released their first native package manager for Windows 10. If you ever worked with a package manager for Linux (e.g. apt, pacman) you know the benefits. Or, if you are a developer, you surely heard about nuget, maven, npm or similar. Easy install, uninstall or update of one or up to all installed applications on your system.
 
 Now you will say, that's a old hat, it already exists [Chocolatey](https://chocolatey.org/). You are right - and at the moment it's even more advanced.

@@ -12,7 +12,6 @@ categories:
   - maker
 ---
 
-## Content
 I show you how to flash the latest Marlin Firmware to your Artillery Sidewinder X2. I had to compile it myself, because Artillery did not update it yet. At time of writing, it's an adapted version of Marlin 2.1.1.
 
 **Caution: No warranty, no support, do it only - if you know what you are doing, it's absolutely your own risk. I'm not responsible for any problems/defects...**

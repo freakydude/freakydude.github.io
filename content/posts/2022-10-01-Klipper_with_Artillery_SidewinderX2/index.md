@@ -14,7 +14,6 @@ categories:
   - maker
 ---
 
-## Content
 The Sidewinder X2 comes with the [Marlin](https://marlinfw.org/) 2.x firmware, installed on its "Artillery_Ruby" Mainboard. This article shows you *one easy* way how you can replace [Marlin](https://marlinfw.org/) by [Klipper](https://www.klipper3d.org/) as an alternative Firmware on your Sidewinder X2. 
 Be aware, that your installed touch display, usb and sd card slot is unusable with klipper, because the way they are work and connected is not compatible to klipper. On my printer, I decided to disconnect and replace them by dummy prints, but you don't have to.
 

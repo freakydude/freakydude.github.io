@@ -1,7 +1,7 @@
 ---
 title: "Installing 'Oh My Fish' Shell"
 date: 2022-03-01
-description: About installing fish, a very helpful modern bash alternative in WSL2/Ubuntu. Enjoy the benefits of the powerline and nice helpers and visualistation in your common workflows.
+description: About installing fish, a very helpful modern bash alternative in WSL2/Ubuntu. Enjoy the benefits of the powerline and nice helpers and visualizations in your common workflows.
 draft: false
 tags:
   - terminal
@@ -10,6 +10,8 @@ tags:
 categories:
   - developer
 ---
+
+About installing fish, a very helpful modern bash alternative in WSL2/Ubuntu. Enjoy the benefits of the powerline and nice helpers and visualizations in your common workflows.
 
 ## Install Fish
 

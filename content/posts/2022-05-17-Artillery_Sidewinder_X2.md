@@ -11,8 +11,6 @@ categories:
   - maker
 ---
 
-## Intro
-
 I bought my first 3D printer. Yes, I finally did it. After reading blogs, ratings and some youtube videos, I have chosen an **Artillery Sidewinder X2**. The following article tells you, why I think it was a good decision.
 
 ## Pros and Cons
@@ -27,7 +25,7 @@ Positive | Negative
 --- | ---
 Medium printing volume (300x300x400mm) | 
 Direct extruder | 
-Auto Bed-Leveling | No original BL-Touch, a Artillery clone with good precicion
+Auto Bed-Leveling | No original BL-Touch, a Artillery clone with good precision
 Color-Touch-Display | 
 Ultra fast 220/110V coated glass heat-bed | Heat-Bed uneven temperature distribution
 Silent printing, drives, power-supply | 

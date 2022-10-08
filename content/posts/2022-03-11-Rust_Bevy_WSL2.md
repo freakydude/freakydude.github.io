@@ -11,8 +11,6 @@ categories:
   - developer
 ---
 
-## Motivation
-
 Are you one of the nerds, who likes to develop your own game, fancy graphics or any aspect that comes with that or would you do your first steps with the young programming language Rust, which unites speed of C/C++ with memory- and thread-safety?
 
 Why not combining both aspects to have some fun learning new things?
