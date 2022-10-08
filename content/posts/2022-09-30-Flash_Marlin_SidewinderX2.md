@@ -52,7 +52,7 @@ I also left unsupported hardware features disabled. For details, see the  Config
      1. Download the `firmware.bin` form the latest release from my github page [https://github.com/freakydude/Marlin/releases/](https://github.com/freakydude/Marlin/releases/).
      1. In STM32CubeProgrammer, Open File, Select Firmware, Press Download
 1. Disconnect USB cable from your printer, restart (power-off, on) your printer
-1. Reset EEPROM with M502 and save EEPROM settings with M500 command
+1. Reset EEPROM with `M502` and save EEPROM settings with `M500` command
 
 ### Basic setup after reset
 
