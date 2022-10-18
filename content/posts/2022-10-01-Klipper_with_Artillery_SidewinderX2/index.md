@@ -75,17 +75,18 @@ Be aware, that your installed touch display, usb and sd card slot is unusable wi
 
 ## Preview to future posts
 If I got some time, be excited about the topics
-- A useful set of gcode macros (filemant runout, pause resume, start-stop print)
+- A useful set of G-code macros (filament runout, pause resume, start-stop print)
 - Reenable the stock filament runout sensor
 - Install an [ADXL345](https://www.analog.com/en/products/adxl345.html#product-evaluationkit) acceleration sensor and calibrate klipper [Resonance Compensation](https://www.klipper3d.org/Resonance_Compensation.html)
 - Remove and replace USB, SD card and the useless touch display
 
 ## Conclusion
-Hope I could help you with the painful start, doing the initial basic configuration for your Artillery Sidewinder X2. For further steps and more details it is always a very good idea to walk through the very good official documentations
+Hope I could help you with the painful start, doing the initial basic configuration for your Artillery Sidewinder X2. 
+
+For further steps and more details it is always a very good idea to walk through the very good official documentations
 - [Klipper Documentation](https://www.klipper3d.org/Overview.html)
 - [Mainsail Documentation](https://docs.mainsail.xyz/)
 - [Moonraker Documentation](https://moonraker.readthedocs.io/)
-
 
 Please leave comments, if something is wrong or missing. Or if you have questions.
 
