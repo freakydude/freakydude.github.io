@@ -5,11 +5,11 @@
     <link>https://blog.freakydu.de/tags/</link>
     <description>Recent content in Tags on freakyDude&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D printer</title>
       <link>https://blog.freakydu.de/tags/3d-printer/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.freakydu.de/tags/3d-printer/</guid>
       <description></description>
@@ -18,27 +18,54 @@
     <item>
       <title>artillery</title>
       <link>https://blog.freakydu.de/tags/artillery/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.freakydu.de/tags/artillery/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>cura</title>
+      <link>https://blog.freakydu.de/tags/cura/</link>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/cura/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>klipper</title>
       <link>https://blog.freakydu.de/tags/klipper/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.freakydu.de/tags/klipper/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>macros</title>
+      <link>https://blog.freakydu.de/tags/macros/</link>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/macros/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>mainsail</title>
       <link>https://blog.freakydu.de/tags/mainsail/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.freakydu.de/tags/mainsail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sidewinder</title>
+      <link>https://blog.freakydu.de/tags/sidewinder/</link>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/sidewinder/</guid>
       <description></description>
     </item>
     
@@ -48,15 +75,6 @@
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.freakydu.de/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sidewinder</title>
-      <link>https://blog.freakydu.de/tags/sidewinder/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.freakydu.de/tags/sidewinder/</guid>
       <description></description>
     </item>
     
