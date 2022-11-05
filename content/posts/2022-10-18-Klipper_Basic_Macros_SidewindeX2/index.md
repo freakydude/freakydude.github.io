@@ -75,25 +75,27 @@ Just call the [START_PRINT](#start-g-code) and the [END_PRINT](#end-g-code) G-co
 For copy and paste:
 
 ### Start G-code
-```
+
+```text
 START_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}
 ```
 
 It calls the 'START_PRINT' macro from [macros.cfg](macros.cfg) with the in Cura configured material print temperatures.
 
 ### End G-code
-```
+
+```text
 END_PRINT
 ```
 
 It calls the 'END_PRINT' macro from [macros.cfg](macros.cfg).
 
-
 ## Conclusion
 
-If you followed the steps, make sure, you calibrated your z_offset and your bed mesh. And you are ready to print your first object with klipper.
+If you followed the steps, make sure, you calibrated your z_offset and your bed mesh. And you are ready to print your first object with Klipper.
 
 For further steps and more details it is always a very good idea to walk through the very good official documentations
+
 - [Klipper Documentation](https://www.klipper3d.org/Overview.html)
 - [Mainsail Documentation](https://docs.mainsail.xyz/)
 - [Moonraker Documentation](https://moonraker.readthedocs.io/)

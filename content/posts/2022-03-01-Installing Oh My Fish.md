@@ -32,13 +32,14 @@ About installing fish, a very helpful modern bash alternative in WSL2/Ubuntu. En
 1. Install Theme: Bob the Fish
   `omf install bobthefish`
 
-## Install powerline fonts 
+## Install powerline fonts
 
 1. Install Powerline fonts (Ubuntu/Debian/Mint Linux)
   `sudo apt-get update`
   `sudo apt-get install fonts-powerline`
 
 ## Fix fonts using WSL or Remote
+
 The powerline and theme of oh my fish / bob the fish will not be shown correctly. Instead fancy symbols are shown.
 
 Make sure that your console / terminal application like Windows Terminal or Visual Studio Code are using a font with is patched with powerline symbols.

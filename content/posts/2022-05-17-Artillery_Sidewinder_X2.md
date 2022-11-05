@@ -23,13 +23,12 @@ Also, if you read through some other blogs and youtube channels, some guys compl
 
 Positive | Negative
 --- | ---
-Medium printing volume (300x300x400mm) | 
-Direct extruder | 
+Medium printing volume (300x300x400mm) |
+Direct extruder |
 Auto Bed-Leveling | No original BL-Touch, a Artillery clone with good precision
-Color-Touch-Display | 
+Color-Touch-Display |
 Ultra fast 220/110V coated glass heat-bed | Heat-Bed uneven temperature distribution
-Silent printing, drives, power-supply | 
-
+Silent printing, drives, power-supply |
 
 ## Conclusion
 
