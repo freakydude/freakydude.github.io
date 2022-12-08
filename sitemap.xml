@@ -3,18 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.freakydu.de/tags/3d-printer/</loc>
-    <lastmod>2022-10-18T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/categories/</loc>
+    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/posts/2022-12-08-filament_spools_parameters/</loc>
+    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/filaments/</loc>
+    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/</loc>
+    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/categories/maker/</loc>
+    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/posts/</loc>
+    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/</loc>
+    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/artillery/</loc>
     <lastmod>2022-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/categories/</loc>
-    <lastmod>2022-10-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.freakydu.de/tags/cura/</loc>
-    <lastmod>2022-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/</loc>
     <lastmod>2022-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/klipper/</loc>
@@ -26,19 +41,10 @@
     <loc>https://blog.freakydu.de/tags/mainsail/</loc>
     <lastmod>2022-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/categories/maker/</loc>
-    <lastmod>2022-10-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.freakydu.de/posts/2022-10-18-klipper_basic_macros_sidewindex2/</loc>
     <lastmod>2022-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/posts/</loc>
-    <lastmod>2022-10-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.freakydu.de/tags/sidewinder/</loc>
-    <lastmod>2022-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/</loc>
     <lastmod>2022-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/posts/2022-10-01-klipper_with_artillery_sidewinderx2/</loc>
