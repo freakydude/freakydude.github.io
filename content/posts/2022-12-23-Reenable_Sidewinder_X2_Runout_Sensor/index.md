@@ -36,6 +36,10 @@ Sadly no specs about the runout-sensor are in circulation. So nobody knows, if 5
 
 ### Connect wires
 
+#### Caution
+
+**Do it only if you feel experienced enough. Be aware that you do it at your own risk and that you will probably lose the Artillery's warranty. I am not responsible for damages of any kind.**
+
 I see two possibilities how to connect the filament-runout sensor wires to the correct pins. The fast version is without open the printer case. A beautiful solution is on the other hand to open the printer case.
 
 #### The fast and dirty option
