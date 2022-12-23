@@ -5,22 +5,31 @@
     <link>https://blog.freakydu.de/tags/artillery/</link>
     <description>Recent content in artillery on freakyDude&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 18 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/artillery/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/artillery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Re-enable the Artillery Sidewinder X2 Filament-Runout Sensor</title>
+      <link>https://blog.freakydu.de/posts/2022-12-23-reenable_sidewinder_x2_runout_sensor/</link>
+      <pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2022-12-23-reenable_sidewinder_x2_runout_sensor/</guid>
+      <description>The post shows you how you can re-enable the stock Artillery Sidewinder X2 filament-runout sensor and configure with the Klipper3D printer firmware afterwards.</description>
+    </item>
+    
     <item>
       <title>Must-have Mainsail, Klipper and Cura slicer configuration with Artillery Sidewinder X2</title>
-      <link>https://blog.freakydu.de/posts/2022-10-18-klipper_basic_macros_sidewindex2/</link>
+      <link>https://blog.freakydu.de/posts/2022-10-18-klipper_basic_macros_sidewinder_x2/</link>
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.freakydu.de/posts/2022-10-18-klipper_basic_macros_sidewindex2/</guid>
+      <guid>https://blog.freakydu.de/posts/2022-10-18-klipper_basic_macros_sidewinder_x2/</guid>
       <description>Tutorial about the must-have Mainsail, Klipper and Cura slicer configuration files with Artillery Sidewinder X2.</description>
     </item>
     
     <item>
       <title>Klipper with Artillery Sidewinder X2</title>
-      <link>https://blog.freakydu.de/posts/2022-10-01-klipper_with_artillery_sidewinderx2/</link>
+      <link>https://blog.freakydu.de/posts/2022-10-01-klipper_with_artillery_sidewinder_x2/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.freakydu.de/posts/2022-10-01-klipper_with_artillery_sidewinderx2/</guid>
+      <guid>https://blog.freakydu.de/posts/2022-10-01-klipper_with_artillery_sidewinder_x2/</guid>
       <description>Shows a way to use Klipper as a replacement for the Marlin firmware with your Sidewinder X2</description>
     </item>
     
