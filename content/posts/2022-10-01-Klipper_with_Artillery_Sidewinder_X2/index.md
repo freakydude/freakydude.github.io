@@ -86,8 +86,8 @@ Be aware, that your installed touch display, usb and sd card slot is unusable wi
 
 If I got some time, be excited about the topics
 
-- A useful set of G-code macros (filament runout, pause resume, start-stop print)
-- Reenable the stock filament runout sensor
+- A useful set of G-code macros (filament runout, pause resume, start-stop print). Post is online: [Must-have Mainsail, Klipper and Cura slicer configuration with Artillery Sidewinder X2](../2022-10-18-klipper_basic_macros_sidewinder_x2/)
+- Reenable the stock filament runout sensor, Post is online: [Reenable and configure the filament-runout sensor with Klipper](../2022-12-23-reenable_sidewinder_x2_runout_sensor/)
 - Install an [ADXL345](https://www.analog.com/en/products/adxl345.html#product-evaluationkit) acceleration sensor and calibrate klipper [Resonance Compensation](https://www.klipper3d.org/Resonance_Compensation.html)
 - Remove and replace USB, SD card and the useless touch display
 
@@ -104,4 +104,7 @@ For further steps and more details it is always a very good idea to walk through
 Please leave comments, if something is wrong or missing. Or if you have questions.
 
 Enjoy!
+
+If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+
 freakyDude

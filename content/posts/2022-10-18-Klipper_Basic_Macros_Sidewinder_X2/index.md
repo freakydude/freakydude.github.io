@@ -33,7 +33,7 @@ For the basic setup of Klipper with Mainsail, you should start to configure your
 
 ### Printer.cfg
 
-The [printer.cfg](printer.cfg) file represents the printer hardware. In this case the stock Artillery Sidewinder X2, sold in 2022. I already introduced the [printer.cfg](printer.cfg) in my last [blog post](/content/posts/2022-10-01-Klipper_with_Artillery_SidewinderX2/index.md).
+The [printer.cfg](printer.cfg) file represents the printer hardware. In this case the stock Artillery Sidewinder X2, sold in 2022. I already introduced the [printer.cfg](printer.cfg) in my last [blog post](../2022-10-01-klipper_with_artillery_sidewinder_x2/).
 Meanwhile I created a merge request to the official klipper repository. So it will be only a matter of some days, that they include my config into the official Klipper repository as an example printer configuration.
 
 **Update** The basic printer.cfg example for Artillery Sidewinder X2 is merged into official Klipper3d repository. Find it [here](https://github.com/Klipper3d/klipper/blob/master/config/printer-artillery-sidewinder-x2-2022.cfg)
@@ -59,7 +59,6 @@ The [macros.cfg](macros.cfg) file contains all our basic g-code macros. That inc
 If you done everything right, Mainsail does not show errors or warnings on it's dashboard. Mainsail is ready to print.
 
 But before printing, make sure that you read the following [section](#basic-slicer-setup-cura).
-
 
 ## Basic slicer setup (Cura)
 
@@ -101,6 +100,8 @@ For further steps and more details it is always a very good idea to walk through
 - [Klipper Documentation](https://www.klipper3d.org/Overview.html)
 - [Mainsail Documentation](https://docs.mainsail.xyz/)
 - [Moonraker Documentation](https://moonraker.readthedocs.io/)
+
+If you also like to reenable the stock filament runout sensor a new post about that is online: [Reenable and configure the filament-runout sensor with Klipper](../2022-12-23-reenable_sidewinder_x2_runout_sensor/)
 
 Please leave comments, if something is wrong or missing. Or if you have questions.
 

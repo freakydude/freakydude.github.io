@@ -29,3 +29,7 @@ On the other hand, there are [Debian](https://www.debian.org/)-based distributio
 In my opinion, [Arch Linux](https://archlinux.org/) catches the sweet spot. Without spending most of the time in configuring details, you get an always up-to-date, slim distribution. And while working with it, you have the chance to learn a lot about how the linux-ecosystem works.
 
 In future posts, I will help you with some aspects here.
+
+If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+
+freakyDude

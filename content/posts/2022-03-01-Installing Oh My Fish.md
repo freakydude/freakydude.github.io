@@ -52,3 +52,7 @@ Under windows, a good suggestion is to use MS font Cascadia in its variant **Cas
 - [Project: Oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 - [Theme: Bob-the-fish](https://github.com/oh-my-fish/theme-bobthefish)
 - [Font: Cascadia Code](https://github.com/microsoft/cascadia-code).
+
+If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+
+freakyDude

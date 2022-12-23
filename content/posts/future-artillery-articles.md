@@ -11,7 +11,8 @@ categories:
   - maker
 ---
 
-## keywords
+## Keywords
+
 - Differences in the concept of Marlin and Klipper
 - Update Marlin
 - Set flash jumper
@@ -27,3 +28,7 @@ categories:
 - Calibrate Extruder, PID, Pressure Advanced, Echo
 - Install ADXL345, Recalibrate Echo
 - Install WebCam
+
+If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+
+freakyDude
