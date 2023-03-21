@@ -5,7 +5,16 @@
     <link>https://blog.freakydu.de/posts/</link>
     <description>Recent content in Posts on freakyDude&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Filament and Spool parameters</title>
+      <link>https://blog.freakydu.de/posts/2023-03-21-filament_spools_parameters/</link>
+      <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2023-03-21-filament_spools_parameters/</guid>
+      <description>My list of relevant information about different filament I printed with.</description>
+    </item>
+    
     <item>
       <title>Re-enable the Artillery Sidewinder X2 Filament-Runout Sensor</title>
       <link>https://blog.freakydu.de/posts/2022-12-23-reenable_sidewinder_x2_runout_sensor/</link>
@@ -13,15 +22,6 @@
       
       <guid>https://blog.freakydu.de/posts/2022-12-23-reenable_sidewinder_x2_runout_sensor/</guid>
       <description>The post shows you how you can re-enable the stock Artillery Sidewinder X2 filament-runout sensor and configure with the Klipper3D printer firmware afterwards.</description>
-    </item>
-    
-    <item>
-      <title>Filament and Spool parameters</title>
-      <link>https://blog.freakydu.de/posts/2022-12-08-filament_spools_parameters/</link>
-      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.freakydu.de/posts/2022-12-08-filament_spools_parameters/</guid>
-      <description>My list of relevant information about different filament I printed with.</description>
     </item>
     
     <item>

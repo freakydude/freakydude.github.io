@@ -5,13 +5,22 @@
     <link>https://blog.freakydu.de/tags/</link>
     <description>Recent content in Tags on freakyDude&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D printer</title>
       <link>https://blog.freakydu.de/tags/3d-printer/</link>
-      <pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.freakydu.de/tags/3d-printer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>filaments</title>
+      <link>https://blog.freakydu.de/tags/filaments/</link>
+      <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.freakydu.de/tags/filaments/</guid>
       <description></description>
     </item>
     
@@ -48,15 +57,6 @@
       <pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.freakydu.de/tags/sidewinder/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>filaments</title>
-      <link>https://blog.freakydu.de/tags/filaments/</link>
-      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.freakydu.de/tags/filaments/</guid>
       <description></description>
     </item>
     
