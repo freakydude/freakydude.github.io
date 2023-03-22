@@ -1,7 +1,7 @@
 ---
 title: Perfect input shaping - Install the ADXL345 accelerometer on Artillery Sidewinder/Genius Pro
-date: 2023-03-22
-description: About installing the ASXL345 accelerometer to calibrate easily input shaping for an Artillery Sidewinder with Klipper firmware.
+date: 2023-03-22T00:00:00+01:00
+description: About installing the ADXL345 accelerometer to calibrate easily input shaping for an Artillery Sidewinder with Klipper firmware.
 draft: false
 tags:
   - artillery

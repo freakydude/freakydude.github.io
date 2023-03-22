@@ -13,18 +13,22 @@ git clone https://github.com/freakydude/freakydude.github.io
 ```
 
 ### Init PaperMod submodule
+
 ```sh
-git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod  
+git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+git submodule update --init --recursive
 ```
 
 ### Build and run hugo server
 
 - With installed hugo packages
+
   ```sh
   hugo serve
   ```
 
 - With docker-compose
+
   ```sh
   docker-compose up server
   ```
