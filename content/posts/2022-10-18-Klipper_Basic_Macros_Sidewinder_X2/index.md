@@ -1,9 +1,9 @@
 ---
 title: Must-have Mainsail, Klipper and Cura slicer configuration with Artillery Sidewinder X2
 date: 2022-10-18
-description: Tutorial about the must-have Mainsail, Klipper and Cura slicer configuration files with Artillery Sidewinder X2. 
+description: Tutorial about the must-have Mainsail, Klipper and Cura slicer configuration files with Artillery Sidewinder X2.
 draft: false
-tags: 
+tags:
   - artillery
   - sidewinder
   - 3D printer

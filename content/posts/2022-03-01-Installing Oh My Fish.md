@@ -16,27 +16,27 @@ About installing fish, a very helpful modern bash alternative in WSL2/Ubuntu. En
 ## Install Fish
 
 1. Install fish
-  `sudo apt install fish`
+   `sudo apt install fish`
 1. Switch to fish
-  `fish`
+   `fish`
 1. Set fish as default shell
-  `chsh -s /usr/bin/fish`
+   `chsh -s /usr/bin/fish`
 
-*Hint*: Switch back to bash with  `chsh -s /usr/bin/bash`
+_Hint_: Switch back to bash with `chsh -s /usr/bin/bash`
 
 ## Install 'Oh My Fish' with the theme 'Bob The Fish'
 
 1. Install Oh My Fish
-  `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
+   `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
 
 1. Install Theme: Bob the Fish
-  `omf install bobthefish`
+   `omf install bobthefish`
 
 ## Install powerline fonts
 
 1. Install Powerline fonts (Ubuntu/Debian/Mint Linux)
-  `sudo apt-get update`
-  `sudo apt-get install fonts-powerline`
+   `sudo apt-get update`
+   `sudo apt-get install fonts-powerline`
 
 ## Fix fonts using WSL or Remote
 
@@ -44,7 +44,7 @@ The powerline and theme of oh my fish / bob the fish will not be shown correctly
 
 Make sure that your console / terminal application like Windows Terminal or Visual Studio Code are using a font with is patched with powerline symbols.
 
-Under windows, a good suggestion is to use MS font Cascadia in its variant **Cascadia (Code|Mono) PL**. You can find it at  [Cascadia Code on Github](https://github.com/microsoft/cascadia-code).
+Under windows, a good suggestion is to use MS font Cascadia in its variant **Cascadia (Code|Mono) PL**. You can find it at [Cascadia Code on Github](https://github.com/microsoft/cascadia-code).
 
 ### Useful links
 

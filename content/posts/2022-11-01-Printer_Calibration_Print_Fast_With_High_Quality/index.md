@@ -3,7 +3,7 @@ title: Direct path to print fast without sacrificing quality
 date: 2022-11-01
 description: Direct path to print fast without sacrificing quality
 draft: true
-tags: 
+tags:
   - artillery
   - sidewinder
   - 3D printer

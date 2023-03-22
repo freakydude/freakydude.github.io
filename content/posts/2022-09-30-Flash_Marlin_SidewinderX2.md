@@ -4,12 +4,12 @@ date: 2022-09-30
 description: Step by step guide to flash the my compiled Marlin firmware to the Artillery Sidewinder X2 printer
 draft: false
 tags:
-    - artillery
-    - sidewinder
-    - 3D printer
-    - marlin
+  - artillery
+  - sidewinder
+  - 3D printer
+  - marlin
 categories:
-    - maker
+  - maker
 ---
 
 I show you how to flash the latest Marlin Firmware to your Artillery Sidewinder X2. I had to compile it myself, because Artillery did not update it yet. At time of writing, it's an adapted version of Marlin 2.1.2.
@@ -31,9 +31,9 @@ I also left unsupported hardware features disabled. For details, see the Configu
 
 ### Prerequisites - Tools you need
 
--   [Pronterface/Printrun](http://www.pronterface.com/)
--   [STM32CubeProgrammer](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.html#get-software) (you have to register for download)
--   [Customized Marlin Artillery Sidewinder X2 Firmware](https://github.com/freakydude/Marlin/releases/)
+- [Pronterface/Printrun](http://www.pronterface.com/)
+- [STM32CubeProgrammer](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.html#get-software) (you have to register for download)
+- [Customized Marlin Artillery Sidewinder X2 Firmware](https://github.com/freakyDude/Marlin/releases/)
 
 ### Prepare and Flash
 
@@ -42,17 +42,17 @@ I also left unsupported hardware features disabled. For details, see the Configu
 1. PowerOn your Artillery Sidewinder X2
 1. Connect your PC/Mac/Laptop with USB to your Sidewinder
 1. Start Pronterface
-    1. Connect with 115200 Baud to your Printer
-    1. Type `M997` at bottom right
-    1. Error messages can be ignored
-    1. If you using Windows, look into your device manager, if there is a "STM32 Bootloader"
+   1. Connect with 115200 Baud to your Printer
+   1. Type `M997` at bottom right
+   1. Error messages can be ignored
+   1. If you using Windows, look into your device manager, if there is a "STM32 Bootloader"
 1. Disconnect Pronterface
 1. Start STM32CubeProgrammer
-    1. Connect with USB
-    1. **Make a backup of your original firmware**
-    1. Flash the modified Firmware:
-        1. Download the `firmware.bin` form the latest release from my github page [https://github.com/freakydude/Marlin/releases/](https://github.com/freakydude/Marlin/releases/).
-        1. In STM32CubeProgrammer, Open File, Select Firmware, Press Download
+   1. Connect with USB
+   1. **Make a backup of your original firmware**
+   1. Flash the modified Firmware:
+      1. Download the `firmware.bin` form the latest release from my github page [https://github.com/freakydude/Marlin/releases/](https://github.com/freakyDude/Marlin/releases/).
+      1. In STM32CubeProgrammer, Open File, Select Firmware, Press Download
 1. Disconnect USB cable from your printer, restart (power-off, on) your printer
 1. Reset EEPROM with `M502` and save EEPROM settings with `M500` command
 
@@ -60,9 +60,9 @@ I also left unsupported hardware features disabled. For details, see the Configu
 
 You reset your EEPROM (your printer configuration) to firmware defaults. You should setup some basic parameters at least, before you print your next wonderful thing.
 
--   Your Z-Probe Offset (First-Layer, Babysteps) with `M851 Z-[your new value]`
--   Your Extruder E-Steps with `M92 E[your new value]`
--   Your Auto-Bed-Leveling. Home with `G28`, probe with `G29`, enable it with `M420 S1` afterwards
+- Your Z-Probe Offset (First-Layer, Babysteps) with `M851 Z-[your new value]`
+- Your Extruder E-Steps with `M92 E[your new value]`
+- Your Auto-Bed-Leveling. Home with `G28`, probe with `G29`, enable it with `M420 S1` afterwards
 
 Don't forget to save your settings into your EEPROM again with `M500`
 

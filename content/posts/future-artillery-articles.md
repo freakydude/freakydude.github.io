@@ -3,7 +3,7 @@ title: Artillery Sidewinder X2 future
 date: 2022-12-30
 description: blubb
 draft: true
-tags: 
+tags:
   - artillery
   - sidewinder
   - 3D printer

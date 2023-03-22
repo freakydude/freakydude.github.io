@@ -3,7 +3,7 @@ title: "Artillery Sidewinder X2 3D FDM Printer"
 date: 2022-05-17
 description: Talking about the decision, pros and cons to buy an Artillery Sidewinder X2
 draft: false
-tags: 
+tags:
   - artillery
   - sidewinder
   - 3D printer
@@ -19,16 +19,16 @@ At time of writing this post, the Artillery Sidewinder X2 is a really smart choi
 
 On the downside, this heat-bed is in reality a bit problematic. Because the head-bed construction has a very uneven temperature distribution. I think, you just must be clear about that fact and adjust the temperature if needed.
 
-Also, if you read through some other blogs and youtube channels, some guys complain about the BL Touch auto-bed-leveling sensor clone, installed on the Sidewinder. I personally can't complain about it, but I have to say, I did't work with an BLtouch sensor yet. 
+Also, if you read through some other blogs and youtube channels, some guys complain about the BL Touch auto-bed-leveling sensor clone, installed on the Sidewinder. I personally can't complain about it, but I have to say, I did't work with an BLtouch sensor yet.
 
-Positive | Negative
---- | ---
-Medium printing volume (300x300x400mm) |
-Direct extruder |
-Auto Bed-Leveling | No original BL-Touch, a Artillery clone with good precision
-Color-Touch-Display |
-Ultra fast 220/110V coated glass heat-bed | Heat-Bed uneven temperature distribution
-Silent printing, drives, power-supply |
+| Positive                                  | Negative                                                    |
+| ----------------------------------------- | ----------------------------------------------------------- |
+| Medium printing volume (300x300x400mm)    |
+| Direct extruder                           |
+| Auto Bed-Leveling                         | No original BL-Touch, a Artillery clone with good precision |
+| Color-Touch-Display                       |
+| Ultra fast 220/110V coated glass heat-bed | Heat-Bed uneven temperature distribution                    |
+| Silent printing, drives, power-supply     |
 
 ## Conclusion
 

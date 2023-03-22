@@ -3,7 +3,7 @@ title: "Why do I prefer Arch Linux?"
 date: 2021-04-22
 description: About pros and cons using Arch Linux
 draft: false
-tags: 
+tags:
   - linux
   - archlinux
 categories:

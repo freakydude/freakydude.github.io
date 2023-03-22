@@ -56,7 +56,7 @@ params:
     safari_pinned_tab: "/apple-touch-icon.png"
 
   label:
-    text: "Home"
+    text: "freakyDude"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -84,10 +84,10 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/freakydude/"
-#    - name: paypal
-#      url: "https://www.paypal.com/paypalme/frashman"
-#    - name: buymeacoffee
-#      url: "https://www.buymeacoffee.com/freakydude"
+    #    - name: paypal
+    #      url: "https://www.paypal.com/paypalme/frashman"
+    #    - name: buymeacoffee
+    #      url: "https://www.buymeacoffee.com/freakydude"
     - name: kofi
       url: "https://ko-fi.com/freakydude"
     - name: youtube

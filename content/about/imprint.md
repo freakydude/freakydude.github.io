@@ -1,7 +1,7 @@
 ---
 title: "Imprint"
 date: 2020-04-18
-author: freakydude
+author: freakyDude
 type: about
 categories:
   - about

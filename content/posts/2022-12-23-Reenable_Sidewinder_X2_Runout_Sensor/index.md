@@ -3,7 +3,7 @@ title: Re-enable the Artillery Sidewinder X2 Filament-Runout Sensor
 date: 2022-12-23
 description: The post shows you how you can re-enable the stock Artillery Sidewinder X2 filament-runout sensor and configure with the Klipper3D printer firmware afterwards.
 draft: false
-tags: 
+tags:
   - artillery
   - sidewinder
   - 3D printer
@@ -48,9 +48,9 @@ Build yourself a adapter from a male JST-XH 2.54mm connector with 3 pins to your
 
 You need the two connector types:
 
-JST XH 2.54 connector | JST SM connector
--|-
-![JST XH 2.54 connector](images/jst-xh-254-connector.jpg "JST XH 2.54 connector") | ![JST SM connector](images/jst-sm-connector.jpg "JST SM connector")
+| JST XH 2.54 connector                                                             | JST SM connector                                                    |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![JST XH 2.54 connector](images/jst-xh-254-connector.jpg "JST XH 2.54 connector") | ![JST SM connector](images/jst-sm-connector.jpg "JST SM connector") |
 
 Or you solve it just with some jumper cables. The pins from the filament runout sensors are ![Filament runout sensor pins](images/runout-sensor-pins.jpg "Filament runout sensor pins")
 
@@ -69,7 +69,7 @@ Finally it's time to configure Klipper.
 
 ### Configure Klipper
 
-At the end you have to configure Klipper to use the newly connected filament-runout sensor. Thats probably the easiest part. 
+At the end you have to configure Klipper to use the newly connected filament-runout sensor. Thats probably the easiest part.
 
 Open your printer.cfg and add the following section
 
@@ -83,7 +83,7 @@ switch_pin: PA0 # the z-endstop pin
 
 and restart the Klipper firmware afterwards.
 
-If you did it right, you will see a new entry in your *Miscellaneous* Section in your Mainsail Web-UI. ![Filament Sensor Section](images/filament-sensor-ui.jpg "Filament Sensor Section") It will toggle if you insert/remove filament into your filament-runout sensor. Also, your status lit will switch red/green as before.
+If you did it right, you will see a new entry in your _Miscellaneous_ Section in your Mainsail Web-UI. ![Filament Sensor Section](images/filament-sensor-ui.jpg "Filament Sensor Section") It will toggle if you insert/remove filament into your filament-runout sensor. Also, your status lit will switch red/green as before.
 
 ## Conclusion
 

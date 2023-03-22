@@ -1,7 +1,7 @@
 ---
 title: "Setup Rust and Bevy under WSL2 in Windows 11"
 date: 2022-03-11
-description: Some easy steps to setup an initial Rust development environment in Windows 11 WSL2/Ubuntu Linux together with the needed libraries to compile and run all of the Bevy examples. All that is running within the brand new preview of the graphical WSL implementation. 
+description: Some easy steps to setup an initial Rust development environment in Windows 11 WSL2/Ubuntu Linux together with the needed libraries to compile and run all of the Bevy examples. All that is running within the brand new preview of the graphical WSL implementation.
 draft: false
 tags:
   - rust
@@ -16,9 +16,11 @@ Are you one of the nerds, who likes to develop your own game, fancy graphics or 
 Why not combining both aspects to have some fun learning new things?
 
 ## Environment
+
 Just to be even more nerdy, I show you a way to do that all within the Windows Subsystem for Linux and it's brand new graphical extension under Windows 11. At the moment of writing it's still in preview, so be aware of some shortcomings.
 
 ### Preconditions
+
 - Microsoft Windows 11
 - Enabled CPU virtualisation
 
@@ -29,42 +31,51 @@ Just to be even more nerdy, I show you a way to do that all within the Windows S
 If you havn't installed WSL2 yet, follow the manual [here](https://docs.microsoft.com/en-us/windows/wsl/install)
 
 In short:
+
 1. Open a windows terminal with administrator privilegies [Windows Terminal on Github](https://github.com/microsoft/terminal)
 1. Run
-   ```bat 
+
+   ```bat
    wsl --install
-   ```    
+   ```
+
    and follow the instructions.
 
 ### Configure Linux in WSL2
 
 1. Open your Ubuntu Linux within WSL2
 
-1. Install rust with 
+1. Install rust with
+
    ```sh
-   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
    rustup update
    rustup component add rls rust-analysis rust-src
    ```
 
-   *Remarks*: The Ubuntu 20.04 packages from repository are missing libs for code completion in VS Code.
+   _Remarks_: The Ubuntu 20.04 packages from repository are missing libs for code completion in VS Code.
 
    1. If you are using fish shell
+
       - Create/edit file: `~/.config/fish/conf.d/myconfig.fish`
-      - Add 
+      - Add
+
         ```fish
         if status --is-login
           set -gx PATH $PATH ~/.cargo/bin $PATH
         end
         ```
 
-1. Install bevy linux dependencies with 
+1. Install bevy linux dependencies with
+
    ```sh
    sudo apt install g++ pkg-config libx11-dev libasound2-dev libudev-dev libwayland-dev libxkbcommon-dev mesa-vulkan-drivers
-   ``` 
+   ```
+
    Some more information can be found [here](https://github.com/bevyengine/bevy/blob/main/docs/linux_dependencies.md)
 
-1. Install git 
+1. Install git
+
    ```sh
    sudo apt install git
    ```
@@ -72,11 +83,13 @@ In short:
 ## Bevy (a slim and fast Rust game engine)
 
 1. Clone the [Bevy repo](https://github.com/bevyengine/bevy):
-   ```sh 
+
+   ```sh
    git clone https://github.com/bevyengine/bevy
    ```
 
 2. Try the examples in the examples folder
+
    ```sh
    cargo run --example breakout
    ```
@@ -88,6 +101,7 @@ Be aware, that the setup and use of the graphical WSL for Linux GUI applications
 This is a very good startpoint to learn rust by playing around with a game engine. Let me know about your progress with that.
 
 ## Useful Links
+
 - [Learn Rust](https://www.rust-lang.org/learn)
 - [Bevy Engine](https://bevyengine.org/)
 - [Bevy Getting Started](https://bevyengine.org/learn/book/getting-started/)

@@ -33,7 +33,7 @@ Until the Preview period is over, the straightforward way ist to install it - ye
 
 After installation open the windows command line (`cmd.exe`) or a powershell.
 
->If you start it as an administrator, you don't have to accept the elevation dialogs later on.
+> If you start it as an administrator, you don't have to accept the elevation dialogs later on.
 
 Before you install your applications, I recommend to modify some settings first.
 
@@ -51,12 +51,12 @@ In the opened settings.json file, setup your preferred language priority list (e
 
 ```json
 {
-    "installBehavior": {
-        "preferences": {
-            "locale": [ "de-DE", "en-US" ],
-            "scope": "machine"
-        }
+  "installBehavior": {
+    "preferences": {
+      "locale": ["de-DE", "en-US"],
+      "scope": "machine"
     }
+  }
 }
 ```
 
