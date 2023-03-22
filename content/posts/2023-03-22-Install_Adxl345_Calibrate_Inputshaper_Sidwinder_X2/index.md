@@ -19,7 +19,7 @@ categories:
 
 Simply said: _Input Shaping_ or _Resonance Compensation_ is a technic to reduce vibrations and resonances by proactive adjusting the printer movements. It increases the max possible printer speed without reducing the print quality. More details can be found in Klipper [Resonance Compensation](https://www.klipper3d.org/Resonance_Compensation.html#resonance-compensation) documentation.
 
-This article focuses on Klipper firmware, but Marlin added Input Shaping as experimental feature in its latest Version also. [see M593](https://marlinfw.org/docs/gcode/M593.html).
+This article focuses on Klipper firmware, but also Marlin added Input Shaping as experimental feature in its latest Version. [see M593](https://marlinfw.org/docs/gcode/M593.html).
 
 There is also a manual way to determine the resonance frequencies but this post shows you the steps to measure the frequencies by an ADXL345 accelerometer chip. You can get it for some bucks.
 
