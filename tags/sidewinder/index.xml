@@ -5,7 +5,16 @@
     <link>https://blog.freakydu.de/tags/sidewinder/</link>
     <description>Recent content in sidewinder on freakyDude&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/sidewinder/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/sidewinder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perfect input shaping - Install the ADXL345 accelerometer on Artillery Sidewinder/Genius Pro</title>
+      <link>https://blog.freakydu.de/posts/2023-03-22-install_adxl345_calibrate_inputshaper_sidwinder_x2/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2023-03-22-install_adxl345_calibrate_inputshaper_sidwinder_x2/</guid>
+      <description>About installing the ADXL345 accelerometer to calibrate easily input shaping for an Artillery Sidewinder with Klipper firmware.</description>
+    </item>
+    
     <item>
       <title>Re-enable the Artillery Sidewinder X2 Filament-Runout Sensor</title>
       <link>https://blog.freakydu.de/posts/2022-12-23-reenable_sidewinder_x2_runout_sensor/</link>
