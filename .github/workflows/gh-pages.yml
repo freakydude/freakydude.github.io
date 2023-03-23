@@ -1,4 +1,4 @@
-name: github pages
+name: Deploy Hugo site to Pages
 
 on:
   push:
@@ -9,11 +9,17 @@ on:
     branches:
       - master # Set a branch to deploy
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
@@ -30,6 +36,10 @@ jobs:
           extended: true
 
       - name: Build
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
         run: hugo --minify
 
       - name: Deploy

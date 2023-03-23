@@ -1,6 +1,6 @@
 baseURL: "https://blog.freakydu.de/"
 title: freakyDude's Blog
-paginate: 10
+paginate: 25
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -19,7 +19,7 @@ outputs:
     - JSON
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: dev #production # to enable google analytics, opengraph, twitter-cards and schema.
   title: freakyDude's Blog
   description: "My blog to remember and share knowledge I'm working on. As always in search of smart solutions."
   keywords: [Blog, DJ, Tech, 3D Printer, Development]
