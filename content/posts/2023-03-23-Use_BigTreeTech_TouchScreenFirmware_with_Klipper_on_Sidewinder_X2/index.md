@@ -1,7 +1,7 @@
 ---
 title: Use BigTreeTech-TouchScreenFirmware with Klipper on Sidewinder X2
 date: 2023-03-23T00:00:00+01:00
-description: 
+description:
 draft: true
 tags:
   - artillery
@@ -16,6 +16,16 @@ categories:
 ---
 
 ## Intro
+
+If you followed my last posts, you know I switched from Marlin to Klipper firmware on my Artillery Sidewinder X2. If you did the same, you maybe run in the same issue like me.
+
+My integrated Display is useless!
+
+But I found a solution - well - not perfect yet but more then OK for my main use cases. After a lot of reading though discussions I understood the relationships between the printers Mainboard, the included TFT, Marlin and Klipper and got an idea.
+
+So I started an experiment, which I think was successful. It results into a open source project which in itself is an experiment again.
+
+Sooo what I'am talking about?!
 
 ## Conclusion
 
