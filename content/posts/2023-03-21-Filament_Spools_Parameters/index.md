@@ -19,8 +19,12 @@ categories:
 | PLA+ Silk | Sunlu        | 1000g           | 126g - 129g  | 210°C             | 0.8mm      | 100% | 2022  | ![Sunlu PLA+ Silk 2022](images/sunlu_pla_silk_2022.png "Sunlu PLA+ Silk 2022")    |
 | ABS       | Sunlu        | 1000g           | 1000g        | 250°C             | 0.5mm      | 98%  | 2022  |                                                                                   |
 
-To provide more filaments, please leave comments with information about them.
+Please leave a comment if something is wrong or missing. Or if you have any questions.
 
-If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+Have fun!
+
+If you like, buy me a coffee
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
 
 freakyDude

@@ -34,6 +34,12 @@ Also, if you read through some other blogs and youtube channels, some guys compl
 
 That's a great package for this money from Artillery. See in my other posts, how to update to latest Marlin firmware and for more advanced makers, see how to use Klipper3D with your Artillery Sidewinder X2.
 
-If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+Please leave a comment if something is wrong or missing. Or if you have any questions.
+
+Have fun!
+
+If you like, buy me a coffee
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
 
 freakyDude

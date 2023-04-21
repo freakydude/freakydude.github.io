@@ -105,10 +105,12 @@ For further steps and more details it is always a very good idea to walk through
 - [Mainsail Documentation](https://docs.mainsail.xyz/)
 - [Moonraker Documentation](https://moonraker.readthedocs.io/)
 
-Please leave comments, if something is wrong or missing. Or if you have questions.
+Please leave a comment if something is wrong or missing. Or if you have any questions.
 
-Enjoy!
+Have fun!
 
-If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+If you like, buy me a coffee
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
 
 freakyDude

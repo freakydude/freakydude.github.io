@@ -109,6 +109,12 @@ Here it is, a native package manager for Windows applications. Yes, it's version
 This tool, saves you a lot of time.
 Have fun.
 
-If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+Please leave a comment if something is wrong or missing. Or if you have any questions.
+
+Have fun!
+
+If you like, buy me a coffee
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
 
 freakyDude

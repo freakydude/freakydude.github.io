@@ -30,6 +30,12 @@ In my opinion, [Arch Linux](https://archlinux.org/) catches the sweet spot. With
 
 In future posts, I will help you with some aspects here.
 
-If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+Please leave a comment if something is wrong or missing. Or if you have any questions.
+
+Have fun!
+
+If you like, buy me a coffee
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
 
 freakyDude

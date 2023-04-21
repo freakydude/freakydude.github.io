@@ -103,7 +103,12 @@ For further steps and more details it is always a very good idea to walk through
 
 If you also like to reenable the stock filament runout sensor a new post about that is online: [Reenable and configure the filament-runout sensor with Klipper](../2022-12-23-reenable_sidewinder_x2_runout_sensor/)
 
-Please leave comments, if something is wrong or missing. Or if you have questions.
+Please leave a comment if something is wrong or missing. Or if you have any questions.
 
-Enjoy!
+Have fun!
+
+If you like, buy me a coffee
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+
 freakyDude

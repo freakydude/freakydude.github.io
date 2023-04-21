@@ -246,9 +246,9 @@ For further steps and more details it is always a very good idea to walk through
 - [Klipper Documentation](https://www.klipper3d.org/Overview.html)
 - [Mainsail Documentation](https://docs.mainsail.xyz/)
 
-Please leave comments, if something is wrong or missing. Or if you have questions.
+Please leave a comment if something is wrong or missing. Or if you have any questions.
 
-Enjoy!
+Have fun!
 
 If you like, buy me a coffee
 

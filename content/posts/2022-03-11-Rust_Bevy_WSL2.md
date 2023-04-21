@@ -108,6 +108,12 @@ This is a very good startpoint to learn rust by playing around with a game engin
 - [Bevy Cheat Book](https://bevy-cheatbook.github.io/)
 - [Linux GUI Apps on WSL](https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps)
 
-If you like, buy me a coffee [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+Please leave a comment if something is wrong or missing. Or if you have any questions.
+
+Have fun!
+
+If you like, buy me a coffee
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
 
 freakyDude
