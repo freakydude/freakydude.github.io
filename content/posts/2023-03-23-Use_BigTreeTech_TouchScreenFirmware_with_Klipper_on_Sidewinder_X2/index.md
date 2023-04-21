@@ -53,7 +53,7 @@ So, let's start hacking and improving your printer.
 First, you need to wire things up. Disconnect the display from your mainboard. It needs to be connected to your Raspberry Pi instead.
 
 I made a little schematic where you connect your PI with a level shifter to the UART (serial) interface of your BTT TFT (or compatible like the one in our Artillery Sidewinder X2).
-It's really important to use a level shifter here. If your UART pins get 5V from your PI, they will be irreparably damaged, burned. **Be careful!**
+It's really important to use a level shifter here. If your RPi GPIO UART pins get 5V they will be irreparably damaged, burned. **Be careful!**
 
 ![RPi to LevelShifter to BTT Touchscreen](images/rpi-serial-levelshifter-cut.png "RPi to LevelShifter to BTT Touchscreen")
 That's not a mistake. Make sure that somewhere between the display UART and the RPi UART you have a TX (transmit) and RX (receive) crossover to allow a bidirectional connection between them.
