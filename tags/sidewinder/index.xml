@@ -5,7 +5,18 @@
     <link>https://blog.freakydu.de/tags/sidewinder/</link>
     <description>Recent content in sidewinder on freakyDude&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/sidewinder/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Apr 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/sidewinder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use your TouchScreen with Klipper on Sidewinder X2</title>
+      <link>https://blog.freakydu.de/posts/2023-03-23-use_bigtreetech_touchscreenfirmware_with_klipper_on_sidewinder_x2/</link>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://blog.freakydu.de/posts/2023-03-23-use_bigtreetech_touchscreenfirmware_with_klipper_on_sidewinder_x2/</guid>
+      <description>Intro If you have been following my recent posts, you know that I switched from Marlin to Klipper firmware on my Artillery Sidewinder X2. If you have done the same, you may be experiencing the same problem as me. I have already received questions from you about how much better the printing results are with Klipper, but that is another topic.
+Our integrated display is useless!
+But I found a solution - well - not perfect yet, but more than OK for my main use cases.</description>
+    </item>
+    
     <item>
       <title>Perfect input shaping - Install the ADXL345 accelerometer on Artillery Sidewinder/Genius Pro</title>
       <link>https://blog.freakydu.de/posts/2023-03-22-install_adxl345_calibrate_inputshaper_sidwinder_x2/</link>

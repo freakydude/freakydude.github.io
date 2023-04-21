@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.freakydu.de/tags/3d-printer/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/artillery/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/bigtreetech/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/categories/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/categories/developer/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/klipper/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/mainsail/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/categories/maker/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/posts/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/sidewinder/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/touchscreen/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/posts/2023-03-23-use_bigtreetech_touchscreenfirmware_with_klipper_on_sidewinder_x2/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://blog.freakydu.de/about/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -9,46 +51,16 @@
     <loc>https://blog.freakydu.de/categories/about/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/categories/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.freakydu.de/about/me/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/tags/3d-printer/</loc>
-    <lastmod>2023-03-22T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://blog.freakydu.de/tags/adxl345/</loc>
-    <lastmod>2023-03-22T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/artillery/</loc>
     <lastmod>2023-03-22T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/genius/</loc>
     <lastmod>2023-03-22T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/tags/klipper/</loc>
-    <lastmod>2023-03-22T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/mainsail/</loc>
-    <lastmod>2023-03-22T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/categories/maker/</loc>
-    <lastmod>2023-03-22T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://blog.freakydu.de/posts/2023-03-22-install_adxl345_calibrate_inputshaper_sidwinder_x2/</loc>
-    <lastmod>2023-03-22T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/posts/</loc>
-    <lastmod>2023-03-22T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/sidewinder/</loc>
-    <lastmod>2023-03-22T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/</loc>
     <lastmod>2023-03-22T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/posts/2023-03-21-filament_spools_parameters/</loc>
@@ -85,9 +97,6 @@
     <lastmod>2022-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/bevy/</loc>
-    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/categories/developer/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/rust/</loc>
