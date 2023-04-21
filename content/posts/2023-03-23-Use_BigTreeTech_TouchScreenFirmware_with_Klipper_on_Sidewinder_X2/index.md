@@ -41,7 +41,7 @@ I tested all this stuff only with my own printer and the constellation around it
 
 - A Raspberry PI or Bigtreetech CB1 (as mostly already in use for Klipper)
 - A Level Shifter (cheap part, [for example](https://www.amazon.de/s?k=levelshifter+3%2C3+zu+5v&sprefix=levelshifter+%2Caps%2C83&ref=nb_sb_ss_ts-doa-p_1_13))
-- A BTT TFT im TouchScreen Mode (I used it with Artillery Sidewinder X2, BTT TFT28 with GD32F305 chipset)
+- A BigTreeTech TFT in touch mode (I used it with Artillery Sidewinder X2, BTT TFT28 with GD32F305 chipset)
   - Most things should work with official artillery firmware
   - To get all the features, flash their open source [TouchScreenFirmware](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware#installation)
   - Not merged yet, but there is a version for your GD32F305 TFT controller version. See [this issue](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware/issues/2391) until it's mainline. Thanks for all the work guys!!
@@ -117,7 +117,7 @@ To enable the progress and color change features, configure your slicer as [desc
 
 ## Conclusion
 
-If you have successfully followed my instructions, you may be one of the first people on the planet to have this combination, a BTT touchscreen in Marlin Touchscreen mode, working on a Klipper firmware-driven printer. And yes, since we are all green these days, you did not throw away your working hardware. Congratulations!
+If you have successfully followed my instructions, you may be one of the first people on the planet to have this combination, a BTT touchscreen in Marlin touch mode, working on a Klipper firmware-driven printer. And yes, since we are all green these days, you did not throw away your working hardware. Congratulations!
 
 For further steps and more details it is always a good idea to go through the very good official documentation.
 
