@@ -46,7 +46,9 @@ A example how to connect your ADXL345 to the SPI interface of the RaspberryPI. H
 
 I used standard jumper cables for that task, but in case you want to do some crafting, go on.
 
-If you have the Sidewinder X1/X2 or Genius Pro you can use [my mount](https://www.thingiverse.com/thing:5511453) from Thingiverse to install the accelerometer on you extruder. I suggest V2, the sensor is in parallel to the xy-plane and mounted with screws.
+If you have the Sidewinder X1/X2 or Genius Pro you can use [my mount from Thingiverse](https://www.thingiverse.com/thing:5511453) to install the accelerometer on your extruder. I suggest V2, the sensor is in parallel to the xy-plane and mounted with screws.
+Because those are bed slingers, the measurement of the resonance frequency should be split. For measure the frequency for y-axis, you should install the accelerometer on your heater bed. I made an adapter for that too. (Thanks to _Paradisebaker_ to clarify that.)
+
 If you own another printer, you have to look for different mounting solution.
 
 ![ADXL345 Mount](images/adxl345-photo.png "ADXL345 Mount")
@@ -149,7 +151,7 @@ If you have problems, consult [Checking the setup](https://www.klipper3d.org/Mea
 
 ### Manual Test X- and Y-Axes
 
-- Test x-axis resonances on G-Code console (for example in Mainsail)
+- Test x-axis resonances on G-Code console (for example in Mainsail). *Mount your ADXL345 on your extruder*
 
   ```sh
   TEST_RESONANCES AXIS=X
@@ -176,7 +178,7 @@ If you have problems, consult [Checking the setup](https://www.klipper3d.org/Mea
   Recommended shaper is mzv @ 55.0 Hz
   ```
 
-- Test y-axis resonances on G-Code console (for example in Mainsail)
+- Test y-axis resonances on G-Code console (for example in Mainsail). *Mount your ADXL345 on your heat bed. There is also an adapter on my [thingiverse](https://www.thingiverse.com/thing:5511453) page*
 
   ```sh
   TEST_RESONANCES AXIS=Y
