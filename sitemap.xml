@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.freakydu.de/posts/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://blog.freakydu.de/tags/3d-printer/</loc>
     <lastmod>2023-04-21T00:00:00+01:00</lastmod>
   </url><url>
@@ -27,9 +30,6 @@
     <lastmod>2023-04-21T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/categories/maker/</loc>
-    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/posts/</loc>
     <lastmod>2023-04-21T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/sidewinder/</loc>
