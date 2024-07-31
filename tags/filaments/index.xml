@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>filaments on freakyDude&#39;s Blog</title>
+    <title>Filaments on freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/tags/filaments/</link>
-    <description>Recent content in filaments on freakyDude&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Filaments on freakyDude&#39;s Blog</description>
+    <generator>Hugo -- 0.130.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.freakydu.de/tags/filaments/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.freakydu.de/tags/filaments/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Filament and Spool parameters</title>
       <link>https://blog.freakydu.de/posts/2023-03-21-filament_spools_parameters/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.freakydu.de/posts/2023-03-21-filament_spools_parameters/</guid>
       <description>My list of relevant information about different filament I printed with.</description>
     </item>
-    
   </channel>
 </rss>
