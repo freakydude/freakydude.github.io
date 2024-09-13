@@ -4,7 +4,7 @@
     <title>freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/about/</link>
     <description>Recent content on freakyDude&#39;s Blog</description>
-    <generator>Hugo -- 0.130.0</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/about/index.xml" rel="self" type="application/rss+xml" />
@@ -13,25 +13,40 @@
       <link>https://blog.freakydu.de/about/me/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/about/me/</guid>
-      <description>I&amp;rsquo;m a full-stack software developer with a lot of interests. Currently I&amp;rsquo;m working on some projects around 3d printing in my spare time.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m a full-stack software developer with a lot of interests. Currently I&amp;rsquo;m working on some projects around 3d printing in my spare time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Imprint</title>
       <link>https://blog.freakydu.de/about/imprint/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/about/imprint/</guid>
-      <description>Information according to § 5 TMG Frank Roth
-Badstr. 40a 90762 Fuerth Germany
-Contact Phone: 004915205448415 E-mail: developer@freakydu.de
-Editorially responsible Frank Roth Badstr. 40a 90762 Fuerth E-Mail: developer@freakydu.de</description>
+      <description>&lt;h2 id=&#34;information-according-to--5-tmg&#34;&gt;Information according to § 5 TMG&lt;/h2&gt;
+&lt;p&gt;Frank Roth&lt;/p&gt;
+&lt;p&gt;Badstr. 40a
+90762 Fuerth
+Germany&lt;/p&gt;
+&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
+&lt;p&gt;Phone: 004915205448415
+E-mail: &lt;a href=&#34;mailto:developer@freakydu.de&#34;&gt;developer@freakydu.de&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;editorially-responsible&#34;&gt;Editorially responsible&lt;/h2&gt;
+&lt;p&gt;Frank Roth
+Badstr. 40a
+90762 Fuerth
+E-Mail: &lt;a href=&#34;mailto:developer@freakydu.de&#34;&gt;developer@freakydu.de&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy Policy</title>
       <link>https://blog.freakydu.de/about/privacy_policy/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/about/privacy_policy/</guid>
-      <description>Personal data (usually referred to just as &#34;data&#34; below) will only be processed by us to the extent necessary and for the purpose of providing a functional and user-friendly website, including its contents, and the services offered there.
-Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter referred to as the &#34;GDPR&#34;), &#34;processing&#34; refers to any operation or set of operations such as collection, recording, organization, structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure by transmission, dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or destruction performed on personal data, whether by automated means or not.</description>
+      <description>&lt;p&gt;Personal data (usually referred to just as &#34;data&#34; below) will only be processed by us to the extent necessary and for
+    the purpose of providing a functional and user-friendly website, including its contents, and the services offered
+    there.&lt;/p&gt;
+&lt;p&gt;Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter referred to as
+    the &#34;GDPR&#34;), &#34;processing&#34; refers to any operation or set of operations such as collection, recording, organization,
+    structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure by transmission,
+    dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or destruction
+    performed on personal data, whether by automated means or not.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
