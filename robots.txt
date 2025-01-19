@@ -1,4 +1,3 @@
 User-agent: *
-Allow: /
 Disallow:
 Sitemap: https://blog.freakydu.de/sitemap.xml

@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>freakyDude&#39;s Blog</title>
+    <title>About on freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/about/</link>
-    <description>Recent content on freakyDude&#39;s Blog</description>
+    <description>Recent content in About on freakyDude&#39;s Blog</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/about/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>It&#39;s me</title>
-      <link>https://blog.freakydu.de/about/me/</link>
-      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.freakydu.de/about/me/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a full-stack software developer with a lot of interests. Currently I&amp;rsquo;m working on some projects around 3d printing in my spare time.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Imprint</title>
       <link>https://blog.freakydu.de/about/imprint/</link>

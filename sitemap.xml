@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.freakydu.de/posts/</loc>
+    <loc>https://blog.freakydu.de/</loc>
     <lastmod>2023-10-21T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/</loc>
+    <loc>https://blog.freakydu.de/posts/</loc>
     <lastmod>2023-10-21T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/3d-printer/</loc>
@@ -43,15 +43,6 @@
   </url><url>
     <loc>https://blog.freakydu.de/posts/2023-03-23-use_bigtreetech_touchscreenfirmware_with_klipper_on_sidewinder_x2/</loc>
     <lastmod>2023-04-21T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/about/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/categories/about/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/about/me/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/adxl345/</loc>
     <lastmod>2023-03-22T00:00:00+01:00</lastmod>
@@ -131,13 +122,19 @@
     <loc>https://blog.freakydu.de/posts/2021-04-22-why_arch_linux/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.freakydu.de/categories/about/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/about/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.freakydu.de/about/imprint/</loc>
     <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/about/privacy_policy/</loc>
     <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/archives/</loc>
+    <loc>https://blog.freakydu.de/archive/</loc>
   </url><url>
     <loc>https://blog.freakydu.de/search/</loc>
   </url>

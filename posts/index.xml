@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>freakyDude&#39;s Blog</title>
+    <title>Posts on freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/posts/</link>
-    <description>Recent content on freakyDude&#39;s Blog</description>
+    <description>Recent content in Posts on freakyDude&#39;s Blog</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Apr 2023 00:00:00 +0100</lastBuildDate>

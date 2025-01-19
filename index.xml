@@ -19,13 +19,6 @@
 &lt;p&gt;But I found a solution - well - not perfect yet, but more than OK for my main use cases. After reading a lot of discussions I understood the relationships between the printer mainboard, the included TFT, Marlin and Klipper and got an idea.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>It&#39;s me</title>
-      <link>https://blog.freakydu.de/about/me/</link>
-      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.freakydu.de/about/me/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a full-stack software developer with a lot of interests. Currently I&amp;rsquo;m working on some projects around 3d printing in my spare time.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Perfect input shaping - Install the ADXL345 accelerometer on Artillery Sidewinder/Genius Pro</title>
       <link>https://blog.freakydu.de/posts/2023-03-22-install_adxl345_calibrate_inputshaper_sidwinder_x2/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0100</pubDate>
