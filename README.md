@@ -4,31 +4,49 @@ You can find that site under
 
 [https://blog.freakydu.de](https://blog.freakydu.de)
 
-## Clone, build and run source
-
-### Clone Source
+## Clone Source
 
 ```sh
 git clone https://github.com/freakydude/freakydude.github.io
 ```
 
-### Init PaperMod submodule
+## Init PaperMod submodule
 
 ```sh
 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 git submodule update --init --recursive
 ```
 
-### Build and run hugo server
+## Build and run hugo server
 
-- With installed hugo packages
+### With installed hugo packages
 
   ```sh
-  hugo serve
+  hugo server --buildDrafts --disableFastRender
   ```
 
-- With docker-compose
+### With docker-compose
+
+- Run "hugo server"
 
   ```sh
-  docker-compose up server
+  docker-compose up
+  ```
+
+- Build site
+
+  ```sh
+  docker-compose run --rm hugo ""
+  ```
+
+- Build site with flags
+
+  ```sh
+  docker-compose run --rm hugo --gc --minify --cleanDestinationDir
+  ```
+
+- Run a command of Hugo
+
+  ```sh
+  docker-compose run --rm hugo env
   ```

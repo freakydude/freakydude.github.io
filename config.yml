@@ -4,7 +4,10 @@ title: freakyDude's Blog
 description: "My blog to remember and share knowledge I'm working on. As always in search of smart solutions."
 keywords: [Blog, DJ, Tech, 3D Printer, Development]
 author: "freakyDude"
-paginate: 10
+# pagination:
+#   disableAliases: false
+#   pagerSize: 10
+#   path: page
 theme: PaperMod
 
 enableRobotsTXT: true
