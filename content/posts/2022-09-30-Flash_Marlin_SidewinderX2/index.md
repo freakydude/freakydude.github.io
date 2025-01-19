@@ -70,12 +70,7 @@ Don't forget to save your settings into your EEPROM again with `M500`
 
 _And special thanks to [PrEzi](https://www.thingiverse.com/PrEzi), who's guide helped me to understand and of course all the guys he mentioned already._
 
-Please leave a comment if something is wrong or missing. Or if you have any questions.
-
+Please leave a comment if there is something wrong or missing. Or if you have any questions.
 Have fun!
 
-If you like, buy me a coffee
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
-
-freakyDude
+If you enjoyed this article and would like to support my work, feel free to buy me a coffee! Your support helps me continue creating content. Thank you! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)

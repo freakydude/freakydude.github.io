@@ -89,12 +89,8 @@ If you did it right, you will see a new entry in your _Miscellaneous_ Section in
 
 By walk through this post, you not only reenabled your filament-runout sensor - you also enabled it the first time for real. Even if you are still using the Marlin firmware, you have the first time the possibility to configure it in your firmware. I still don't know, why Artillery didn't connect it just right out of the box. But now it works and maybe you had some fun to fix the sensors.
 
-Please leave a comment if something is wrong or missing. Or if you have any questions.
-
+Please leave a comment if there is something wrong or missing. Or if you have any questions.
 Have fun!
 
-If you like, buy me a coffee
+If you enjoyed this article and would like to support my work, feel free to buy me a coffee! Your support helps me continue creating content. Thank you! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
-
-freakyDude

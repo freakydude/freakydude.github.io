@@ -1,9 +1,7 @@
 baseURL: https://blog.freakydu.de/
 languageCode: en-us
 title: freakyDude's Blog
-description: "My blog to remember and share knowledge I'm working on. As always in search of smart solutions."
-keywords: [Blog, DJ, Tech, 3D Printer, Development]
-author: "freakyDude"
+
 # pagination:
 #   disableAliases: false
 #   pagerSize: 10
@@ -30,25 +28,26 @@ menu:
     - identifier: search
       name: search
       url: /search/
-      weight: 10
+      weight: 1
     - identifier: categories
       name: categories
       url: /categories/
-      weight: 20
+      weight: 2
     - identifier: tags
       name: tags
       url: /tags/
-      weight: 30
-    - identifier: archives
-      name: archives
+      weight: 3
+    - identifier: archive
+      name: archive
       url: /archives/
-      weight: 40
+      weight: 4
     - identifier: about
       name: about
       url: /about/
-      weight: 50
+      weight: 5
 
 params:
+  defaultTheme: auto
   ShowShareButtons: true
   ShowReadingTime: true
   ShowToc: true
@@ -57,37 +56,62 @@ params:
   ShowCodeCopyButtons: true
   comments: true
   assets:
-    disableHLJS: true # to disable highlight.js
+    # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
     favicon32x32: "/favicon-32x32.png"
     apple_touch_icon: "/apple-touch-icon.png"
     # safari_pinned_tab: "/apple-touch-icon.png" (should be a svg)
+  schema:
+    publisherType: "Person"      
+    
+  description: My blog to remember and share knowledge I'm working on. As always in search of smart solutions.
+  keywords: 
+    - Blog
+    - DJ
+    - Tech
+    - 3D Printer
+    - Development
+    - Linux
+  author: freakyDude
 
   label:
     text: "freakyDude"
     icon: /apple-touch-icon.png
-    iconHeight: 35
+    iconHeight: 36
 
   # home-info mode
   homeInfoParams:
-    Title: "freakyDude's blog"
-    Content: in search of smart solutions
+    Title: "freakyDude in search of smart solutions"
+    Content: >
+      I'm a software developer from Germany with a passion for 3D printing and CAD design. 
+      This blog is mainly about some facts where it was hard to find all the needed information in one place.
 
   socialIcons:
+    - name: discord
+      url: "https://discord.gg/4gN4GqHGx5"
     - name: github
       url: "https://github.com/freakydude/"
-    #    - name: paypal
-    #      url: "https://www.paypal.com/paypalme/frashman"
-    #    - name: buymeacoffee
-    #      url: "https://www.buymeacoffee.com/freakydude"
+    - name: youtube
+      url: "https://www.youtube.com/channel/UCnbeRiftkkyCWVawZTrCXYQ"
+    - name: buymeacoffee
+      url: "https://www.buymeacoffee.com/freakydude"
     - name: kofi
       url: "https://ko-fi.com/freakydude"
-    - name: youtube
-      url: "https://www.youtube.com/channel/UCnbeRiftkkyCWVawZTrCXYQ/"
 
   editPost:
     URL: "https://github.com/freakydude/freakydude.github.io/tree/master/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
+
+  copyright: "© 2021-2025 freakyDude"
+ 
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+

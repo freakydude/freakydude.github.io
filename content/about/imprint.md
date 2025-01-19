@@ -18,11 +18,11 @@ Germany
 ## Contact
 
 Phone: 004915205448415
-E-mail: developer@freakydu.de
+E-mail: <developer@freakydu.de>
 
 ## Editorially responsible
 
 Frank Roth
 Badstr. 40a
 90762 Fuerth
-E-Mail: developer@freakydu.de
+E-Mail: <developer@freakydu.de>

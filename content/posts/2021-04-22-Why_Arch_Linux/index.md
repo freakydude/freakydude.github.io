@@ -30,12 +30,7 @@ In my opinion, [Arch Linux](https://archlinux.org/) catches the sweet spot. With
 
 In future posts, I will help you with some aspects here.
 
-Please leave a comment if something is wrong or missing. Or if you have any questions.
-
+Please leave a comment if there is something wrong or missing. Or if you have any questions.
 Have fun!
 
-If you like, buy me a coffee
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
-
-freakyDude
+If you enjoyed this article and would like to support my work, feel free to buy me a coffee! Your support helps me continue creating content. Thank you! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)

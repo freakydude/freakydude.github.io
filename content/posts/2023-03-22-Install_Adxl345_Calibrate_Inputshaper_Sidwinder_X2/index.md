@@ -151,7 +151,7 @@ If you have problems, consult [Checking the setup](https://www.klipper3d.org/Mea
 
 ### Manual Test X- and Y-Axes
 
-- Test x-axis resonances on G-Code console (for example in Mainsail). *Mount your ADXL345 on your extruder*
+- Test x-axis resonances on G-Code console (for example in Mainsail). _Mount your ADXL345 on your extruder_
 
   ```sh
   TEST_RESONANCES AXIS=X
@@ -178,7 +178,7 @@ If you have problems, consult [Checking the setup](https://www.klipper3d.org/Mea
   Recommended shaper is mzv @ 55.0 Hz
   ```
 
-- Test y-axis resonances on G-Code console (for example in Mainsail). *Mount your ADXL345 on your heat bed. There is also an adapter on my [thingiverse](https://www.thingiverse.com/thing:5511453) page*
+- Test y-axis resonances on G-Code console (for example in Mainsail). _Mount your ADXL345 on your heat bed. There is also an adapter on my [thingiverse](https://www.thingiverse.com/thing:5511453) page_
 
   ```sh
   TEST_RESONANCES AXIS=Y
@@ -248,12 +248,7 @@ For further steps and more details it is always a very good idea to walk through
 - [Klipper Documentation](https://www.klipper3d.org/Overview.html)
 - [Mainsail Documentation](https://docs.mainsail.xyz/)
 
-Please leave a comment if something is wrong or missing. Or if you have any questions.
-
+Please leave a comment if there is something wrong or missing. Or if you have any questions.
 Have fun!
 
-If you like, buy me a coffee
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
-
-freakyDude
+If you enjoyed this article and would like to support my work, feel free to buy me a coffee! Your support helps me continue creating content. Thank you! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)

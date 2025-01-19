@@ -23,23 +23,18 @@ Also, if you read through some other blogs and youtube channels, some guys compl
 
 | Positive                                  | Negative                                                    |
 | ----------------------------------------- | ----------------------------------------------------------- |
-| Medium printing volume (300x300x400mm)    |
-| Direct extruder                           |
+| Medium printing volume (300x300x400mm)    |  |
+| Direct extruder                           |  |
 | Auto Bed-Leveling                         | No original BL-Touch, a Artillery clone with good precision |
-| Color-Touch-Display                       |
+| Color-Touch-Display                       |  |
 | Ultra fast 220/110V coated glass heat-bed | Heat-Bed uneven temperature distribution                    |
-| Silent printing, drives, power-supply     |
+| Silent printing, drives, power-supply     |  |
 
 ## Conclusion
 
 That's a great package for this money from Artillery. See in my other posts, how to update to latest Marlin firmware and for more advanced makers, see how to use Klipper3D with your Artillery Sidewinder X2.
 
-Please leave a comment if something is wrong or missing. Or if you have any questions.
-
+Please leave a comment if there is something wrong or missing. Or if you have any questions.
 Have fun!
 
-If you like, buy me a coffee
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
-
-freakyDude
+If you enjoyed this article and would like to support my work, feel free to buy me a coffee! Your support helps me continue creating content. Thank you! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
