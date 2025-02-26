@@ -30,7 +30,7 @@ You will need the following items to complete the process.
 - A universal USB driver. See [Zadig](https://zadig.akeo.ie/)
 - AllWinner tools to switch the CB1 into USB device mode. See [sunxi-tools](https://github.com/bigtreetech/sunxi-tools) or [Here](http://linux-sunxi.org/FEL/USBBoot#Using_sunxi-fel_on_Windows)
 - An Armbian Linux image of your choice. See [Armbian for CB1](https://www.armbian.com/bigtreetech-cb1/)
-- An image flashing tool. I used [Rufus](https://rufus.ie/)
+- An image flashing tool. I used [Balena Etcher](https://etcher.balena.io/)
 
 ## Flash the Image to eMMC
 
@@ -67,8 +67,8 @@ You will need the following items to complete the process.
 
   - This will switch the CB1 into USB storage mode.
 - Flash the Armbian Image
-  - Start [Rufus](https://rufus.ie/)
-  - Select your CB1 (it should appear as a storage device) and choose the downloaded Armbian image.
+  - Start [Balena Etcher](https://etcher.balena.io/)
+  - Select the downloaded Armbian image and flash your CB1 (it should appear as a storage device).
   - No need to change the default settings. Begin the flashing process.
 
 ### Mandatory Armbian Configuration
