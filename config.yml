@@ -39,7 +39,7 @@ menu:
       weight: 3
     - identifier: archive
       name: archive
-      url: /archives/
+      url: /archive/
       weight: 4
     - identifier: about
       name: about
