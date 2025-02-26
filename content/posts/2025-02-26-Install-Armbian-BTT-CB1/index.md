@@ -47,7 +47,8 @@ You will need the following items to complete the process.
 - Identify Your CB1
   - Look for your device, which will likely appear as an unknown device. Try each device until you find the one with the correct USB ID
     ![Find your CB1](images/zadig-find-your-cb1.png)
-  - If you cannot find it, ensure that the DIP switches are set correctly and that your USB connection is functioning properly.
+    - If you cannot find it, ensure that the DIP switches are set correctly and that your USB connection is functioning properly.
+- Install Driver
 
 ### Enable CB1 eMMC Storage as an USB Storage Device
 
