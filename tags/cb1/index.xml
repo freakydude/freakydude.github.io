@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Linux on freakyDude&#39;s Blog</title>
-    <link>https://blog.freakydu.de/tags/linux/</link>
-    <description>Recent content in Linux on freakyDude&#39;s Blog</description>
+    <title>Cb1 on freakyDude&#39;s Blog</title>
+    <link>https://blog.freakydu.de/tags/cb1/</link>
+    <description>Recent content in Cb1 on freakyDude&#39;s Blog</description>
     <generator>Hugo -- 0.144.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0100</lastBuildDate>
-    <atom:link href="https://blog.freakydu.de/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.freakydu.de/tags/cb1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flash Armbian on Your Bigtreetech CB1 eMMC Compute Module</title>
       <link>https://blog.freakydu.de/posts/2025-02-26-install-armbian-btt-cb1/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/posts/2025-02-26-install-armbian-btt-cb1/</guid>
       <description>A step-by-step guide to flashing Armbian Linux onto your Bigtreetech CB1 eMMC version</description>
-    </item>
-    <item>
-      <title>Why do I prefer Arch Linux?</title>
-      <link>https://blog.freakydu.de/posts/2021-04-22-why_arch_linux/</link>
-      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.freakydu.de/posts/2021-04-22-why_arch_linux/</guid>
-      <description>About pros and cons using Arch Linux</description>
     </item>
   </channel>
 </rss>

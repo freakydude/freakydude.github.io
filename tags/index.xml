@@ -4,10 +4,38 @@
     <title>Tags on freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/tags/</link>
     <description>Recent content in Tags on freakyDude&#39;s Blog</description>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Apr 2023 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0100</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Armbian</title>
+      <link>https://blog.freakydu.de/tags/armbian/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/armbian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bigtreetech</title>
+      <link>https://blog.freakydu.de/tags/bigtreetech/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/bigtreetech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cb1</title>
+      <link>https://blog.freakydu.de/tags/cb1/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/cb1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://blog.freakydu.de/tags/linux/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/linux/</guid>
+      <description></description>
+    </item>
     <item>
       <title>3D Printer</title>
       <link>https://blog.freakydu.de/tags/3d-printer/</link>
@@ -20,13 +48,6 @@
       <link>https://blog.freakydu.de/tags/artillery/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/tags/artillery/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bigtreetech</title>
-      <link>https://blog.freakydu.de/tags/bigtreetech/</link>
-      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/bigtreetech/</guid>
       <description></description>
     </item>
     <item>
@@ -153,13 +174,6 @@
       <link>https://blog.freakydu.de/tags/archlinux/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/tags/archlinux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://blog.freakydu.de/tags/linux/</link>
-      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.freakydu.de/tags/linux/</guid>
       <description></description>
     </item>
   </channel>
