@@ -39,6 +39,7 @@ You will need the following items to complete the process.
 
 ### Install the Universal USB Storage Driver
 
+- Connect your CB1 to your windows machine
 - Install and Start Zadig
   - Download and run [Zadig](https://zadig.akeo.ie/)
 - List All USB Devices
@@ -56,7 +57,7 @@ You will need the following items to complete the process.
   - Obtain `sunxi-fel.exe` and `u-boot-sunxi-cb1-emmc.bin` from [sunxi-tools](https://github.com/bigtreetech/sunxi-tools)
 
 - Open a Windows Command Prompt:
-  - Ppress `<WIN>+<R>`, type `cmd` and press `<ENTER>`
+  - Press `<WIN>+<R>`, type `cmd` and press `<ENTER>`
 
 - Run the sunxi-fel Command
   - Navigate to the folder containing the downloaded sunxi-tools and run the following command
