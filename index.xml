@@ -135,31 +135,5 @@ E-Mail: &lt;a href=&#34;mailto:developer@freakydu.de&#34;&gt;developer@freakydu.
     dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or destruction
     performed on personal data, whether by automated means or not.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title></title>
-      <link>https://blog.freakydu.de/posts/2025-08-4-improved_klipper_print_estimation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blog.freakydu.de/posts/2025-08-4-improved_klipper_print_estimation/</guid>
-      <description>&lt;p&gt;title: &amp;ldquo;Improved Klipper Print Estimation&amp;rdquo;
-date: 2025-05-08T00:00:00+01:00
-description: Replace BTT&amp;rsquo;s outdated Linux with Armbian, enable CAN Bus networking, and unlock your TFT35 SPI display&amp;rsquo;s full potential for Klipper-based 3D printing.
-draft: true
-tags:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;btt manta&lt;/li&gt;
-&lt;li&gt;armbian&lt;/li&gt;
-&lt;li&gt;bigtreetech&lt;/li&gt;
-&lt;li&gt;btt tft35 spi&lt;/li&gt;
-&lt;li&gt;canbus&lt;/li&gt;
-&lt;li&gt;touchscreen&lt;/li&gt;
-&lt;li&gt;3D printer&lt;/li&gt;
-&lt;li&gt;klipper&lt;/li&gt;
-&lt;li&gt;mainsail
-categories:&lt;/li&gt;
-&lt;li&gt;maker&lt;/li&gt;
-&lt;li&gt;developer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;</description>
-    </item>
   </channel>
 </rss>
