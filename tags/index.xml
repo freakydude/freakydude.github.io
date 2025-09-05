@@ -6,50 +6,8 @@
     <description>Recent content in Tags on freakyDude&#39;s Blog</description>
     <generator>Hugo -- 0.149.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 10:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0100</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>3D Printer</title>
-      <link>https://blog.freakydu.de/tags/3d-printer/</link>
-      <pubDate>Fri, 05 Sep 2025 10:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/3d-printer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Klipper</title>
-      <link>https://blog.freakydu.de/tags/klipper/</link>
-      <pubDate>Fri, 05 Sep 2025 10:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/klipper/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Klipper_estimator</title>
-      <link>https://blog.freakydu.de/tags/klipper_estimator/</link>
-      <pubDate>Fri, 05 Sep 2025 10:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/klipper_estimator/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Klipperscreen</title>
-      <link>https://blog.freakydu.de/tags/klipperscreen/</link>
-      <pubDate>Fri, 05 Sep 2025 10:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/klipperscreen/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mainsail</title>
-      <link>https://blog.freakydu.de/tags/mainsail/</link>
-      <pubDate>Fri, 05 Sep 2025 10:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/mainsail/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Moonraker</title>
-      <link>https://blog.freakydu.de/tags/moonraker/</link>
-      <pubDate>Fri, 05 Sep 2025 10:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/moonraker/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Armbian</title>
       <link>https://blog.freakydu.de/tags/armbian/</link>
@@ -79,10 +37,31 @@
       <description></description>
     </item>
     <item>
+      <title>3D Printer</title>
+      <link>https://blog.freakydu.de/tags/3d-printer/</link>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/3d-printer/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Artillery</title>
       <link>https://blog.freakydu.de/tags/artillery/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/tags/artillery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Klipper</title>
+      <link>https://blog.freakydu.de/tags/klipper/</link>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/klipper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mainsail</title>
+      <link>https://blog.freakydu.de/tags/mainsail/</link>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/mainsail/</guid>
       <description></description>
     </item>
     <item>

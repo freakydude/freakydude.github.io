@@ -3,43 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.freakydu.de/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/3d-printer/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/categories/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/categories/developer/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/posts/2025-09-05-improved_klipper_print_estimation/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/klipper/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/klipper_estimator/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/klipperscreen/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/mainsail/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/categories/maker/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/moonraker/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
+    <lastmod>2025-09-05T17:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/posts/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/</loc>
-    <lastmod>2025-09-05T10:00:00+01:00</lastmod>
+    <lastmod>2025-09-05T17:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/armbian/</loc>
     <lastmod>2025-01-26T00:00:00+01:00</lastmod>
@@ -47,7 +14,13 @@
     <loc>https://blog.freakydu.de/tags/bigtreetech/</loc>
     <lastmod>2025-01-26T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://blog.freakydu.de/categories/</loc>
+    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://blog.freakydu.de/tags/cb1/</loc>
+    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/categories/developer/</loc>
     <lastmod>2025-01-26T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/posts/2025-02-26-install-armbian-btt-cb1/</loc>
@@ -56,7 +29,22 @@
     <loc>https://blog.freakydu.de/tags/linux/</loc>
     <lastmod>2025-01-26T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://blog.freakydu.de/categories/maker/</loc>
+    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/</loc>
+    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/3d-printer/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://blog.freakydu.de/tags/artillery/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/klipper/</loc>
+    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/mainsail/</loc>
     <lastmod>2023-04-21T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/sidewinder/</loc>
