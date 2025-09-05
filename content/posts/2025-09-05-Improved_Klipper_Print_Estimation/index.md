@@ -1,5 +1,5 @@
 ---
-date: 2025-09-05T10:00:00+01:00
+date: 2025-09-05T17:00:00+01:00
 title: Improved Klipper Print Estimation
 description: Get accurate print time with Klipper Estimator plugin for Klipper firmware. Improve print time estimation in Mainsail, Moonraker and KlipperScreen.
 draft: false
