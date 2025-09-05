@@ -4,22 +4,71 @@
     <title>Tags on freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/tags/</link>
     <description>Recent content in Tags on freakyDude&#39;s Blog</description>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo -- 0.149.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0100</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D Printer</title>
+      <link>https://blog.freakydu.de/tags/3d-printer/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/3d-printer/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Armbian</title>
       <link>https://blog.freakydu.de/tags/armbian/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/tags/armbian/</guid>
       <description></description>
     </item>
     <item>
       <title>Bigtreetech</title>
       <link>https://blog.freakydu.de/tags/bigtreetech/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/tags/bigtreetech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Btt Manta</title>
+      <link>https://blog.freakydu.de/tags/btt-manta/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/btt-manta/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Btt Tft35 Spi</title>
+      <link>https://blog.freakydu.de/tags/btt-tft35-spi/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/btt-tft35-spi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Canbus</title>
+      <link>https://blog.freakydu.de/tags/canbus/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/canbus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Klipper</title>
+      <link>https://blog.freakydu.de/tags/klipper/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/klipper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mainsail</title>
+      <link>https://blog.freakydu.de/tags/mainsail/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/mainsail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Touchscreen</title>
+      <link>https://blog.freakydu.de/tags/touchscreen/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/tags/touchscreen/</guid>
       <description></description>
     </item>
     <item>
@@ -37,13 +86,6 @@
       <description></description>
     </item>
     <item>
-      <title>3D Printer</title>
-      <link>https://blog.freakydu.de/tags/3d-printer/</link>
-      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/3d-printer/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Artillery</title>
       <link>https://blog.freakydu.de/tags/artillery/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
@@ -51,31 +93,10 @@
       <description></description>
     </item>
     <item>
-      <title>Klipper</title>
-      <link>https://blog.freakydu.de/tags/klipper/</link>
-      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/klipper/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mainsail</title>
-      <link>https://blog.freakydu.de/tags/mainsail/</link>
-      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/mainsail/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Sidewinder</title>
       <link>https://blog.freakydu.de/tags/sidewinder/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/tags/sidewinder/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Touchscreen</title>
-      <link>https://blog.freakydu.de/tags/touchscreen/</link>
-      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
-      <guid>https://blog.freakydu.de/tags/touchscreen/</guid>
       <description></description>
     </item>
     <item>

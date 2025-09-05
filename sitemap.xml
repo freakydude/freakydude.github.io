@@ -3,24 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.freakydu.de/</loc>
-    <lastmod>2025-02-16T00:00:00+01:00</lastmod>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/posts/</loc>
-    <lastmod>2025-02-16T00:00:00+01:00</lastmod>
+    <loc>https://blog.freakydu.de/tags/3d-printer/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/armbian/</loc>
-    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/tags/bigtreetech/</loc>
-    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/btt-manta/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/btt-tft35-spi/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/canbus/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/categories/</loc>
-    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/cb1/</loc>
-    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/categories/developer/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/klipper/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/mainsail/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/categories/maker/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/posts/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/posts/2025-02-16-supercharge_armbian_bigtreetech_cb1_tft35_spi_manta_canbus/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/touchscreen/</loc>
+    <lastmod>2025-05-08T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.freakydu.de/tags/cb1/</loc>
     <lastmod>2025-01-26T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/posts/2025-02-26-install-armbian-btt-cb1/</loc>
@@ -29,28 +59,10 @@
     <loc>https://blog.freakydu.de/tags/linux/</loc>
     <lastmod>2025-01-26T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/categories/maker/</loc>
-    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/</loc>
-    <lastmod>2025-01-26T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/3d-printer/</loc>
-    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://blog.freakydu.de/tags/artillery/</loc>
     <lastmod>2023-04-21T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://blog.freakydu.de/tags/klipper/</loc>
-    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/mainsail/</loc>
-    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://blog.freakydu.de/tags/sidewinder/</loc>
-    <lastmod>2023-04-21T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.freakydu.de/tags/touchscreen/</loc>
     <lastmod>2023-04-21T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://blog.freakydu.de/posts/2023-03-23-use_bigtreetech_touchscreenfirmware_with_klipper_on_sidewinder_x2/</loc>
