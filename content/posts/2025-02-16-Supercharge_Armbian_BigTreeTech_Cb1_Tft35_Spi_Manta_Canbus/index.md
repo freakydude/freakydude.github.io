@@ -18,7 +18,7 @@ categories:
   - developer
 ---
 
-## Intro  
+## Intro
 
 The BigTreeTech CB1 is a powerful Raspberry Pi alternative for 3D printing enthusiasts, but its stock software often lags behind. By installing Armbian - a lightweight, optimized Linux distribution - you'll gain access to newer packages, better hardware support, and streamlined updates. This guide not only modernizes your CB1 but also unlocks advanced features:
 
@@ -63,33 +63,33 @@ Replace restrictive netplan with user-friendly networking:
 
 1. Connect via Ethernet:
 
-    ```bash
-    ssh root@bigtreetech-cb1 # Default password: 1234
-    ```
+   ```bash
+   ssh root@bigtreetech-cb1 # Default password: 1234
+   ```
 
 2. Update system & install NetworkManager:
 
-    ```bash
-    apt update && apt upgrade -y
-    apt install network-manager -y
-    apt purge netplan.io -y
-    rm -rf /etc/systemd/network/*
-    ```
+   ```bash
+   apt update && apt upgrade -y
+   apt install network-manager -y
+   apt purge netplan.io -y
+   rm -rf /etc/systemd/network/*
+   ```
 
 3. Connect to Wi-Fi
 
-    ```bash
-  
-    nmcli device wifi connect "SSID" password "PASSWORD" ifname wlan0
-    nmcli connection modify "SSID" connection.autoconnect yes
-    ```
+   ```bash
+
+   nmcli device wifi connect "SSID" password "PASSWORD" ifname wlan0
+   nmcli connection modify "SSID" connection.autoconnect yes
+   ```
 
 4. Prevent boot delays from network services:
 
-    ```bash
-    sudo systemctl disable systemd-networkd-wait-online.service
-    sudo systemctl disable NetworkManager-wait-online.service
-    ```
+   ```bash
+   sudo systemctl disable systemd-networkd-wait-online.service
+   sudo systemctl disable NetworkManager-wait-online.service
+   ```
 
 ### Configure CAN Bus
 
@@ -109,26 +109,26 @@ TransmitQueueLength=128
 
 1. Create /etc/systemd/network/can0.network
 
-    ```systemd
-    [Match]
-    Name=can0
+   ```systemd
+   [Match]
+   Name=can0
 
-    [CAN]
-    BitRate=1000000
-    RestartSec=10s
-    ```
+   [CAN]
+   BitRate=1000000
+   RestartSec=10s
+   ```
 
 2. Create /etc/systemd/network/can0.link
    _The link file has currently no effect, workaround with udev rules below_
 
-    ```systemd
-    [Match]
+   ```systemd
+   [Match]
 
-    Type=can
+   Type=can
 
-    [Link]
-    TransmitQueueLength=128
-    ```
+   [Link]
+   TransmitQueueLength=128
+   ```
 
    **Workaround** Add udev rule /etc/udev/rules.d/80-can.rules:
 
@@ -163,17 +163,18 @@ Automated setup with KIAUH:
 
 1. Download and install
 
-    ```bash
-    cd ~
-    git clone https://github.com/dw-0/kiauh.git
-    cd kiauh && ./kiauh.sh
-    ```
+   ```bash
+   cd ~
+   git clone https://github.com/dw-0/kiauh.git
+   cd kiauh && ./kiauh.sh
+   ```
 
 2. Recommended selections:
-    - Klipper: Latest version
-    - Moonraker: API server
-    - Mainsail: Modern web interface
-    - KlipperScreen: Touchscreen UI (Choose Wayland backend)
+
+   - Klipper: Latest version
+   - Moonraker: API server
+   - Mainsail: Modern web interface
+   - KlipperScreen: Touchscreen UI (Choose Wayland backend)
 
    1. Optional Add-ons:
       - Crowsnest: Camera streaming
