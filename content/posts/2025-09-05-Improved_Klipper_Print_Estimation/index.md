@@ -1,5 +1,5 @@
 ---
-date: 2025-09-05T17:00:00+01:00
+date: 2025-09-05T10:00:00+01:00
 title: Improved Klipper Print Estimation
 description: Get accurate print time with Klipper Estimator plugin for Klipper firmware. Improve print time estimation in Mainsail, Moonraker and KlipperScreen.
 draft: false
@@ -38,6 +38,8 @@ One of the common frustrations among 3D printing enthusiasts is the inaccuracy o
    - Print progress calculation -> "Slicer (M73)"
    - ETA calculation method -> "Slicer"
    - Estimate time calculation -> "File, Filament"
+
+   ![Mainsail Settings](images/mainsail-eta-config.png "Mainsail Settings")
 
 3. Setup KlipperScreen to show the estimated time.
    Go to `KlipperScreen.conf`
