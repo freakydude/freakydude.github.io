@@ -54,12 +54,15 @@ You will need the following items to complete the process.
 ### Enable CB1 eMMC Storage as an USB Storage Device
 
 - Download Required Files
+
   - Obtain `sunxi-fel.exe` and `u-boot-sunxi-cb1-emmc.bin` from [sunxi-tools](https://github.com/bigtreetech/sunxi-tools)
 
 - Open a Windows Command Prompt:
+
   - Press `<WIN>+<R>`, type `cmd` and press `<ENTER>`
 
 - Run the sunxi-fel Command
+
   - Navigate to the folder containing the downloaded sunxi-tools and run the following command
 
   ```bat
@@ -67,6 +70,7 @@ You will need the following items to complete the process.
   ```
 
   - This will switch the CB1 into USB storage mode.
+
 - Flash the Armbian Image
   - Start [Balena Etcher](https://etcher.balena.io/)
   - Select the downloaded Armbian image and flash your CB1 (it should appear as a storage device).
