@@ -6,8 +6,15 @@
     <description>Recent content on freakyDude&#39;s Blog</description>
     <generator>Hugo -- 0.149.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 05 Sep 2025 17:00:00 +0100</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improved Klipper Print Estimation</title>
+      <link>https://blog.freakydu.de/posts/2025-09-05-improved_klipper_print_estimation/</link>
+      <pubDate>Fri, 05 Sep 2025 17:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/posts/2025-09-05-improved_klipper_print_estimation/</guid>
+      <description>Get accurate print time with Klipper Estimator plugin for Klipper firmware. Improve print time estimation in Mainsail, Moonraker and KlipperScreen.</description>
+    </item>
     <item>
       <title>Flash Armbian on Your Bigtreetech CB1 eMMC Compute Module</title>
       <link>https://blog.freakydu.de/posts/2025-02-26-install-armbian-btt-cb1/</link>
