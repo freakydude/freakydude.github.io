@@ -5,7 +5,25 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: 'npm'
+    directory: '/'
+    registries: '*'
     schedule:
-      interval: "weekly"
+      interval: 'daily'
+      timezone: 'Europe/Berlin'
+    groups:
+      npm-security-updates:
+        applies-to: security-updates
+        update-types:
+          - 'minor'
+          - 'patch'
+      npm-version-updates:
+        applies-to: version-updates
+        update-types:
+          - 'minor'
+          - 'patch'
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      timezone: 'Europe/Berlin'      
