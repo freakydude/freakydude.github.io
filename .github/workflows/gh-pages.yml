@@ -8,6 +8,7 @@ on:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true # ${{ !(github.ref_name == 'master' || startsWith(github.ref, 'refs/tags/')) }}  
 env:
   HUGO_CACHEDIR: /tmp/hugo_cache # <- Define the env variable here, so that Hugo's cache dir is now predictible in your workflow and doesn't depend on the Hugo's version you're using.
   
