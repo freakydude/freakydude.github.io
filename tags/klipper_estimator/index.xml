@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 05 Sep 2025 17:00:00 +0100</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/tags/klipper_estimator/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Improved Klipper Print Estimation</title>
+      <title>How to Get Accurate Print Time Estimates with Klipper Estimator</title>
       <link>https://blog.freakydu.de/posts/2025-09-05-improved_klipper_print_estimation/</link>
       <pubDate>Fri, 05 Sep 2025 17:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/posts/2025-09-05-improved_klipper_print_estimation/</guid>
-      <description>Get accurate print time with Klipper Estimator plugin for Klipper firmware. Improve print time estimation in Mainsail, Moonraker and KlipperScreen.</description>
+      <description>Learn how to dramatically improve 3D print time predictions in Klipper using the Klipper Estimator plugin. Step-by-step setup for Moonraker, Mainsail, and KlipperScreen, plus a breakdown of what makes Klipper Estimator more accurate than slicers.</description>
     </item>
   </channel>
 </rss>
