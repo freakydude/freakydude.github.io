@@ -28,6 +28,50 @@ The BTT Manta M8P CAN board can be flashed and used with Klipper firmware via tw
 
 In general, CAN Bus is the preferred method for communication between multiple boards in a 3D printer setup, as it provides better reliability and performance compared to USB connections.
 
+## Prerequisites
+
+- A working Klipper installation on a host system (Raspberry Pi, etc.). Follow the [Klipper Installation Guide](https://www.klipper3d.org/Installation.html) if you haven't done this yet.
+- Basic knowledge of using the terminal/command line.
+- Installed `dfu-util` on your host system. You can install it via your package manager. For example, on Debian/Ubuntu-based systems, you can run:
+
+   ```sh
+   sudo apt-get install dfu-util python3-serial
+   ```
+
+- A USB cable to connect the BTT Manta M8P board to your host system for flashing Katapult and Klipper firmware.
+- A CAN Bus connection between the BTT Manta M8P board and the BTT EBB42 board for communication.
+
+### Configured CAN Bus on Host System
+
+There a many ways to setup CAN Bus on your host system. I recommend to use systemd-networkd for this. Here is a quick example:
+
+Add the following file `/etc/systemd/network/80-can.link`:
+
+```ini
+[Match]
+Type=can
+
+[Link]
+TransmitQueueLength=128
+```
+
+and the following file `/etc/systemd/network/80-can.network`:
+
+```ini
+[Match]
+Name=can0
+
+[CAN]
+BitRate=1000000
+```
+
+Run the following commands to load this configuration:
+
+```sh
+sudo systemctl daemon-reload
+sudo systemctl restart systemd-networkd
+```
+
 ## My Artillery Sidewinder X2 Setup
 
 - I replaced the original Artillery Mainboard with a BTT Manta M8P v1.1 board running in CAN Mode.
