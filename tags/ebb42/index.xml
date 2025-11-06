@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ebb42 on freakyDude&#39;s Blog</title>
+    <link>https://blog.freakydu.de/tags/ebb42/</link>
+    <description>Recent content in Ebb42 on freakyDude&#39;s Blog</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Nov 2025 18:00:00 +0100</lastBuildDate>
+    <atom:link href="https://blog.freakydu.de/tags/ebb42/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flashing BTT Manta M8P CAN and EBB42 with Klipper using Katapult</title>
+      <link>https://blog.freakydu.de/posts/2025-11-05-flashing_btt_manta_m8p_can/</link>
+      <pubDate>Thu, 06 Nov 2025 18:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/posts/2025-11-05-flashing_btt_manta_m8p_can/</guid>
+      <description>A quick guide on how to flash the BTT Manta M8P CAN and EBB42 board with Klipper firmware using Katapult.</description>
+    </item>
+  </channel>
+</rss>
