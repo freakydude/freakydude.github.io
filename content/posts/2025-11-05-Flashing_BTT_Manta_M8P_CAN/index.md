@@ -299,7 +299,132 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
 - Mainboard: BTT Manta M8P v2.0 (USB Mode)
 - Toolhead board: BTT EBB SB2209 v1.10 USB
 
-*incomplete - coming soon
+### Flashing the BTT EBB SB2209 USB
+
+1. Configure Klipper Firmware for the BTT EBB SB2209 USB:
+
+   ```sh
+   cd ~
+   cd klipper
+   make menuconfig
+   ```
+
+   ![Setup Klipper for EBB SB2209 USB](images/config-usb-ebb-sb2209-usb-v10.png "Setup Klipper for EBB SB2209 USB")
+
+   Save and exit with `Quit` and `Yes`.
+2. Build the Klipper firmware:
+
+   ```sh
+   make -j
+   ```
+
+3. Stop Klipper service first:
+
+   ```sh
+   sudo service klipper stop
+   ```
+
+4. Flash Klipper
+
+   ```sh
+   cd ~/klipper
+   make flash FLASH_DEVICE=2e8a:0003
+   ```
+
+   This should result in something like this:
+
+   ```sh
+   Flashing out/klipper.uf2 to 2e8a:0003
+   sudo lib/rp2040_flash/rp2040_flash out/klipper.uf2
+
+   Loaded UF2 image with 166 pages
+   Found rp2040 device on USB bus 1 address 9
+   Flashing...
+   Resetting interface
+   Locking
+   Exiting XIP mode
+   Erasing
+   Flashing
+   Rebooting device
+   ```
+
+5. Restart Klipper to apply the changes.
+
+   ```sh
+   sudo service klipper restart
+   ```
+
+### Flashing the BTT Manta M8P v2.0 in USB Mode
+
+1. Configure Klipper Firmware for the BTT Manta M8P v2.0 USB:
+
+   ```sh
+   cd ~
+   cd klipper
+   make menuconfig
+   ```
+
+   ![Setup Klipper for BTT Manta M8P v2.0 USB](images/config-usb-m8p-v20.png "Setup Klipper for BTT Manta M8P v2.0 USB")
+
+   Be aware that I have also enabled the PD14 GPIO Pin. If you have connected a device like the BTT Relay V1.2 to the PS-ON GPIO Pin the power supply is switched via this pin.
+
+   Save and exit with `Quit` and `Yes`.
+2. Build the Klipper firmware:
+
+   ```sh
+   make -j
+   ```
+
+3. Stop Klipper service first:
+
+   ```sh
+   sudo service klipper stop
+   ```
+
+4. Flash Klipper
+
+   If you doing that initially, you need to put the board into bootloader mode first. To do so, hold the BOOT button while plugging in the USB cable. Or as an alternative, press and hold the BOOT button, press reset, release reset, then release BOOT.
+
+   After that, you can flash the firmware:
+
+   ```sh
+   sudo dfu-util -R -a 0 -s 0x08000000:mass-erase:force -D ~/klipper/out/klipper.bin
+   ```
+
+   If this results in an error you probably have Klipper already running on the board.
+
+   In this case, you can use the following command to flash the firmware. In your case the `xxxxxxxxxxx` part of the path may differ, so adjust it accordingly.
+
+   Determine the correct serial path by listing the devices:
+
+   ```sh
+   ls /dev/serial/by-id/usb-Klipper_stm32h723xx_*
+   ```
+
+   ```sh
+   cd ~/klipper
+   make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32h723xx_xxxxxxxxxxx-if00
+   ```
+
+   This results in something like this:
+
+   ```sh
+   Downloading element to address = 0x08000000, size = 41508
+   Erase           [=========================] 100%        41508 bytes
+   Erase    done.
+   Download        [=========================] 100%        41508 bytes
+   Download done.
+   File downloaded successfully
+   ...   
+   ```
+
+   Ignore the errors below, you should be good to go.
+
+5. Restart Klipper to apply the changes.
+
+   ```sh
+   sudo service klipper restart
+   ```
 
 ## Further Links
 
