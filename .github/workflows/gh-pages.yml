@@ -40,7 +40,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: ${{ env.HUGO_CACHEDIR }} # <- Use the same env variable just right here
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
