@@ -4,42 +4,36 @@
     <title>About on freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/about/</link>
     <description>Recent content in About on freakyDude&#39;s Blog</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Imprint</title>
       <link>https://blog.freakydu.de/about/imprint/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/about/imprint/</guid>
-      <description>&lt;h2 id=&#34;information-according-to--5-tmg&#34;&gt;Information according to § 5 TMG&lt;/h2&gt;
-&lt;p&gt;Frank Roth&lt;/p&gt;
-&lt;p&gt;Badstr. 40a
-90762 Fuerth
+      <description>&lt;h2 id=&#34;information-according-to--5-ddg&#34;&gt;Information according to § 5 DDG&lt;/h2&gt;
+&lt;p&gt;Frank Roth&lt;br&gt;
+Badstr. 40a&lt;br&gt;
+90762 Fürth&lt;br&gt;
 Germany&lt;/p&gt;
 &lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
-&lt;p&gt;Phone: 004915205448415
-E-mail: &lt;a href=&#34;mailto:developer@freakydu.de&#34;&gt;developer@freakydu.de&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;editorially-responsible&#34;&gt;Editorially responsible&lt;/h2&gt;
-&lt;p&gt;Frank Roth
-Badstr. 40a
-90762 Fuerth
-E-Mail: &lt;a href=&#34;mailto:developer@freakydu.de&#34;&gt;developer@freakydu.de&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;E-mail: &lt;a href=&#34;mailto:developer@freakydu.de&#34;&gt;developer@freakydu.de&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;responsible-for-content-according-to--18-2-mstv&#34;&gt;Responsible for content according to § 18 (2) MStV&lt;/h2&gt;
+&lt;p&gt;Frank Roth&lt;br&gt;
+Badstr. 40a&lt;br&gt;
+90762 Fürth&lt;br&gt;
+Germany&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy Policy</title>
       <link>https://blog.freakydu.de/about/privacy_policy/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/about/privacy_policy/</guid>
-      <description>&lt;p&gt;Personal data (usually referred to just as &#34;data&#34; below) will only be processed by us to the extent necessary and for
-    the purpose of providing a functional and user-friendly website, including its contents, and the services offered
-    there.&lt;/p&gt;
-&lt;p&gt;Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter referred to as
-    the &#34;GDPR&#34;), &#34;processing&#34; refers to any operation or set of operations such as collection, recording, organization,
-    structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure by transmission,
-    dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or destruction
-    performed on personal data, whether by automated means or not.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This privacy policy explains which personal data is processed when you visit this blog, why, and what rights you have. In short: this is a private, static blog without analytics, tracking, or advertising. The site itself sets no cookies. Personal data is processed only by the hosting provider and by the few third-party services listed below.&lt;/p&gt;
+&lt;h3 id=&#34;1-controller&#34;&gt;1. Controller&lt;/h3&gt;
+&lt;p&gt;The controller within the meaning of the General Data Protection Regulation (GDPR) is:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

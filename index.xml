@@ -4,150 +4,148 @@
     <title>freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/</link>
     <description>Recent content on freakyDude&#39;s Blog</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Nov 2025 18:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 19:00:00 +0100</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Flashing BTT Manta M8P CAN and EBB42 with Klipper using Katapult</title>
+      <title>Sailhand: A Native Touch Screen for Klipper with Happy Hare, AFC, Tool Changers and Spoolman</title>
+      <link>https://blog.freakydu.de/posts/2026-11-17-sailhand_klipper_touch_screen/</link>
+      <pubDate>Tue, 17 Nov 2026 19:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/posts/2026-11-17-sailhand_klipper_touch_screen/</guid>
+      <description>Announcing Sailhand, my open-source touch screen app for Klipper printers. What it does, what is cool about it, and how to install and try it on a Raspberry Pi or a BTT CB1.</description>
+    </item>
+    <item>
+      <title>Flash the BTT Manta M8P and EBB42 with Klipper Using Katapult</title>
       <link>https://blog.freakydu.de/posts/2025-11-05-flashing_btt_manta_m8p_can/</link>
       <pubDate>Thu, 06 Nov 2025 18:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/posts/2025-11-05-flashing_btt_manta_m8p_can/</guid>
-      <description>A quick guide on how to flash the BTT Manta M8P CAN and EBB42 board with Klipper firmware using Katapult.</description>
+      <description>A quick guide to flashing Klipper with Katapult onto the BTT Manta M8P and EBB42 boards over CAN bus (Sidewinder X2), plus the USB variant for the Manta M8P v2.0 and EBB SB2209 (Voron 2.4).</description>
     </item>
     <item>
-      <title>How to Get Accurate Print Time Estimates with Klipper Estimator</title>
+      <title>Get Accurate Print Time Estimates with Klipper Estimator</title>
       <link>https://blog.freakydu.de/posts/2025-09-05-improved_klipper_print_estimation/</link>
       <pubDate>Fri, 05 Sep 2025 17:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/posts/2025-09-05-improved_klipper_print_estimation/</guid>
       <description>Learn how to dramatically improve 3D print time predictions in Klipper using the Klipper Estimator plugin. Step-by-step setup for Moonraker, Mainsail, and KlipperScreen, plus a breakdown of what makes Klipper Estimator more accurate than slicers.</description>
     </item>
     <item>
-      <title>Flash Armbian on Your Bigtreetech CB1 eMMC Compute Module</title>
+      <title>Flash Armbian onto the BigTreeTech CB1 eMMC Compute Module</title>
       <link>https://blog.freakydu.de/posts/2025-02-26-install-armbian-btt-cb1/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/posts/2025-02-26-install-armbian-btt-cb1/</guid>
-      <description>A step-by-step guide to flashing Armbian Linux onto your Bigtreetech CB1 eMMC version</description>
+      <description>A step-by-step guide to flashing Armbian Linux onto the eMMC version of the BigTreeTech CB1 compute module from a Windows machine.</description>
     </item>
     <item>
-      <title>Use your TouchScreen with Klipper on Sidewinder X2</title>
+      <title>Use Your BigTreeTech TouchScreen with Klipper on the Sidewinder X2</title>
       <link>https://blog.freakydu.de/posts/2023-03-23-use_bigtreetech_touchscreenfirmware_with_klipper_on_sidewinder_x2/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/posts/2023-03-23-use_bigtreetech_touchscreenfirmware_with_klipper_on_sidewinder_x2/</guid>
-      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;If you have been following my recent posts, you know that I switched from Marlin to Klipper firmware on my Artillery Sidewinder X2. If you have done the same, you may be experiencing the same problem as me. I have already received questions from you about how much better the printing results are with Klipper, but that is another topic.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Our integrated display is useless!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;But I found a solution - well - not perfect yet, but more than OK for my main use cases. After reading a lot of discussions I understood the relationships between the printer mainboard, the included TFT, Marlin and Klipper and got an idea.&lt;/p&gt;</description>
+      <description>How to make the integrated BigTreeTech TFT touchscreen of the Artillery Sidewinder X2 work with Klipper and Mainsail, using a Raspberry Pi or CB1, a level shifter, and a serial bridge.</description>
     </item>
     <item>
-      <title>Perfect input shaping - Install the ADXL345 accelerometer on Artillery Sidewinder/Genius Pro</title>
+      <title>Install the ADXL345 and Calibrate Input Shaping on the Artillery Sidewinder X2 and Genius Pro</title>
       <link>https://blog.freakydu.de/posts/2023-03-22-install_adxl345_calibrate_inputshaper_sidwinder_x2/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/posts/2023-03-22-install_adxl345_calibrate_inputshaper_sidwinder_x2/</guid>
-      <description>About installing the ADXL345 accelerometer to calibrate easily input shaping for an Artillery Sidewinder with Klipper firmware.</description>
+      <description>Shows how to install an ADXL345 accelerometer and calibrate input shaping (resonance compensation) with Klipper on an Artillery Sidewinder X2 or Genius Pro.</description>
     </item>
     <item>
-      <title>Filament and Spool parameters</title>
+      <title>Filament and Spool Parameters of My 3D Printer Filaments</title>
       <link>https://blog.freakydu.de/posts/2023-03-21-filament_spools_parameters/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2023-03-21-filament_spools_parameters/</guid>
-      <description>My list of relevant information about different filament I printed with.</description>
+      <description>My list of relevant information about the different filaments I printed with, including weights, print temperature, retraction, and flow.</description>
     </item>
     <item>
-      <title>Re-enable the Artillery Sidewinder X2 Filament-Runout Sensor</title>
+      <title>Re-enable the Filament Runout Sensor of the Artillery Sidewinder X2</title>
       <link>https://blog.freakydu.de/posts/2022-12-23-reenable_sidewinder_x2_runout_sensor/</link>
       <pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2022-12-23-reenable_sidewinder_x2_runout_sensor/</guid>
-      <description>The post shows you how you can re-enable the stock Artillery Sidewinder X2 filament-runout sensor and configure with the Klipper3D printer firmware afterwards.</description>
+      <description>Shows how to re-enable the stock filament runout sensor of the Artillery Sidewinder X2 by moving it to the z-endstop pins and configuring it in Klipper.</description>
     </item>
     <item>
-      <title>Must-have Mainsail, Klipper and Cura slicer configuration with Artillery Sidewinder X2</title>
+      <title>Must-Have Mainsail, Klipper, and Cura Configuration for the Artillery Sidewinder X2</title>
       <link>https://blog.freakydu.de/posts/2022-10-18-klipper_basic_macros_sidewinder_x2/</link>
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2022-10-18-klipper_basic_macros_sidewinder_x2/</guid>
-      <description>Tutorial about the must-have Mainsail, Klipper and Cura slicer configuration files with Artillery Sidewinder X2.</description>
+      <description>Walks through the must-have Mainsail, Klipper, and Cura slicer configuration files and G-code macros for the Artillery Sidewinder X2.</description>
     </item>
     <item>
-      <title>Klipper with Artillery Sidewinder X2</title>
+      <title>Replace Marlin with Klipper on the Artillery Sidewinder X2</title>
       <link>https://blog.freakydu.de/posts/2022-10-01-klipper_with_artillery_sidewinder_x2/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2022-10-01-klipper_with_artillery_sidewinder_x2/</guid>
-      <description>Shows a way to use Klipper as a replacement for the Marlin firmware with your Sidewinder X2</description>
+      <description>Shows an easy way to replace the Marlin firmware of the Artillery Sidewinder X2 with Klipper, using a Raspberry Pi running MainsailOS.</description>
     </item>
     <item>
-      <title>Flash latest Marlin firmware to Artillery Sidewinder X2</title>
+      <title>Flash the Latest Marlin Firmware to the Artillery Sidewinder X2</title>
       <link>https://blog.freakydu.de/posts/2022-09-30-flash_marlin_sidewinderx2/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2022-09-30-flash_marlin_sidewinderx2/</guid>
-      <description>Step by step guide to flash the my compiled Marlin firmware to the Artillery Sidewinder X2 printer</description>
+      <description>Step-by-step guide to flash my compiled Marlin firmware to the Artillery Sidewinder X2 (Artillery Ruby v1.2 mainboard) with Pronterface and STM32CubeProgrammer.</description>
     </item>
     <item>
-      <title>Artillery Sidewinder X2 3D FDM Printer</title>
+      <title>Why I Chose the Artillery Sidewinder X2 as My First 3D Printer</title>
       <link>https://blog.freakydu.de/posts/2022-05-17-artillery_sidewinder_x2/</link>
       <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2022-05-17-artillery_sidewinder_x2/</guid>
-      <description>Talking about the decision, pros and cons to buy an Artillery Sidewinder X2</description>
+      <description>The decision, pros, and cons of buying an Artillery Sidewinder X2 as a first FDM 3D printer.</description>
     </item>
     <item>
-      <title>Setup Rust and Bevy under WSL2 in Windows 11</title>
+      <title>Set Up Rust and Bevy in WSL2 on Windows 11</title>
       <link>https://blog.freakydu.de/posts/2022-03-11-rust_bevy_wsl2/</link>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2022-03-11-rust_bevy_wsl2/</guid>
-      <description>Some easy steps to setup an initial Rust development environment in Windows 11 WSL2/Ubuntu Linux together with the needed libraries to compile and run all of the Bevy examples. All that is running within the brand new preview of the graphical WSL implementation.</description>
+      <description>Some easy steps to set up an initial Rust development environment in Windows 11 WSL2/Ubuntu Linux, together with the libraries needed to compile and run all of the Bevy examples, using the graphical WSL implementation (WSLg).</description>
     </item>
     <item>
-      <title>Installing &#39;Oh My Fish&#39; Shell</title>
+      <title>Install fish and Oh My Fish with the Bob the Fish Theme in WSL2</title>
       <link>https://blog.freakydu.de/posts/2022-03-01-installing-oh-my-fish/</link>
       <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2022-03-01-installing-oh-my-fish/</guid>
-      <description>About installing fish, a very helpful modern bash alternative in WSL2/Ubuntu. Enjoy the benefits of the powerline and nice helpers and visualizations in your common workflows.</description>
+      <description>How to install fish, a very helpful modern bash alternative, together with Oh My Fish and the Bob the Fish theme in WSL2/Ubuntu, and how to fix the powerline fonts.</description>
     </item>
     <item>
-      <title>Windows package manager WinGet 1.0</title>
+      <title>Install and Update Windows Applications with WinGet 1.0</title>
       <link>https://blog.freakydu.de/posts/2021-06-01-windows_package_manager_winget/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2021-06-01-windows_package_manager_winget/</guid>
-      <description>A short intro to the finally released WinGet 1.0. It&amp;#39;s a native Microsoft Package Manager to install, uninstall and update most of your daily used applications.</description>
+      <description>A short intro to the finally released WinGet 1.0, the native Microsoft package manager to install, uninstall, and update most of your daily used applications on Windows.</description>
     </item>
     <item>
-      <title>Why do I prefer Arch Linux?</title>
+      <title>Why I Prefer Arch Linux</title>
       <link>https://blog.freakydu.de/posts/2021-04-22-why_arch_linux/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2021-04-22-why_arch_linux/</guid>
-      <description>About pros and cons using Arch Linux</description>
+      <description>The pros and cons of Arch Linux compared to other popular Linux distributions, and why it is my favorite.</description>
     </item>
     <item>
       <title>Imprint</title>
       <link>https://blog.freakydu.de/about/imprint/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/about/imprint/</guid>
-      <description>&lt;h2 id=&#34;information-according-to--5-tmg&#34;&gt;Information according to § 5 TMG&lt;/h2&gt;
-&lt;p&gt;Frank Roth&lt;/p&gt;
-&lt;p&gt;Badstr. 40a
-90762 Fuerth
+      <description>&lt;h2 id=&#34;information-according-to--5-ddg&#34;&gt;Information according to § 5 DDG&lt;/h2&gt;
+&lt;p&gt;Frank Roth&lt;br&gt;
+Badstr. 40a&lt;br&gt;
+90762 Fürth&lt;br&gt;
 Germany&lt;/p&gt;
 &lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
-&lt;p&gt;Phone: 004915205448415
-E-mail: &lt;a href=&#34;mailto:developer@freakydu.de&#34;&gt;developer@freakydu.de&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;editorially-responsible&#34;&gt;Editorially responsible&lt;/h2&gt;
-&lt;p&gt;Frank Roth
-Badstr. 40a
-90762 Fuerth
-E-Mail: &lt;a href=&#34;mailto:developer@freakydu.de&#34;&gt;developer@freakydu.de&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;E-mail: &lt;a href=&#34;mailto:developer@freakydu.de&#34;&gt;developer@freakydu.de&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;responsible-for-content-according-to--18-2-mstv&#34;&gt;Responsible for content according to § 18 (2) MStV&lt;/h2&gt;
+&lt;p&gt;Frank Roth&lt;br&gt;
+Badstr. 40a&lt;br&gt;
+90762 Fürth&lt;br&gt;
+Germany&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy Policy</title>
       <link>https://blog.freakydu.de/about/privacy_policy/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/about/privacy_policy/</guid>
-      <description>&lt;p&gt;Personal data (usually referred to just as &#34;data&#34; below) will only be processed by us to the extent necessary and for
-    the purpose of providing a functional and user-friendly website, including its contents, and the services offered
-    there.&lt;/p&gt;
-&lt;p&gt;Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter referred to as
-    the &#34;GDPR&#34;), &#34;processing&#34; refers to any operation or set of operations such as collection, recording, organization,
-    structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure by transmission,
-    dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or destruction
-    performed on personal data, whether by automated means or not.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This privacy policy explains which personal data is processed when you visit this blog, why, and what rights you have. In short: this is a private, static blog without analytics, tracking, or advertising. The site itself sets no cookies. Personal data is processed only by the hosting provider and by the few third-party services listed below.&lt;/p&gt;
+&lt;h3 id=&#34;1-controller&#34;&gt;1. Controller&lt;/h3&gt;
+&lt;p&gt;The controller within the meaning of the General Data Protection Regulation (GDPR) is:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

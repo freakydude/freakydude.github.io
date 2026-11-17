@@ -4,16 +4,16 @@
     <title>Cb1 on freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/tags/cb1/</link>
     <description>Recent content in Cb1 on freakyDude&#39;s Blog</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0100</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/tags/cb1/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Flash Armbian on Your Bigtreetech CB1 eMMC Compute Module</title>
+      <title>Flash Armbian onto the BigTreeTech CB1 eMMC Compute Module</title>
       <link>https://blog.freakydu.de/posts/2025-02-26-install-armbian-btt-cb1/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
       <guid>https://blog.freakydu.de/posts/2025-02-26-install-armbian-btt-cb1/</guid>
-      <description>A step-by-step guide to flashing Armbian Linux onto your Bigtreetech CB1 eMMC version</description>
+      <description>A step-by-step guide to flashing Armbian Linux onto the eMMC version of the BigTreeTech CB1 compute module from a Windows machine.</description>
     </item>
   </channel>
 </rss>

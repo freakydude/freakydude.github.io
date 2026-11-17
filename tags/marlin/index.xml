@@ -4,16 +4,16 @@
     <title>Marlin on freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/tags/marlin/</link>
     <description>Recent content in Marlin on freakyDude&#39;s Blog</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/tags/marlin/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Flash latest Marlin firmware to Artillery Sidewinder X2</title>
+      <title>Flash the Latest Marlin Firmware to the Artillery Sidewinder X2</title>
       <link>https://blog.freakydu.de/posts/2022-09-30-flash_marlin_sidewinderx2/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2022-09-30-flash_marlin_sidewinderx2/</guid>
-      <description>Step by step guide to flash the my compiled Marlin firmware to the Artillery Sidewinder X2 printer</description>
+      <description>Step-by-step guide to flash my compiled Marlin firmware to the Artillery Sidewinder X2 (Artillery Ruby v1.2 mainboard) with Pronterface and STM32CubeProgrammer.</description>
     </item>
   </channel>
 </rss>

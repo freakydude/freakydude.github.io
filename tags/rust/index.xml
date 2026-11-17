@@ -4,16 +4,23 @@
     <title>Rust on freakyDude&#39;s Blog</title>
     <link>https://blog.freakydu.de/tags/rust/</link>
     <description>Recent content in Rust on freakyDude&#39;s Blog</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 19:00:00 +0100</lastBuildDate>
     <atom:link href="https://blog.freakydu.de/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Setup Rust and Bevy under WSL2 in Windows 11</title>
+      <title>Sailhand: A Native Touch Screen for Klipper with Happy Hare, AFC, Tool Changers and Spoolman</title>
+      <link>https://blog.freakydu.de/posts/2026-11-17-sailhand_klipper_touch_screen/</link>
+      <pubDate>Tue, 17 Nov 2026 19:00:00 +0100</pubDate>
+      <guid>https://blog.freakydu.de/posts/2026-11-17-sailhand_klipper_touch_screen/</guid>
+      <description>Announcing Sailhand, my open-source touch screen app for Klipper printers. What it does, what is cool about it, and how to install and try it on a Raspberry Pi or a BTT CB1.</description>
+    </item>
+    <item>
+      <title>Set Up Rust and Bevy in WSL2 on Windows 11</title>
       <link>https://blog.freakydu.de/posts/2022-03-11-rust_bevy_wsl2/</link>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.freakydu.de/posts/2022-03-11-rust_bevy_wsl2/</guid>
-      <description>Some easy steps to setup an initial Rust development environment in Windows 11 WSL2/Ubuntu Linux together with the needed libraries to compile and run all of the Bevy examples. All that is running within the brand new preview of the graphical WSL implementation.</description>
+      <description>Some easy steps to set up an initial Rust development environment in Windows 11 WSL2/Ubuntu Linux, together with the libraries needed to compile and run all of the Bevy examples, using the graphical WSL implementation (WSLg).</description>
     </item>
   </channel>
 </rss>
