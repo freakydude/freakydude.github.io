@@ -109,7 +109,7 @@ This step is only necessary if you have a brand new BTT Manta M8P board without 
 4. Flash Katapult:
 
    ```sh
-   dfu-util -R -a 0 -s 0x08000000:mass-erase:force -D ~/katapult/out/katapult.bin
+   sudo dfu-util -R -a 0 -s 0x08000000:mass-erase:force -D ~/katapult/out/katapult.bin
    ```
 
 5. Reset the board (or power it off and on). Katapult should now be installed, and the status LED will blink.
@@ -262,7 +262,7 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
 5. Flash Klipper to the EBB42:
 
    ```sh
-   ~/klippy-env/bin/python3 ~/katapult/scripts/flash_can.py -i can0 <CANBUS_UUID> -f ~/klipper/out/klipper.bin -u
+   ~/klippy-env/bin/python3 ~/katapult/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u <CANBUS-UUID>
    ```
 
    Replace `<CANBUS-UUID>` with the actual CAN bus UUID of your board (noted from the last step, or configured in `printer.cfg` in the `[mcu ebb42]` section as `canbus_uuid`).

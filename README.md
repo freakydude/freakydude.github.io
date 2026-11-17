@@ -26,7 +26,7 @@ git submodule update --init --recursive
   hugo server --buildDrafts --disableFastRender
   ```
 
-### With docker-compose
+### With Docker Compose (official Hugo image, version from .env)
 
 - Run "hugo server"
 
@@ -37,13 +37,13 @@ git submodule update --init --recursive
 - Build site
 
   ```sh
-  docker compose run --rm hugo ""
+  docker compose run --rm hugo build
   ```
 
 - Build site with flags
 
   ```sh
-  docker compose run --rm hugo --gc --minify --cleanDestinationDir
+  docker compose run --rm hugo build --gc --minify --cleanDestinationDir
   ```
 
 - Run a command of Hugo

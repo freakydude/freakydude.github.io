@@ -1,13 +1,12 @@
 services:
   hugo:
     container_name: hugo
-    # image: "peaceiris/hugo:v${HUGO_VERSION}"
-    # image: peaceiris/hugo:v${HUGO_VERSION}-mod   # Hugo Modules
-    image: peaceiris/hugo:v${HUGO_VERSION}-full  # Hugo Modules and Node.js
+    # Official Hugo image (extended, with Dart Sass); version pinned in .env
+    image: ghcr.io/gohugoio/hugo:v${HUGO_VERSION}
     ports:
       - 1313:1313
     volumes:
-      - ${PWD}:/src
+      - ${PWD}:/project
     command:
       - server
       - --bind=0.0.0.0

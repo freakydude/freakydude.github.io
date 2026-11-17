@@ -1,6 +1,7 @@
 ---
 title: "Install and Update Windows Applications with WinGet 1.0"
 date: 2021-06-01
+lastmod: 2026-11-17
 description: A short intro to the finally released WinGet 1.0, the native Microsoft package manager to install, uninstall, and update most of your daily used applications on Windows.
 draft: false
 tags:
@@ -13,21 +14,23 @@ This week, Microsoft released its first native package manager for Windows 10. I
 
 Now you will say that's old hat, because [Chocolatey](https://chocolatey.org/) already exists. You are right, and at the moment it's even more advanced.
 
-Anyway, [WinGet](https://github.com/microsoft/winget-cli) is officially supported and developed under the guidance of Microsoft, and it will be integrated into future Windows releases. So for me, that's the way to go.
+Anyway, [WinGet](https://github.com/microsoft/winget-cli) is officially supported and developed under the guidance of Microsoft, and it is now part of Windows itself. So for me, that's the way to go.
+
+> **Update (November 2026):** WinGet is now included in Windows 11 and current Windows 10 as part of the App Installer, so the preview-period instructions for installing it manually are mostly obsolete. The requirements and the install sections are updated accordingly.
 
 ## Requirements
 
-The client requires Windows 10 1809 (build 17763) or later at this time.
+The client requires Windows 10 1809 (build 17763), Windows 11, Windows Server 2025, or later.
 
 ## Install WinGet
 
 ### Automatically with the Microsoft Store
 
-The client is distributed within the [App Installer](https://apps.microsoft.com/detail/9nblggh4nns1) package. While this package is pre-installed on Windows, the client will not be made generally available during the Preview period.
+The client is distributed within the [App Installer](https://apps.microsoft.com/detail/9nblggh4nns1) package. On Windows 11 and current Windows 10, App Installer is a system component that is delivered and updated by the Microsoft Store, so WinGet is usually already there. If `winget` is not found right after your first login, give Windows a moment to register it, or install or update App Installer from the Microsoft Store.
 
 ### Manually
 
-Until the Preview period is over, the straightforward way is to install it manually. You get the same package from the [WinGet releases page](https://github.com/microsoft/winget-cli/releases). Download and execute the Microsoft.DesptopAppInstaller_xxx.appxbundle. See the official [Readme.md](https://github.com/microsoft/winget-cli/blob/master/README.md) for more information.
+If the Store is not available (e.g. in a sandbox), you can install it manually. You get the same package from the [WinGet releases page](https://github.com/microsoft/winget-cli/releases). Download and execute the Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle. Note that this package does not update itself via the Microsoft Store. See the official [Readme.md](https://github.com/microsoft/winget-cli/blob/master/README.md) for more information.
 
 ## Configure WinGet
 

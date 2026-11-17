@@ -1,0 +1,41 @@
+{{- /* Markdown images: page-bundle raster images are converted to WebP at build time, at most $maxWidth px wide
+     (2x the content width for sharp HiDPI rendering). The original stays in the repo and opens on click.
+     Other images (remote, SVG, GIF, global resources) render unchanged, as in PaperMod's own hook. */ -}}
+{{- $maxWidth := 1440 -}}
+{{- $quality := "q85" -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.String -}}
+{{- $original := "" -}}
+{{- $width := 0 -}}
+{{- $height := 0 -}}
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+    {{- $src = .RelPermalink -}}
+    {{- if and (eq .MediaType.MainType "image") (in (slice "png" "jpeg" "jpg") .MediaType.SubType) -}}
+      {{- $image := . -}}
+      {{- if gt .Width $maxWidth -}}
+        {{- $image = .Resize (printf "%dx webp %s" $maxWidth $quality) -}}
+      {{- else -}}
+        {{- $image = .Process (printf "webp %s" $quality) -}}
+      {{- end -}}
+      {{- $original = .RelPermalink -}}
+      {{- $src = $image.RelPermalink -}}
+      {{- $width = $image.Width -}}
+      {{- $height = $image.Height -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $attributes := merge .Attributes (dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy") -}}
+{{- if $width -}}
+  {{- $attributes = merge $attributes (dict "width" (string $width) "height" (string $height) "decoding" "async") -}}
+{{- end -}}
+{{- with $original }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end -}}
+<img
+  {{- range $k, $v := $attributes -}}
+    {{- if $v -}}
+      {{- printf " %s=%q" $k $v | safeHTMLAttr -}}
+    {{- end -}}
+  {{- end -}}>
+{{- with $original }}</a>{{ end -}}
+{{- /**/ -}}

@@ -3,49 +3,47 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - master  # Set a branch to deploy      
+      - master # Branch to deploy
   pull_request:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true # ${{ !(github.ref_name == 'master' || startsWith(github.ref, 'refs/tags/')) }}  
+  cancel-in-progress: true
+
 env:
-  HUGO_CACHEDIR: /tmp/hugo_cache # <- Define the env variable here, so that Hugo's cache dir is now predictible in your workflow and doesn't depend on the Hugo's version you're using.
-  
+  HUGO_CACHEDIR: /tmp/hugo_cache # Fixed cache dir, independent of the Hugo version
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      # The theme comes from the submodule commit recorded in this repo; Dependabot proposes updates as PRs.
+      - uses: actions/checkout@v7
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0 # Full history for .GitInfo and .Lastmod
 
-      - name: Get Theme
-        run: git submodule update --init --recursive
-      - name: Update theme to Latest commit
-        run: git submodule update --remote --merge          
-
-      - name: Read .env
+      # The Hugo version is pinned in one place: .env (also used by docker-compose.yml).
+      - name: Read Hugo version from .env
         id: hugo-version
         run: |
           . ./.env
-          echo "HUGO_VERSION=${HUGO_VERSION}" >> "${GITHUB_OUTPUT}"          
+          echo "HUGO_VERSION=${HUGO_VERSION}" >> "${GITHUB_OUTPUT}"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          # hugo-version: '${{ steps.hugo-version.outputs.HUGO_VERSION }}'          
-          hugo-version: 'latest'
+          hugo-version: ${{ steps.hugo-version.outputs.HUGO_VERSION }}
           extended: true
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
-          path: ${{ env.HUGO_CACHEDIR }} # <- Use the same env variable just right here
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          path: |
+            ${{ env.HUGO_CACHEDIR }}
+            resources/_gen
+          key: ${{ runner.os }}-hugo-${{ steps.hugo-version.outputs.HUGO_VERSION }}-${{ hashFiles('content/**/*.png', 'content/**/*.jpg', 'layouts/_markup/**') }}
           restore-keys: |
-            ${{ runner.os }}-hugomod-          
+            ${{ runner.os }}-hugo-${{ steps.hugo-version.outputs.HUGO_VERSION }}-
 
       - name: Build
         run: hugo --minify

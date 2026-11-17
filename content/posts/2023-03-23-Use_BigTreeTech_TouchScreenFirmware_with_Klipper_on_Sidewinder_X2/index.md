@@ -1,6 +1,7 @@
 ---
 title: Use Your BigTreeTech TouchScreen with Klipper on the Sidewinder X2
 date: 2023-04-21T00:00:00+01:00
+lastmod: 2026-11-17
 description: How to make the integrated BigTreeTech TFT touchscreen of the Artillery Sidewinder X2 work with Klipper and Mainsail, using a Raspberry Pi or CB1, a level shifter, and a serial bridge.
 draft: false
 tags:
@@ -29,6 +30,8 @@ I made the integrated display (and potentially any [supported BigTreeTech TFT](h
 
 ![Main screen of the BigTreeTech touchscreen running with Klipper](images/klipper-btt-mainscreen.png "Mainscreen") ![Print progress screen of the touchscreen](images/klipper-btt-printprogress.png "Progress") ![About screen of the touchscreen](images/klipper-btt-about.png "About")
 
+> **Update (November 2026):** The BigTreeTech issue about the GD32F305 TFT is closed now, and the project has an additional macro file for a status LED. But the official firmware release Vx.x.28 is reported not to flash on the Sidewinder X2 screen, so check the requirements section.
+
 > **Caution:** As always with my other posts and projects, I am not a company. I do this in my spare time, mostly because I am really excited to make these things work and to improve them. I tested all of this only with my own printer and the setup around it. I did my best to make it all work without problems. However, **there is no warranty. Be careful, watch your printer, and double-check things. Use it as it is. I assume no liability for damages or consequences of any kind.**
 
 ## Requirements
@@ -38,7 +41,7 @@ I made the integrated display (and potentially any [supported BigTreeTech TFT](h
 - A BigTreeTech TFT in touch mode (I used the BTT TFT28 with the GD32F305 chipset in my Artillery Sidewinder X2)
   - Most things should work with the official Artillery firmware.
   - To get all the features, flash the open source [TouchScreenFirmware](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware#installation).
-  - It is not merged yet, but there is a version for the GD32F305 TFT controller. See [this issue](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware/issues/2391) until it is in the mainline. Thanks for all the work, guys!
+  - Support for the GD32F305 TFT controller was requested in [this issue](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware/issues/2391), which was closed as completed in February 2024. The repository contains the Artillery TFT28 V3.0.5 (GD32F305) bootloader, but a user [reports](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware/issues/3029) that the release Vx.x.28 does not flash on a Sidewinder X2 with a GD32F305 TFT28 (modified versions work). I could not verify the current state myself, so check that issue before you flash. Thanks for all the work, guys!
 
 So, let's start hacking and improving your printer.
 
@@ -72,7 +75,7 @@ As you can see in the schematic above, your touchscreen and the BigTreeTech firm
 
 Prepare your Klipper and Mainsail configs as [described in the project readme](https://github.com/freakydude/klipper-serial-btt#prepare-klippermainsail).
 
-To keep the overview, I have split the macros into four files (at the time of writing).
+To keep the overview, I have split the macros into several files: the example file below, and four files in the `fd-macros` folder of the project.
 
 #### fd-macros-example.cfg
 
@@ -102,6 +105,10 @@ If there are problems with it, let's discuss the issue and create a pull request
 Similar to `mainsail-support.cfg`, this file contains all the "internal" macros to support the current BTT touchscreen features. Mostly, this is a subset of the Marlin G-codes. It also sends some information to the display, so it communicates in both directions. I only implemented what I needed and tested the features, and some things don't fit between Klipper and Marlin. I think it is a good start.
 
 As with the file above, use the macros as they are. If there are problems with them, let's discuss the issue and create a pull request.
+
+#### fd-macros/status-led-support.cfg
+
+This file visualizes some printer states with a Neopixel or Dotstar LED, for example the extruder LED of the Sidewinder X2. It is optional, and it is ignored unless your `printer.cfg` has a `[neopixel statusled]` or `[dotstar statusled]` section. The [project readme](https://github.com/freakydude/klipper-serial-btt#optional-support-of-a-status-led) has an example section for the Sidewinder X2.
 
 ### Set up your slicer
 
