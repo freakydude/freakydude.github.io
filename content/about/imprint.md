@@ -1,28 +1,27 @@
 ---
 title: "Imprint"
 date: 2020-04-18
+lastmod: 2026-11-17
 author: freakyDude
 type: about
 categories:
   - about
 ---
 
-## Information according to § 5 TMG
+## Information according to § 5 DDG
 
-Frank Roth
-
-Badstr. 40a
-90762 Fuerth
+Frank Roth\
+Badstr. 40a\
+90762 Fürth\
 Germany
 
 ## Contact
 
-Phone: 004915205448415
 E-mail: <developer@freakydu.de>
 
-## Editorially responsible
+## Responsible for content according to § 18 (2) MStV
 
-Frank Roth
-Badstr. 40a
-90762 Fuerth
-E-Mail: <developer@freakydu.de>
+Frank Roth\
+Badstr. 40a\
+90762 Fürth\
+Germany
