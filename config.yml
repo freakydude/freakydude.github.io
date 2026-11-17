@@ -2,10 +2,6 @@ baseURL: https://blog.freakydu.de/
 locale: en-us
 title: freakyDude's Blog
 
-# Allow HTML content files (content/about/privacy_policy.html); Org stays blocked as in Hugo's default.
-security:
-  allowContent: ['! ^text/org$']
-
 # pagination:
 #   disableAliases: false
 #   pagerSize: 10
