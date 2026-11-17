@@ -18,7 +18,7 @@ categories:
 
 I have been working on a touch screen for my printers for a while now, and it has reached the point where I want you to try it. It is called Sailhand, it is open source, and it is a small native app for the display on your Klipper printer.
 
-I started it because I wanted one screen that handles everyday printing and also knows about the multi-material and tool changer setups I run. Sailhand runs on the printer host (a Raspberry Pi, a BTT CB1/CB2 and similar), starts fullscreen at boot and talks to [Klipper](https://www.klipper3d.org/) through [Moonraker](https://moonraker.readthedocs.io/). It is written in Rust with [Slint](https://slint.dev/), so there is no browser and no desktop environment involved.
+I started it because I wanted one screen that handles everyday printing and also knows about the multi-material and tool changer setups I run. Sailhand runs on the printer host (a Raspberry Pi, a BTT CB1/CB2 and similar), starts fullscreen at boot and talks to [Klipper](https://www.klipper3d.org/) through [Moonraker](https://moonraker.readthedocs.io/). It is written in Rust with [Slint](https://slint.dev/), so there is no browser and no desktop environment involved. The same app also runs natively on Android, so a phone or tablet works as a printer display as well.
 
 ![Sailhand print page with Happy Hare and Spoolman](images/print.png)
 
@@ -60,7 +60,8 @@ A few more things I like:
 - **Native and light.** It starts fullscreen at boot via cage, a small Wayland kiosk, and needs no browser.
 - **Updates like Mainsail and Fluidd.** New versions show up in Moonraker's update manager.
 - **No cloud, no telemetry.** Sailhand only talks to your Moonraker.
-- **It runs elsewhere too.** You can use it on an Android phone or tablet as a touch screen near the printer, or as a window on a Linux or Windows desktop.
+- **Native Android app.** Sailhand also runs as a real native app on Android phones and tablets, not as a web page. Put an old tablet next to the printer and use it as a touch screen, or control the printer from your phone. It talks to the same Moonraker, so you need no extra setup on the printer.
+- **Desktop too.** You can also run it as a window on a Linux or Windows desktop.
 - **Open source.** It is licensed under GPL-3.0-or-later, and use is free for everyone.
 
 ## Requirements
