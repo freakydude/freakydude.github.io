@@ -47,23 +47,15 @@ The legal basis for loading the comment section is Art. 6 (1) (f) GDPR; my legit
 
 More information: <https://github.com/utterance/utterances> and the GitHub privacy statement linked above.
 
-### 5. Ko-fi button
+### 5. Links to other websites
 
-Some posts show a Ko-fi button whose image is loaded from the servers of Ko-fi Labs Limited, Suite 501, The Nexus Building, Broadway, Letchworth Garden City, Hertfordshire, United Kingdom. When the image loads, your IP address and the address of the page you are viewing are transmitted to Ko-fi. The European Commission has issued an adequacy decision for the United Kingdom.
+The blog contains plain links to other websites, for example to GitHub, Discord, YouTube, Buy Me a Coffee, Ko-fi (including the Ko-fi button below each post, whose image is served from this site), and the share buttons below each post. No data is transmitted to these services until you click such a link. After that, the privacy policy of the respective provider applies.
 
-The legal basis is Art. 6 (1) (f) GDPR. My legitimate interest lies in offering a simple way to support this blog.
-
-More information: <https://more.ko-fi.com/privacy>
-
-### 6. Links to other websites
-
-The blog contains plain links to other websites, for example to GitHub, Discord, YouTube, Buy Me a Coffee, Ko-fi, and the share buttons below each post. No data is transmitted to these services until you click such a link. After that, the privacy policy of the respective provider applies.
-
-### 7. Contact by email
+### 6. Contact by email
 
 If you contact me by email, I process your email address and the content of your message to answer your request. The legal basis is Art. 6 (1) (f) GDPR, or Art. 6 (1) (b) GDPR if your request relates to a contract. I delete the data once your request has been dealt with, unless statutory retention obligations apply.
 
-### 8. Your rights
+### 7. Your rights
 
 Under the GDPR you have the right
 
@@ -80,6 +72,6 @@ To exercise these rights, an informal email to the address above is enough.
 
 You also have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR). The authority responsible for me is the Bavarian State Office for Data Protection Supervision (Bayerisches Landesamt für Datenschutzaufsicht), Promenade 18, 91522 Ansbach, Germany, <https://www.lda.bayern.de>.
 
-### 9. Changes to this privacy policy
+### 8. Changes to this privacy policy
 
 I update this privacy policy when the blog or the services it uses change. The current version is always available on this page.

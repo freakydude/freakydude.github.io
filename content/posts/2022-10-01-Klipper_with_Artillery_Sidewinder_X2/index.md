@@ -1,7 +1,7 @@
 ---
-title: Klipper with Artillery Sidewinder X2
+title: Replace Marlin with Klipper on the Artillery Sidewinder X2
 date: 2022-10-01
-description: Shows a way to use Klipper as a replacement for the Marlin firmware with your Sidewinder X2
+description: Shows an easy way to replace the Marlin firmware of the Artillery Sidewinder X2 with Klipper, using a Raspberry Pi running MainsailOS.
 draft: false
 tags:
   - artillery
@@ -14,98 +14,100 @@ categories:
   - maker
 ---
 
-The Sidewinder X2 comes with the [Marlin](https://marlinfw.org/) 2.x firmware, installed on its "Artillery_Ruby" Mainboard. This article shows you _one easy_ way how you can replace [Marlin](https://marlinfw.org/) by [Klipper](https://www.klipper3d.org/) as an alternative Firmware on your Sidewinder X2.
-Be aware, that your installed touch display, usb and sd card slot is unusable with klipper, because the way they are work and connected is not compatible to klipper. On my printer, I decided to disconnect and replace them by dummy prints, but you don't have to.
+The Sidewinder X2 comes with the [Marlin](https://marlinfw.org/) 2.x firmware, installed on its "Artillery_Ruby" mainboard. This article shows you _one easy_ way to replace Marlin with [Klipper](https://www.klipper3d.org/) as an alternative firmware on your Sidewinder X2.
 
-### Caution
+Be aware that the installed touch display, the USB port, and the SD card slot are unusable with Klipper, because the way they work and are connected is not compatible with it. On my printer, I decided to disconnect them and replace them with dummy prints, but you don't have to.
 
-**Do it only if you feel experienced enough. Be aware that you do it at your own risk and that you will probably lose the Artillery's warranty. I am not responsible for damages of any kind.**
+> **Caution:** Do this only if you feel experienced enough. You do it at your own risk, and you will probably lose the Artillery warranty. I am not responsible for damages of any kind.
 
-## Preconditions
+## Requirements
 
-- An Artillery Sidewinder X2, unmodified hardware and with Artillery Ruby V1.2 mainboard
-- A Raspberry PI (Zero W, 3B+, 4) or similar compatible boards with SD card, power supply, usb connection to your printer
-- A working pc to flash the PI, and as a remote SSH console to it
-- The will to open your printer (and potential loss of warranty)
-- Some experience with Linux and bash console
+- An Artillery Sidewinder X2 with unmodified hardware and an Artillery Ruby V1.2 mainboard
+- A Raspberry Pi (Zero W, 3B+, 4) or a similar compatible board with SD card, power supply, and USB connection to your printer
+- A working PC to flash the Pi and to use as a remote SSH console
+- The will to open your printer (and the potential loss of warranty)
+- Some experience with Linux and the bash console
 
-## Install MainsailOS and build Klipper firmware
+## Install MainsailOS
 
-1. Basic install and configure Mainsail
+- Flash an SD card for your Raspberry Pi with MainsailOS. It's a prepared Raspberry Pi OS Lite with a modern software stack to control your printer. The frontend in this case is [Mainsail](https://docs.mainsail.xyz/) by default. It's similar to [OctoPrint](https://octoprint.org/), but more modern and made for [Klipper](https://www.klipper3d.org/) driven printers only.
+- Follow the [official MainsailOS installation guide](https://docs.mainsail.xyz/setup/mainsailos/). There is also a simple article on [All3DP](https://all3dp.com/2/mainsailos-simply-explained/).
+- On the documentation page [Mainsail configuration](https://docs.mainsail.xyz/configuration/mainsail-cfg/), you need a basic [printer.cfg](https://github.com/Klipper3d/klipper/blob/master/config/printer-artillery-sidewinder-x2-2022.cfg) that tells Klipper all about your connected printer hardware. In Marlin, this configuration lives in _Configuration.h_ and _Configuration_adv.h_ and has to be recompiled on every change. In Klipper, it is just a config file, so you don't have to recompile the whole firmware on changes. There are a lot of example configs in the [Klipper repository](https://github.com/Klipper3d/klipper/tree/master/config), but not yet for the Artillery Sidewinder X2.
+- But today is your lucky day. I created a printer.cfg for the Sidewinder X2. Download it here: [printer.cfg](https://github.com/Klipper3d/klipper/blob/master/config/printer-artillery-sidewinder-x2-2022.cfg).
 
-   - Flash a SD card for your Raspberry with MainsailOS. It's a prepared Raspberry PI OS Lite a modern software stack to control your printer. The frontend in this case is by default [Mainsail](https://docs.mainsail.xyz/). It's similar to [OctoPrint](https://octoprint.org/) but more modern and to use with [Klipper](https://www.klipper3d.org/) driven printers only.
-   - Follow the [official MainsailOS installation guide](https://docs.mainsail.xyz/setup/mainsail-os). There is also simple article on [All3DP](https://all3dp.com/2/mainsailos-simply-explained/).
-   - On the documentation page [Klipper setup](https://docs.mainsail.xyz/setup/mainsailos/klipper-setup) you need a basic [printer.cfg](https://github.com/Klipper3d/klipper/blob/master/config/printer-artillery-sidewinder-x2-2022.cfg) that tells Klipper all about your connected printer hardware. In Marlin, this configurations are in _Configuration.h_ and _Configuration_adv.h_ and have to be recompiled on any change. In Klipper, this is just a config file and one of the benefits is, you don't have to recompile the whole firmware on changes. There are a lot of example configs the the [klipper repository](https://github.com/Klipper3d/klipper/tree/master/config) but not yet for the Artillery Sidewinder X2.
-   - But you have a lucky day. I created a printer.cfg for the Sidewinder X2. Download it here: [printer.cfg](https://github.com/Klipper3d/klipper/blob/master/config/printer-artillery-sidewinder-x2-2022.cfg).
-     _Meanwhile, my Klipper [pull request](https://github.com/Klipper3d/klipper/pull/5810) got merged into the official Klipper examples. So the Sidewinder X2 example file is [here](https://github.com/Klipper3d/klipper/blob/master/config/printer-artillery-sidewinder-x2-2022.cfg)._
+  _Meanwhile, my Klipper [pull request](https://github.com/Klipper3d/klipper/pull/5810) got merged into the official Klipper examples. So the Sidewinder X2 example file is [in the Klipper repository](https://github.com/Klipper3d/klipper/blob/master/config/printer-artillery-sidewinder-x2-2022.cfg)._
 
-2. Flash klipper to your printer mainboard
+## Flash Klipper to the printer mainboard
 
-   - As mentioned under [caution](#caution) - be sure, you know what you are doing. I never tried to switch back to Marlin. Normally, it should be no problem, but I never tried till the time of writing this (comments are welcome).
-   - You have to bridge two pins, to enable the "flash mode" of your mainboard. Open your printer (screws on the bottom). Connect the pins _BOOT0_ and _+3.3V_ with a jumper or a breadboard cable. (You have to remove it after flashing!).
-     ![Bridge the marked pins](images/artillery_ruby_flash_photo.jpg "Bridge the marked pins while flashing")
-   - Connect your Raspberry PI via USB cable to your Artillery Sidewinder X2. Then power on your printer and your Raspberry. Connect to it by using SSH or connect keyboard and monitor to it. Login to console by default with user: pi, password: raspberry.
-   - Before flash, you have to configure and build your firmware for your printer once. Open your PI console and type
+- As mentioned in the caution above, be sure you know what you are doing. I never tried to switch back to Marlin. Normally, it should be no problem, but I have not tried it at the time of writing (comments are welcome).
+- You have to bridge two pins to enable the "flash mode" of your mainboard. Open your printer (screws on the bottom). Connect the pins _BOOT0_ and _+3.3V_ with a jumper or a breadboard cable. (You have to remove it after flashing!)
 
-     ```bash
-     cd ~/klipper/
-     make menuconfig
-     ```
+  ![Photo of the Artillery Ruby mainboard with the BOOT0 and +3.3V pins marked](images/artillery_ruby_flash_photo.jpg "Bridge the marked pins while flashing")
 
-     In the opened configuration-menu change only the following:
+- Connect your Raspberry Pi to your Artillery Sidewinder X2 with a USB cable. Then power on your printer and your Raspberry Pi. Connect to the Pi using SSH, or connect a keyboard and monitor to it. By default, you log in to the console with user `pi` and password `raspberry`.
+- Before flashing, you have to configure and build the firmware for your printer once. Open the console of your Pi and type
 
-     - Set _Micro-controller Architecture_ to _STMicroelectronics STM32_
-     - Set _Processor model_ to _STM32F401_
-     - Set _Bootloader offset_ to _No bootloader_
-     - Quit (Q) and Save (Y)
-       ![make menuconfig sceenshot](images/make_menuconfig.png "make menuconfig sceenshot")
+  ```bash
+  cd ~/klipper/
+  make menuconfig
+  ```
 
-   - Build the firmware with
+  In the configuration menu, change only the following:
 
-     ```bash
-     make
-     ```
+  - Set _Micro-controller Architecture_ to _STMicroelectronics STM32_
+  - Set _Processor model_ to _STM32F401_
+  - Set _Bootloader offset_ to _No bootloader_
+  - Quit (Q) and save (Y)
 
-   - Flash the build firmware with
+  ![Screenshot of the make menuconfig menu with the settings above](images/make_menuconfig.png "make menuconfig screenshot")
 
-     ```bash
-     make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f401xc_4F006F000351383532393535-if00
-     ```
+- Build the firmware with
 
-     In your case maybe the device has another id/path. Adapt the command in that case. **As mentioned under [caution](#caution) - be sure, you know what you are doing.**
+  ```bash
+  make
+  ```
 
-   - Read more details in official Klipper documentation: [Building and flashing the micro-controller](https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller)
-   - Remove the _flash mode_ jumper you set above
+- Flash the built firmware with
 
-3. Reboot your Raspberry, follow the mainsail and klipper configuration checks.
-   - Follow the [Klipper config checks](https://www.klipper3d.org/Config_checks.html). Ignore OctoPrint, because your setup is with Mainsail instead.
-   - Especially make sure some values are adapted and calibrated for your individual printer
-     - Especially the _z-offset_
-     - And the extruder rotation_distance (**Measure it without an installed Nozzle!**)
-   - Calibrate PID values for heat-bed and extruder nozzle
-   - Don't forget to setup/adapt your slicers begin-/end g-code
-4. Your done and ready to get in touch with Klipper and it's endless possibilities. It takes a time to understand the context.
+  ```bash
+  make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f401xc_4F006F000351383532393535-if00
+  ```
 
-## Preview to future posts
+  In your case, the device may have another ID or path. Adapt the command if so. **As mentioned in the caution above, be sure you know what you are doing.**
 
-If I got some time, be excited about the topics
+- Read more details in the official Klipper documentation: [Building and flashing the micro-controller](https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller)
+- Remove the _flash mode_ jumper you set above.
 
-- A useful set of G-code macros (filament runout, pause resume, start-stop print). Post is online: [Must-have Mainsail, Klipper and Cura slicer configuration with Artillery Sidewinder X2](../2022-10-18-klipper_basic_macros_sidewinder_x2/)
-- Reenable the stock filament runout sensor, Post is online: [Reenable and configure the filament-runout sensor with Klipper](../2022-12-23-reenable_sidewinder_x2_runout_sensor/)
-- Install an [ADXL345](https://www.analog.com/en/products/adxl345.html#product-evaluationkit) acceleration sensor and calibrate klipper [Resonance Compensation](https://www.klipper3d.org/Resonance_Compensation.html)
-- Remove and replace USB, SD card and the useless touch display
+## Check and calibrate your setup
+
+Reboot your Raspberry Pi and follow the Mainsail and Klipper configuration checks.
+
+- Follow the [Klipper config checks](https://www.klipper3d.org/Config_checks.html). Ignore OctoPrint, because your setup uses Mainsail instead.
+- Make sure some values are adapted and calibrated for your individual printer:
+  - Especially the _z-offset_
+  - And the extruder rotation_distance (**Measure it without an installed nozzle!**)
+- Calibrate the PID values for the heat bed and the extruder nozzle.
+- Don't forget to set up or adapt the start and end G-code of your slicer.
+
+## Next steps
+
+These follow-up posts build on this setup:
+
+- A useful set of G-code macros (filament runout, pause and resume, start and stop print): [Must-Have Mainsail, Klipper, and Cura Configuration for the Artillery Sidewinder X2](../2022-10-18-klipper_basic_macros_sidewinder_x2/)
+- Re-enabling the stock filament runout sensor: [Re-enable the Filament Runout Sensor of the Artillery Sidewinder X2](../2022-12-23-reenable_sidewinder_x2_runout_sensor/)
+- Installing an [ADXL345](https://www.analog.com/en/products/adxl345.html#product-evaluationkit) acceleration sensor and calibrating Klipper [Resonance Compensation](https://www.klipper3d.org/Resonance_Compensation.html): [Install the ADXL345 and Calibrate Input Shaping on the Artillery Sidewinder X2 and Genius Pro](../2023-03-22-install_adxl345_calibrate_inputshaper_sidwinder_x2/)
+- Removing and replacing the USB port, the SD card slot, and the useless touch display
 
 ## Conclusion
 
-Hope I could help you with the painful start, doing the initial basic configuration for your Artillery Sidewinder X2.
+You are done and ready to get in touch with Klipper and its endless possibilities. It takes a while to understand the context. I hope I could help you with the painful start and the initial basic configuration of your Artillery Sidewinder X2.
 
-For further steps and more details it is always a very good idea to walk through the very good official documentations
+## Further links
 
-- [Klipper Documentation](https://www.klipper3d.org/)
-- [Mainsail Documentation](https://docs.mainsail.xyz/)
-- [Moonraker Documentation](https://moonraker.readthedocs.io/)
+For further steps and more details, it is always a very good idea to walk through the official documentation:
 
-Please leave a comment if there is something wrong or missing. Or if you have any questions.
-Have fun!
+- [Klipper documentation](https://www.klipper3d.org/)
+- [Mainsail documentation](https://docs.mainsail.xyz/)
+- [Moonraker documentation](https://moonraker.readthedocs.io/)
 
-If you enjoyed this article and would like to support my work, feel free to buy me a coffee! Your support helps me continue creating content. Thank you! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+{{< support >}}

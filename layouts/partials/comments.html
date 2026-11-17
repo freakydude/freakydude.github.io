@@ -1,6 +1,27 @@
-{{- /* Comments area start */ -}} {{- /* to add comments read =>
-https://gohugo.io/content-management/comments/ */ -}}
-<script src="https://utteranc.es/client.js" repo="freakydude/freakydude.github.io" issue-term="pathname"
-        label="utterance" theme="preferred-color-scheme" crossorigin="anonymous" async>
-        </script>
-{{- /* Comments area end */ -}}
+{{- /* Comments with utterances (https://utteranc.es): one GitHub issue per page path, label "utterance".
+     The widget follows the site's light/dark toggle (PaperMod sets html[data-theme]) instead of only the OS setting. */ -}}
+<div id="comments"></div>
+<script>
+    (function () {
+        const origin = "https://utteranc.es";
+        const currentTheme = () =>
+            document.documentElement.dataset.theme === "dark" ? "github-dark" : "github-light";
+
+        const client = document.createElement("script");
+        client.src = origin + "/client.js";
+        client.async = true;
+        client.crossOrigin = "anonymous";
+        client.setAttribute("repo", "freakydude/freakydude.github.io");
+        client.setAttribute("issue-term", "pathname");
+        client.setAttribute("label", "utterance");
+        client.setAttribute("theme", currentTheme());
+        document.getElementById("comments").appendChild(client);
+
+        const toggle = document.getElementById("theme-toggle");
+        if (!toggle) return;
+        toggle.addEventListener("click", () => {
+            const frame = document.querySelector(".utterances-frame");
+            if (frame) frame.contentWindow.postMessage({ type: "set-theme", theme: currentTheme() }, origin);
+        });
+    })();
+</script>

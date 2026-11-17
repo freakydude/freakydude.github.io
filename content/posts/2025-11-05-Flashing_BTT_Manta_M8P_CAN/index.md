@@ -1,11 +1,11 @@
 ---
+title: Flash the BTT Manta M8P and EBB42 with Klipper Using Katapult
 date: 2025-11-06T18:00:00+01:00
-title: Flashing BTT Manta M8P CAN and EBB42 with Klipper using Katapult
-description: A quick guide on how to flash the BTT Manta M8P CAN and EBB42 board with Klipper firmware using Katapult.
+description: A quick guide to flashing Klipper with Katapult onto the BTT Manta M8P and EBB42 boards over CAN bus (Sidewinder X2), plus the USB variant for the Manta M8P v2.0 and EBB SB2209 (Voron 2.4).
 draft: false
 tags:
   - 3D printer
-  - klipper  
+  - klipper
   - bigtreetech
   - m8p
   - ebb42
@@ -18,32 +18,30 @@ categories:
   - developer
 ---
 
-## About
+This is a quick and dirty guide, mostly for my own purposes, on how to flash the BTT Manta M8P CAN and the EBB42 board with Klipper using Katapult. The process should work for other BTT Manta M8P and EBB versions too, but you have to adjust the configuration accordingly.
 
-For my own purposes, this is a quick and dirty guide on how to flash the BTT Manta M8P CAN and the EBB42 board with Klipper firmware using Katapult. This process should work for other BTT Manta M8P and EBB versions too, but you have to adjust the configuration accordingly.
+The BTT Manta M8P CAN board can be flashed and used with Klipper via two different methods: a USB connection or CAN bus. If you are using toolhead boards that support CAN bus, like the EBB36 or EBB42, you have to use CAN bus for the communication between the mainboard and the toolhead board. If you are using toolhead boards that support a USB connection (like the BTT SB2209 USB or the EBB36/42 v2.0), use USB instead.
 
-## USB or CAN Bus
+In general, CAN bus is the preferred method for communication between multiple boards in a 3D printer, as it provides better reliability and performance than USB.
 
-The BTT Manta M8P CAN board can be flashed and used with Klipper firmware via two different methods: USB connection or CAN Bus. If you are using toolhead boards like the EBB36 or EBB42 that support CAN Bus, it is mandatory to use the CAN Bus method for communication between the mainboard and toolhead boards. If you are using toolhead boards that support USB connection (like the BTT SB2209 USB or the EBB36/42 v2.0), use USB connection instead.
+I cover two setups below: my Artillery Sidewinder X2 with CAN bus, and my Voron 2.4 with USB.
 
-In general, CAN Bus is the preferred method for communication between multiple boards in a 3D printer setup, as it provides better reliability and performance compared to USB connections.
+## Requirements
 
-## Prerequisites
-
-- A working Klipper installation on a host system (Raspberry Pi, etc.). Follow the [Klipper Installation Guide](https://www.klipper3d.org/Installation.html) if you haven't done this yet.
-- Basic knowledge of using the terminal/command line.
-- Installed `dfu-util` on your host system. You can install it via your package manager. For example, on Debian/Ubuntu-based systems, you can run:
+- A working Klipper installation on a host system (Raspberry Pi, etc.). Follow the [Klipper installation guide](https://www.klipper3d.org/Installation.html) if you haven't done this yet.
+- Basic knowledge of using the terminal.
+- `dfu-util` installed on your host system. You can install it via your package manager. For example, on Debian/Ubuntu-based systems, you can run:
 
    ```sh
    sudo apt-get install dfu-util python3-serial
    ```
 
-- A USB cable to connect the BTT Manta M8P board to your host system for flashing Katapult and Klipper firmware.
-- A CAN Bus connection between the BTT Manta M8P board and the BTT EBB42 board for communication.
+- A USB cable to connect the BTT Manta M8P board to your host system for flashing Katapult and Klipper.
+- A CAN bus connection between the BTT Manta M8P board and the BTT EBB42 board for communication (CAN setup only).
 
-### Configured CAN Bus on Host System
+### Configure CAN bus on the host system
 
-There a many ways to setup CAN Bus on your host system. I recommend to use systemd-networkd for this. Here is a quick example:
+There are many ways to set up CAN bus on your host system. I recommend using systemd-networkd for this. Here is a quick example.
 
 Add the following file `/etc/systemd/network/80-can.link`:
 
@@ -55,7 +53,7 @@ Type=can
 TransmitQueueLength=128
 ```
 
-and the following file `/etc/systemd/network/80-can.network`:
+Then add the following file `/etc/systemd/network/80-can.network`:
 
 ```ini
 [Match]
@@ -72,16 +70,16 @@ sudo systemctl daemon-reload
 sudo systemctl restart systemd-networkd
 ```
 
-## My Artillery Sidewinder X2 Setup
+## Artillery Sidewinder X2 setup (CAN bus)
 
-- I replaced the original Artillery Mainboard with a BTT Manta M8P v1.1 board running in CAN Mode.
-- I replaced the original Artillery Toolhead board with a BTT EBB42 v1.2 board running in CAN Mode.
+- I replaced the original Artillery mainboard with a BTT Manta M8P v1.1 running in CAN mode.
+- I replaced the original Artillery toolhead board with a BTT EBB42 v1.2 running in CAN mode.
 
-### Flashing the BTT Manta M8P v1.1 in CAN Mode with Katapult
+### Flash the BTT Manta M8P v1.1 in CAN mode
 
-#### Flash katapult to the BTT Manta M8P v1.1
+#### Flash Katapult to the Manta M8P
 
-This step is only necessary if you have a brand new BTT Manta M8P board without Katapult installed. If you already have Katapult installed, you can skip this step.
+This step is only necessary if you have a brand new BTT Manta M8P board without Katapult installed. If Katapult is already installed, you can skip this step.
 
 1. Download [Katapult](https://github.com/Arksine/katapult).
 
@@ -97,9 +95,9 @@ This step is only necessary if you have a brand new BTT Manta M8P board without 
    make menuconfig
    ```
 
-   ![Setup Katapult for Manta M8P v1.1](images/config-katapult-m8p-v11.png "Setup Katapult for Manta M8P v1.1")
+   ![Katapult menuconfig for the Manta M8P v1.1](images/config-katapult-m8p-v11.png "Setup Katapult for Manta M8P v1.1")
 
-   Be aware that I have also enabled the PC3 GPIO Pin. If you have connected a device like the BTT Relay V1.2 to the PS-ON GPIO Pin the power supply is switched via this pin.
+   Be aware that I have also enabled the PC3 GPIO pin. If you have connected a device like the BTT Relay V1.2 to the PS-ON GPIO pin, the power supply is switched via this pin.
 
    Save and exit with `Quit` and `Yes`.
 3. Build the firmware-bootloader package:
@@ -108,17 +106,17 @@ This step is only necessary if you have a brand new BTT Manta M8P board without 
    make -j
    ```
 
-4. Flash Katapult
+4. Flash Katapult:
 
    ```sh
    dfu-util -R -a 0 -s 0x08000000:mass-erase:force -D ~/katapult/out/katapult.bin
    ```
 
-5. Reset the board (or power off/on). Katapult should now be installed, the status LED will blink.
+5. Reset the board (or power it off and on). Katapult should now be installed, and the status LED will blink.
 
-#### Flash Klipper to the BTT Manta M8P v1.1 in CAN Mode
+#### Flash Klipper to the Manta M8P
 
-1. Configure Klipper Firmware for the BTT Manta M8P v1.1 CAN:
+1. Configure the Klipper firmware for the BTT Manta M8P v1.1 CAN:
 
    ```sh
    cd ~
@@ -126,9 +124,9 @@ This step is only necessary if you have a brand new BTT Manta M8P board without 
    make menuconfig
    ```
 
-   ![Setup Klipper for Manta M8P v1.1 CAN](images/config-can-m8p-v11.png "Setup Klipper for Manta M8P v1.1 CAN")
+   ![Klipper menuconfig for the Manta M8P v1.1 CAN](images/config-can-m8p-v11.png "Setup Klipper for Manta M8P v1.1 CAN")
 
-   Be aware that I have also enabled the PC3 GPIO Pin. If you have connected a device like the BTT Relay V1.2 to the PS-ON GPIO Pin the power supply is switched via this pin.
+   Be aware that I have also enabled the PC3 GPIO pin. If you have connected a device like the BTT Relay V1.2 to the PS-ON GPIO pin, the power supply is switched via this pin.
 
    Save and exit with `Quit` and `Yes`.
 2. Build the Klipper firmware:
@@ -137,21 +135,21 @@ This step is only necessary if you have a brand new BTT Manta M8P board without 
    make -j
    ```
 
-3. Stop Klipper service first:
+3. Stop the Klipper service first:
 
    ```sh
    sudo service klipper stop
    ```
 
-4. Flash Klipper
-   1. Depending if Klipper is already running (update workflow) on the board, you need to switch into bootloader mode first. Run the following command to do so:
+4. Flash Klipper.
+   1. Depending on whether Klipper is already running on the board (update workflow), you need to switch into bootloader mode first. Run the following command to do so:
 
       ```sh
       ~/klippy-env/bin/python ~/katapult/scripts/flashtool.py -i can0 -u <CANBUS-UUID> -r
       ```
 
-      Replace `<CANBUS-UUID>` with the actual CANBUS-UUID of your board. (Configured in `printer.cfg` under `[mcu]` section as `canbus_uuid`)
-   2. Now the should get something similar to this:
+      Replace `<CANBUS-UUID>` with the actual CAN bus UUID of your board (configured in `printer.cfg` in the `[mcu]` section as `canbus_uuid`).
+   2. Now you should get something similar to this:
 
       ```sh
       Canbus Bridge detected at /sys/bus/usb/devices/1-1.4
@@ -171,24 +169,24 @@ This step is only necessary if you have a brand new BTT Manta M8P board without 
       make flash FLASH_DEVICE=/dev/ttyACM0
       ```
 
-      This should quit with an `CAN Flash Success` message.
-5. Restart Klipper to apply the changes.
+      This should finish with a `CAN Flash Success` message.
+5. Restart Klipper to apply the changes:
 
    ```sh
    sudo service klipper restart
    ```
 
-### Flashing the BTT EBB42 v1.2 in CAN Mode with Katapult
+### Flash the BTT EBB42 v1.2 in CAN mode
 
-#### Flash katapult to the BTT EBB42 v1.2 CAN
+#### Flash Katapult to the EBB42
 
-This step is only necessary if you have a brand new BTT EBB42 board without Katapult installed. If you already have Katapult installed, you can skip this step.
+This step is only necessary if you have a brand new BTT EBB42 board without Katapult installed. If Katapult is already installed, you can skip this step.
 
-1. Connect your EBB42 via USB and Flash Katapult.
-   1. Power off your printer
-   2. Unplug the CAN Bus cable from the EBB42 board to avoid any power issues.
-   3. Temporarily bridge the 5V Jumper on the EBB42 board to power it via USB.
-   4. Put the board into DFU mode by holding the BOOT button while plugging in the USB cable. Or as an alternative, press and hold the BOOT button, press reset, release reset, then release BOOT.
+1. Connect your EBB42 via USB and prepare it for flashing Katapult.
+   1. Power off your printer.
+   2. Unplug the CAN bus cable from the EBB42 board to avoid any power issues.
+   3. Temporarily bridge the 5V jumper on the EBB42 board to power it via USB.
+   4. Put the board into DFU mode by holding the BOOT button while plugging in the USB cable. Alternatively, press and hold the BOOT button, press reset, release reset, and then release BOOT.
    5. The board should now be in DFU mode and ready to be flashed.
 
 2. If needed, download [Katapult](https://github.com/Arksine/katapult).
@@ -199,14 +197,14 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    cd katapult   
    ```
 
-3. Configure Katapult for the BTT Manta M8P v1.1 CAN:
+3. Configure Katapult for the BTT EBB42 v1.2 CAN:
 
    ```sh
    cd ~/katapult
    make menuconfig
    ```
 
-   ![Setup Katapult for EBB42 v1.2](images/config-katapult-ebb42-v12.png "Setup Katapult for EBB42 v1.2")
+   ![Katapult menuconfig for the EBB42 v1.2](images/config-katapult-ebb42-v12.png "Setup Katapult for EBB42 v1.2")
 
    Save and exit with `Quit` and `Yes`.
 4. Build the firmware-bootloader package:
@@ -223,12 +221,12 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
 
    This should finish with a `File downloaded successfully` message.
 
-6. Remove 5V Power Jumper, remove your usb cable and power off your printer.
-   Add your CAN Bus cable to the EBB42 board, then power on. Katapult should now be installed.
+6. Remove the 5V jumper, unplug your USB cable, and power off your printer.
+   Connect your CAN bus cable to the EBB42 board, then power on. Katapult should now be installed.
 
-#### Flash Klipper to the BTT EBB42 v1.2 CAN
+#### Flash Klipper to the EBB42
 
-1. Configure Klipper Firmware for the BTT EBB42 v1.2 CAN CAN:
+1. Configure the Klipper firmware for the BTT EBB42 v1.2 CAN:
 
    ```sh
    cd ~
@@ -236,7 +234,7 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    make menuconfig
    ```
 
-   ![Setup Klipper for EBB42 v1.2 CAN](images/config-can-ebb42-v12.png "Setup Klipper for EBB42 v1.2 CAN")
+   ![Klipper menuconfig for the EBB42 v1.2 CAN](images/config-can-ebb42-v12.png "Setup Klipper for EBB42 v1.2 CAN")
 
    Save and exit with `Quit` and `Yes`.
 2. Build the Klipper firmware:
@@ -245,13 +243,13 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    make -j
    ```
 
-3. Stop Klipper service first:
+3. Stop the Klipper service first:
 
    ```sh
    sudo service klipper stop
    ```
 
-4. Query the CAN Bus UUID of the EBB42 board:
+4. Query the CAN bus UUID of the EBB42 board:
 
    ```sh
    ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
@@ -259,15 +257,15 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
 
    You should get something like this: `Found canbus_uuid=c239709a91c7, Application: CanBoot`
 
-   Make a note of the `CAN UUID`, it should be the uuid of the your EBB42 board. Note it for the next step.
+   Make a note of the `canbus_uuid`. It should be the UUID of your EBB42 board, and you need it for the next step.
 
-5. Flash Klipper to EBB42
+5. Flash Klipper to the EBB42:
 
    ```sh
    ~/klippy-env/bin/python3 ~/katapult/scripts/flash_can.py -i can0 <CANBUS_UUID> -f ~/klipper/out/klipper.bin -u
    ```
 
-   Replace `<CANBUS-UUID>` with the actual CANBUS-UUID of your board. (Noted from the last step or configured in `printer.cfg` under `[mcu ebb42]` section as `canbus_uuid`)
+   Replace `<CANBUS-UUID>` with the actual CAN bus UUID of your board (noted from the last step, or configured in `printer.cfg` in the `[mcu ebb42]` section as `canbus_uuid`).
 
    This should result in something like this:
 
@@ -286,22 +284,22 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    Programming Complete
    ```
 
-   If you get any errors, and you double checked your CANBUS UUID, try to reset the EBB42 board by power cycling your printer and try again. If this not work, begin again from flashing Katapult to the EBB42 board.
+   If you get any errors and you have double-checked your CAN bus UUID, try to reset the EBB42 board by power cycling your printer, and try again. If this does not work, start over with flashing Katapult to the EBB42 board.
 
-6. Restart Klipper to apply the changes.
+6. Restart Klipper to apply the changes:
 
    ```sh
    sudo service klipper restart
    ```
 
-## My Voron 2.4 Setup
+## Voron 2.4 setup (USB)
 
-- Mainboard: BTT Manta M8P v2.0 (USB Mode)
+- Mainboard: BTT Manta M8P v2.0 (USB mode)
 - Toolhead board: BTT EBB SB2209 v1.10 USB
 
-### Flashing the BTT EBB SB2209 USB
+### Flash the BTT EBB SB2209 USB
 
-1. Configure Klipper Firmware for the BTT EBB SB2209 USB:
+1. Configure the Klipper firmware for the BTT EBB SB2209 USB:
 
    ```sh
    cd ~
@@ -309,7 +307,7 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    make menuconfig
    ```
 
-   ![Setup Klipper for EBB SB2209 USB](images/config-usb-ebb-sb2209-usb-v10.png "Setup Klipper for EBB SB2209 USB")
+   ![Klipper menuconfig for the EBB SB2209 USB](images/config-usb-ebb-sb2209-usb-v10.png "Setup Klipper for EBB SB2209 USB")
 
    Save and exit with `Quit` and `Yes`.
 2. Build the Klipper firmware:
@@ -318,13 +316,13 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    make -j
    ```
 
-3. Stop Klipper service first:
+3. Stop the Klipper service first:
 
    ```sh
    sudo service klipper stop
    ```
 
-4. Flash Klipper
+4. Flash Klipper:
 
    ```sh
    cd ~/klipper
@@ -348,15 +346,15 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    Rebooting device
    ```
 
-5. Restart Klipper to apply the changes.
+5. Restart Klipper to apply the changes:
 
    ```sh
    sudo service klipper restart
    ```
 
-### Flashing the BTT Manta M8P v2.0 in USB Mode
+### Flash the BTT Manta M8P v2.0 in USB mode
 
-1. Configure Klipper Firmware for the BTT Manta M8P v2.0 USB:
+1. Configure the Klipper firmware for the BTT Manta M8P v2.0 USB:
 
    ```sh
    cd ~
@@ -364,9 +362,9 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    make menuconfig
    ```
 
-   ![Setup Klipper for BTT Manta M8P v2.0 USB](images/config-usb-m8p-v20.png "Setup Klipper for BTT Manta M8P v2.0 USB")
+   ![Klipper menuconfig for the Manta M8P v2.0 USB](images/config-usb-m8p-v20.png "Setup Klipper for BTT Manta M8P v2.0 USB")
 
-   Be aware that I have also enabled the PD14 GPIO Pin. If you have connected a device like the BTT Relay V1.2 to the PS-ON GPIO Pin the power supply is switched via this pin.
+   Be aware that I have also enabled the PD14 GPIO pin. If you have connected a device like the BTT Relay V1.2 to the PS-ON GPIO pin, the power supply is switched via this pin.
 
    Save and exit with `Quit` and `Yes`.
 2. Build the Klipper firmware:
@@ -375,15 +373,15 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    make -j
    ```
 
-3. Stop Klipper service first:
+3. Stop the Klipper service first:
 
    ```sh
    sudo service klipper stop
    ```
 
-4. Flash Klipper
+4. Flash Klipper.
 
-   If you doing that initially, you need to put the board into bootloader mode first. To do so, hold the BOOT button while plugging in the USB cable. Or as an alternative, press and hold the BOOT button, press reset, release reset, then release BOOT.
+   If you are doing this for the first time, you need to put the board into bootloader mode first. To do so, hold the BOOT button while plugging in the USB cable. Alternatively, press and hold the BOOT button, press reset, release reset, and then release BOOT.
 
    After that, you can flash the firmware:
 
@@ -391,9 +389,9 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    sudo dfu-util -R -a 0 -s 0x08000000:mass-erase:force -D ~/klipper/out/klipper.bin
    ```
 
-   If this results in an error you probably have Klipper already running on the board.
+   If this results in an error, you probably already have Klipper running on the board.
 
-   In this case, you can use the following command to flash the firmware. In your case the `xxxxxxxxxxx` part of the path may differ, so adjust it accordingly.
+   In this case, you can use the following command to flash the firmware. The `xxxxxxxxxxx` part of the path may differ in your case, so adjust it accordingly.
 
    Determine the correct serial path by listing the devices:
 
@@ -418,25 +416,23 @@ This step is only necessary if you have a brand new BTT EBB42 board without Kata
    ...   
    ```
 
-   Ignore the errors below, you should be good to go.
+   Ignore the errors below it, you should be good to go.
 
-5. Restart Klipper to apply the changes.
+5. Restart Klipper to apply the changes:
 
    ```sh
    sudo service klipper restart
    ```
 
-## Further Links
+## Conclusion
 
-- [Klipper Documentation](https://www.klipper3d.org/)
-- [Klipper Git](https://github.com/Klipper3d/klipper)
-- [Katapult Git](https://github.com/Arksine/katapult)
-- [Dr. Klipper Wiki BTT Manta (CAN-Bridge)](https://drklipper.de/doku.php?id=klipper_faq:flash_guide:stm32h743:btt_manta_m8n_can-bridge)
-- [Dr. Klipper Wiki BTT EBB42 (CAN)](https://drklipper.de/doku.php?id=klipper_faq:flash_guide:stm32g0b1:btt_ebb36_ebb42_can)
+After these steps, your mainboard and toolhead board run current Klipper firmware, either over CAN bus with Katapult as the bootloader (Sidewinder X2) or over USB (Voron 2.4).
+## Further links
 
-## Support me
+- [Klipper documentation](https://www.klipper3d.org/)
+- [Klipper on GitHub](https://github.com/Klipper3d/klipper)
+- [Katapult on GitHub](https://github.com/Arksine/katapult)
+- [Dr. Klipper wiki: BTT Manta (CAN bridge)](https://drklipper.de/doku.php?id=klipper_faq:flash_guide:stm32h743:btt_manta_m8n_can-bridge)
+- [Dr. Klipper wiki: BTT EBB42 (CAN)](https://drklipper.de/doku.php?id=klipper_faq:flash_guide:stm32g0b1:btt_ebb36_ebb42_can)
 
-Please leave a comment if there is something wrong or missing, or if you have any questions.
-Have fun!
-
-If you enjoyed this article and would like to support my work, feel free to buy me a coffee! Your support helps me continue creating content. Thank you! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+{{< support >}}

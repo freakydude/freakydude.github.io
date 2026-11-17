@@ -1,7 +1,8 @@
 ---
-title: Flash Armbian on Your Bigtreetech CB1 eMMC Compute Module
+title: Flash Armbian onto the BigTreeTech CB1 eMMC Compute Module
 date: 2025-01-26T00:00:00+01:00
-description: A step-by-step guide to flashing Armbian Linux onto your Bigtreetech CB1 eMMC version
+description: A step-by-step guide to flashing Armbian Linux onto the eMMC version of the BigTreeTech CB1 compute module from a Windows machine.
+draft: false
 tags:
   - armbian
   - bigtreetech
@@ -12,9 +13,9 @@ categories:
   - developer
 ---
 
-This step-by-step guide explains how to flash Armbian Linux onto the Bigtreetech CB1 eMMC compute module. While I describe the process for a Windows machine, the steps are very similar for Linux users.
+This step-by-step guide explains how to flash Armbian Linux onto the BigTreeTech CB1 eMMC compute module. I describe the process for a Windows machine, but the steps are very similar for Linux users.
 
-The eMMC version of the CB1 has built-in storage, which makes the process slightly more complicated than flashing an SD card for non-eMMC versions.
+The eMMC version of the CB1 has built-in storage, which makes the process slightly more complicated than flashing an SD card for the non-eMMC versions.
 
 ## Requirements
 
@@ -22,48 +23,49 @@ You will need the following items to complete the process.
 
 ### Hardware
 
-- A Bigtreetech RPI adapter or a Bigtreetech Manta board to provide the necessary USB and LAN connectors.
-- A USB-C cable to connect and power the CB1 from your Windows machine. For added reliability, I recommend using a USB hub with a dedicated power adapter in between.
+- A BigTreeTech RPI adapter or a BigTreeTech Manta board to provide the necessary USB and LAN connectors.
+- A USB-C cable to connect and power the CB1 from your Windows machine. For added reliability, I recommend putting a USB hub with a dedicated power adapter in between.
 
 ### Software
 
-- A universal USB driver. See [Zadig](https://zadig.akeo.ie/)
-- AllWinner tools to switch the CB1 into USB device mode. See [sunxi-tools](https://github.com/bigtreetech/sunxi-tools) or [Here](http://linux-sunxi.org/FEL/USBBoot#Using_sunxi-fel_on_Windows)
-- An Armbian Linux image of your choice. See [Armbian for CB1](https://www.armbian.com/bigtreetech-cb1/)
-- An image flashing tool. I used [Balena Etcher](https://etcher.balena.io/)
+- A universal USB driver. See [Zadig](https://zadig.akeo.ie/).
+- Allwinner tools to switch the CB1 into USB device mode. See [sunxi-tools](https://github.com/bigtreetech/sunxi-tools) or [the sunxi wiki](https://linux-sunxi.org/FEL/USBBoot#Using_sunxi-fel_on_Windows).
+- An Armbian Linux image of your choice. See [Armbian for CB1](https://armbian.com/boards/bigtreetech-cb1).
+- An image flashing tool. I used [Balena Etcher](https://etcher.balena.io/).
 
-## Flash the Image to eMMC
+## Switch the CB1 into eMMC USB storage mode
 
-- Switch to EMMC USB Storage Mode. Set the DIP switches (USB OTG) and (RPI BOOT) to ON to enter BOOT mode
-  ![emms](images/eMMC.png)
+Set the DIP switches (USB OTG) and (RPI BOOT) to ON to enter BOOT mode.
 
-### Install the Universal USB Storage Driver
+![DIP switch positions for eMMC boot mode](images/eMMC.png)
 
-- Connect your CB1 to your windows machine
-- Install and Start Zadig
-  - Download and run [Zadig](https://zadig.akeo.ie/)
-- List All USB Devices
+## Install the universal USB driver
+
+- Connect your CB1 to your Windows machine.
+- Install and start Zadig.
+  - Download and run [Zadig](https://zadig.akeo.ie/).
+- List all USB devices.
   - In Zadig, list all USB devices on your machine.
-    ![List all devices](images/zadig-list-all-devices.png)
-- Identify Your CB1
-  - Look for your device, which will likely appear as an unknown device. Try each device until you find the one with the correct USB ID
-    ![Find your CB1](images/zadig-find-your-cb1.png)
-    - If you cannot find it, ensure that the DIP switches are set correctly and that your USB connection is functioning properly.
-- Install Driver
+    ![Zadig with all USB devices listed](images/zadig-list-all-devices.png)
+- Identify your CB1.
+  - Look for your device, which will likely appear as an unknown device. Try each device until you find the one with the correct USB ID.
+    ![Finding the CB1 in Zadig](images/zadig-find-your-cb1.png)
+    - If you cannot find it, make sure that the DIP switches are set correctly and that your USB connection is working properly.
+- Install the driver.
 
-### Enable CB1 eMMC Storage as an USB Storage Device
+## Enable the CB1 eMMC as a USB storage device
 
-- Download Required Files
+- Download the required files.
 
-  - Obtain `sunxi-fel.exe` and `u-boot-sunxi-cb1-emmc.bin` from [sunxi-tools](https://github.com/bigtreetech/sunxi-tools)
+  - Obtain `sunxi-fel.exe` and `u-boot-sunxi-cb1-emmc.bin` from [sunxi-tools](https://github.com/bigtreetech/sunxi-tools).
 
-- Open a Windows Command Prompt:
+- Open a Windows Command Prompt.
 
-  - Press `<WIN>+<R>`, type `cmd` and press `<ENTER>`
+  - Press `<WIN>+<R>`, type `cmd`, and press `<ENTER>`.
 
-- Run the sunxi-fel Command
+- Run the sunxi-fel command.
 
-  - Navigate to the folder containing the downloaded sunxi-tools and run the following command
+  - Navigate to the folder containing the downloaded sunxi-tools and run the following command:
 
   ```bat
   sunxi-fel.exe uboot u-boot-sunxi-cb1-emmc.bin
@@ -71,14 +73,15 @@ You will need the following items to complete the process.
 
   - This will switch the CB1 into USB storage mode.
 
-- Flash the Armbian Image
-  - Start [Balena Etcher](https://etcher.balena.io/)
-  - Select the downloaded Armbian image and flash your CB1 (it should appear as a storage device).
-  - No need to change the default settings. Begin the flashing process.
+## Flash the Armbian image
 
-### Mandatory Armbian Configuration
+- Start [Balena Etcher](https://etcher.balena.io/).
+- Select the downloaded Armbian image and flash your CB1 (it should appear as a storage device).
+- There is no need to change the default settings. Begin the flashing process.
 
-- Modify the `armbianEnv.txt` file
+## Apply the mandatory Armbian configuration
+
+- Modify the `armbianEnv.txt` file.
 - Replace the line
 
   ```ini
@@ -93,30 +96,25 @@ You will need the following items to complete the process.
 
   This change activates the eMMC storage as the boot device. You can revert to the previous setting to boot from an SD card if needed.
 
-### CleanUp
+## Clean up
 
-- Unmount the eMMC
-  - Safely eject the EMMC storage from your system.
-- Disconnect Power
+- Unmount the eMMC.
+  - Safely eject the eMMC storage from your system.
+- Disconnect the power.
   - Remove the USB cable or power source.
-- Reset the DIP Switches
+- Reset the DIP switches.
   - Set the DIP switches (USB OTG) and (RPI BOOT) back to OFF to exit BOOT mode.
 
-## Final Steps
+## Conclusion
 
-Congratulations! You should now have successfully flashed Armbian onto your Bigtreetech CB1. You can connect the CB1 to a display and keyboard or to your network and follow the official Armbian documentation for further setup.
+Congratulations! You should now have successfully flashed Armbian onto your BigTreeTech CB1. You can connect the CB1 to a display and keyboard, or to your network, and follow the official Armbian documentation for further setup.
 
-## Further Links
+## Further links
 
-- [Armbian BIGTREETECH CB1](https://www.armbian.com/bigtreetech-cb1/)
+- [Armbian BIGTREETECH CB1](https://armbian.com/boards/bigtreetech-cb1)
 - [BIGTREETECH sunxi-tools](https://github.com/bigtreetech/sunxi-tools)
-- [BIGTREETECH CB1 Repositry](https://github.com/bigtreetech/CB1)
-- [BIGTREETECH CB1 Wiki](https://bttwiki.com/CB1.html)
-- [SUNXI Wiki](https://linux-sunxi.org/)
+- [BIGTREETECH CB1 repository](https://github.com/bigtreetech/CB1)
+- [BIGTREETECH CB1 wiki](https://global.bttwiki.com/CB1.html)
+- [Sunxi wiki](https://linux-sunxi.org/)
 
-## Support me
-
-Please leave a comment if there is something wrong or missing. Or if you have any questions.
-Have fun!
-
-If you enjoyed this article and would like to support my work, feel free to buy me a coffee! Your support helps me continue creating content. Thank you! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+{{< support >}}

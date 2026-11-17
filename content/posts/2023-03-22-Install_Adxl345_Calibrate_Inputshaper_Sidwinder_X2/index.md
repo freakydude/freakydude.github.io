@@ -1,7 +1,7 @@
 ---
-title: Perfect input shaping - Install the ADXL345 accelerometer on Artillery Sidewinder/Genius Pro
+title: Install the ADXL345 and Calibrate Input Shaping on the Artillery Sidewinder X2 and Genius Pro
 date: 2023-03-22T00:00:00+01:00
-description: About installing the ADXL345 accelerometer to calibrate easily input shaping for an Artillery Sidewinder with Klipper firmware.
+description: Shows how to install an ADXL345 accelerometer and calibrate input shaping (resonance compensation) with Klipper on an Artillery Sidewinder X2 or Genius Pro.
 draft: false
 tags:
   - artillery
@@ -15,54 +15,50 @@ categories:
   - maker
 ---
 
-## Intro
+_Input shaping_ (also called _resonance compensation_) is a technique to reduce vibrations and resonances by proactively adjusting the printer movements. It increases the maximum possible printer speed without reducing the print quality. You can find more details in the Klipper [Resonance Compensation](https://www.klipper3d.org/Resonance_Compensation.html#resonance-compensation) documentation.
 
-Simply said: _Input Shaping_ or _Resonance Compensation_ is a technic to reduce vibrations and resonances by proactive adjusting the printer movements. It increases the max possible printer speed without reducing the print quality. More details can be found in Klipper [Resonance Compensation](https://www.klipper3d.org/Resonance_Compensation.html#resonance-compensation) documentation.
+This article focuses on the Klipper firmware, but Marlin also added input shaping as an experimental feature in its latest version (see [M593](https://marlinfw.org/docs/gcode/M593.html)).
 
-This article focuses on Klipper firmware, but also Marlin added Input Shaping as experimental feature in its latest Version. [see M593](https://marlinfw.org/docs/gcode/M593.html).
-
-There is also a manual way to determine the resonance frequencies but this post shows you the steps to measure the frequencies by an ADXL345 accelerometer chip. You can get it for some bucks.
+There is also a manual way to determine the resonance frequencies. This post shows you the steps to measure the frequencies with an ADXL345 accelerometer chip instead. You can get one for a few bucks.
 
 Ready? Let's start!
 
 ## Requirements
 
-What do you need?
-
-- Your printer (tested with Artillery Sidewinder X2)
+- Your printer (tested with the Artillery Sidewinder X2)
 - A working Klipper installation (tested with [MainsailOS](https://docs.mainsail.xyz/))
 - Jumper cables or similar
 - ADXL345 accelerometer module
-- Adapter to mount it on your extruder [see my Design](https://www.thingiverse.com/thing:5511453)
-- Raspberry Pi (or any other connected MCU with SPI interface)
+- An adapter to mount it on your extruder ([see my design on Thingiverse](https://www.thingiverse.com/thing:5511453))
+- Raspberry Pi (or any other connected MCU with an SPI interface)
 
 ## Install and wire the accelerometer
 
-As always, Klipper has a very clean and useful documentation. It describes well how to [wire the accelerometer](https://www.klipper3d.org/Measuring_Resonances.html#wiring).
+As always, Klipper has very clean and useful documentation. It describes well how to [wire the accelerometer](https://www.klipper3d.org/Measuring_Resonances.html#wiring).
 
-A example how to connect your ADXL345 to the SPI interface of the RaspberryPI. Here is a copy of the relevant wiring diagram:
+Here is an example of how to connect your ADXL345 to the SPI interface of the Raspberry Pi. It is a copy of the relevant wiring diagram:
 
-![Wire ADXL345](images/adxl345-wire.png "Wire ADXL345")
+![Wiring diagram for connecting the ADXL345 to the Raspberry Pi SPI interface](images/adxl345-wire.png "Wire ADXL345")
 
-I used standard jumper cables for that task, but in case you want to do some crafting, go on.
+I used standard jumper cables for that task, but if you want to do some crafting, go ahead.
 
-If you have the Sidewinder X1/X2 or Genius Pro you can use [my mount from Thingiverse](https://www.thingiverse.com/thing:5511453) to install the accelerometer on your extruder. I suggest V2, the sensor is in parallel to the xy-plane and mounted with screws.
-Because those are bed slingers, the measurement of the resonance frequency should be split. For measure the frequency for y-axis, you should install the accelerometer on your heater bed. I made an adapter for that too. (Thanks to _Paradisebaker_ to clarify that.)
+If you have a Sidewinder X1/X2 or Genius Pro, you can use [my mount from Thingiverse](https://www.thingiverse.com/thing:5511453) to install the accelerometer on your extruder. I suggest V2: the sensor is parallel to the xy-plane and mounted with screws.
+Because those printers are bed slingers, the measurement of the resonance frequency should be split. To measure the frequency of the y-axis, you should install the accelerometer on your heated bed. I made an adapter for that too. (Thanks to _Paradisebaker_ for clarifying that.)
 
-If you own another printer, you have to look for different mounting solution.
+If you own another printer, you have to look for a different mounting solution.
 
-![ADXL345 Mount](images/adxl345-photo.png "ADXL345 Mount")
+![ADXL345 mounted on the extruder](images/adxl345-photo.png "ADXL345 Mount")
 
-## Build a Klipper MCU for PI
+## Build a Klipper MCU for the Pi
 
-To make use of the SPI interface, you need to build and setup a additional Klipper firmware for your target. So you can configure it as an MCU in your config files.
+To make use of the SPI interface, you need to build and set up an additional Klipper firmware for your target. Then you can configure it as an MCU in your config files.
 
-### Software installation
+### Install the software
 
 [Detailed Klipper documentation](https://www.klipper3d.org/Measuring_Resonances.html#software-installation)
 
-- Login to your MainsailOS PI
-- Make sure, needed packages are installed. (In newer MainsailOS everything is already installed)
+- Log in to your MainsailOS Pi.
+- Make sure the needed packages are installed. (In newer MainsailOS versions, everything is already installed.)
 
   ```sh
   sudo apt update
@@ -73,7 +69,7 @@ To make use of the SPI interface, you need to build and setup a additional Klipp
   ~/klippy-env/bin/pip install -v numpy
   ```
 
-### Build secondary MCU for PI
+### Build the secondary MCU for the Pi
 
 [RPi Micro-Controller documentation](https://www.klipper3d.org/RPi_microcontroller.html)
 
@@ -96,7 +92,7 @@ In the menu, set "Microcontroller Architecture" to "Linux process," then save an
   sudo service klipper start
   ```
 
-- Copy a the matching klipper-mcu service, enable and start it.
+- Copy the matching klipper-mcu service, then enable and start it.
 
   ```sh
   cd ~/klipper/
@@ -104,7 +100,7 @@ In the menu, set "Microcontroller Architecture" to "Linux process," then save an
   sudo systemctl enable --now klipper-mcu.service
   ```
 
-- Configure the new compiled RPi MCU in your `printer.cfg`
+- Configure the newly compiled RPi MCU in your `printer.cfg`
 
   ```yml
   [mcu rpi]
@@ -120,45 +116,45 @@ In the menu, set "Microcontroller Architecture" to "Linux process," then save an
       150, 150, 20 # mid of your bed (Sidewinder size: 300x300mm)
   ```
 
-### Test and Calibration steps
+## Test the accelerometer
 
-- Open your G-Code console (for example in Mainsail)
-- Check if the accelerometer respond. If not, double check the steps above and Klipper documentation.
+- Open your G-code console (for example in Mainsail).
+- Check if the accelerometer responds. If not, double-check the steps above and the Klipper documentation.
 
   ```text
   ACCELEROMETER_QUERY
   ```
 
-- A output should look similar to this
+- The output should look similar to this:
 
   ```text
   accelerometer values (x, y, z): 536.266849, -888.247130, 9918.759623
   ```
 
-- Check if sensor and wires don't have to much noise
+- Check that the sensor and wires don't have too much noise:
 
   ```text
   MEASURE_AXES_NOISE
   ```
 
-- All values should be below 100
+- All values should be below 100:
 
   ```text
   Axes noise for xy-axis accelerometer: 11.789601 (x), 16.017559 (y), 29.190110 (z)
   ```
 
-If you have problems, consult [Checking the setup](https://www.klipper3d.org/Measuring_Resonances.html#checking-the-setup)
+If you have problems, see [Checking the setup](https://www.klipper3d.org/Measuring_Resonances.html#checking-the-setup)
 
-### Manual Test X- and Y-Axes
+## Measure resonances manually
 
-- Test x-axis resonances on G-Code console (for example in Mainsail). _Mount your ADXL345 on your extruder_
+- Test the x-axis resonances in the G-code console (for example in Mainsail). _Mount your ADXL345 on your extruder._
 
   ```sh
   TEST_RESONANCES AXIS=X
   ```
 
-- Login to your Raspberry Pi terminal (with ssh)
-- Run the `calibrate_shaper.py` with the generated csv, also generate a beautiful diagram over the measured and calculated frequencies.
+- Log in to your Raspberry Pi terminal (with SSH).
+- Run `calibrate_shaper.py` with the generated CSV file. This also generates a nice diagram of the measured and calculated frequencies.
 
   Example:
 
@@ -178,14 +174,14 @@ If you have problems, consult [Checking the setup](https://www.klipper3d.org/Mea
   Recommended shaper is mzv @ 55.0 Hz
   ```
 
-- Test y-axis resonances on G-Code console (for example in Mainsail). _Mount your ADXL345 on your heat bed. There is also an adapter on my [thingiverse](https://www.thingiverse.com/thing:5511453) page_
+- Test the y-axis resonances in the G-code console (for example in Mainsail). _Mount your ADXL345 on your heated bed. There is also an adapter on my [Thingiverse page](https://www.thingiverse.com/thing:5511453)._
 
   ```sh
   TEST_RESONANCES AXIS=Y
   ```
 
-- Login to your Raspberry Pi terminal (with ssh)
-- Run the `calibrate_shaper.py` with the generated csv, also generate a beautiful diagram over the measured and calculated frequencies.
+- Log in to your Raspberry Pi terminal (with SSH).
+- Run `calibrate_shaper.py` with the generated CSV file. This also generates a nice diagram of the measured and calculated frequencies.
 
   Example:
 
@@ -205,7 +201,7 @@ If you have problems, consult [Checking the setup](https://www.klipper3d.org/Mea
   Recommended shaper is ei @ 41.6 Hz
   ```
 
-- Configure _input_shaper_ section in `printer.cfg`. You can take the following snipped and replace your calculated and chosen frequencies and algorithm.
+- Configure the _input_shaper_ section in `printer.cfg`. You can take the following snippet and replace the frequencies and algorithm with your calculated and chosen ones.
 
   Example:
 
@@ -217,9 +213,9 @@ If you have problems, consult [Checking the setup](https://www.klipper3d.org/Mea
   shaper_type_y: ei
   ```
 
-### Alternative auto calibrate
+## Calibrate automatically (alternative)
 
-If you are not interested in any details, you can use the automatic `SHAPER_CALIBRATE` script. See [Input Shaper auto-calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration) documentation.
+If you are not interested in the details, you can use the automatic `SHAPER_CALIBRATE` script. See the [Input Shaper auto-calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration) documentation.
 
 - In short:
 
@@ -233,7 +229,7 @@ If you are not interested in any details, you can use the automatic `SHAPER_CALI
   SHAPER_CALIBRATE AXIS=X or SHAPER_CALIBRATE AXIS=Y
   ```
 
-- Don't forget to save your config
+- Don't forget to save your config:
 
   ```sh
   SAVE_CONFIG
@@ -241,14 +237,13 @@ If you are not interested in any details, you can use the automatic `SHAPER_CALI
 
 ## Conclusion
 
-Hope this was straight forward and you could successful measure your resonances. Now you should be able to print faster with your Artillery Sidewinder X2. Try to increase your acceleration and speed.
+I hope this was straightforward and you could successfully measure your resonances. Now you should be able to print faster with your Artillery Sidewinder X2. Try to increase your acceleration and speed.
 
-For further steps and more details it is always a very good idea to walk through the very good official documentations
+## Further links
 
-- [Klipper Documentation](https://www.klipper3d.org/Overview.html)
-- [Mainsail Documentation](https://docs.mainsail.xyz/)
+For further steps and more details, it is always a very good idea to walk through the official documentation:
 
-Please leave a comment if there is something wrong or missing. Or if you have any questions.
-Have fun!
+- [Klipper documentation](https://www.klipper3d.org/Overview.html)
+- [Mainsail documentation](https://docs.mainsail.xyz/)
 
-If you enjoyed this article and would like to support my work, feel free to buy me a coffee! Your support helps me continue creating content. Thank you! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F7GC8PC)
+{{< support >}}
